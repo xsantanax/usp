@@ -1,0 +1,1652 @@
+;--------------------------------------------------------
+; File Created by SDCC : free open source ANSI-C Compiler
+; Version 3.3.0 #8604 (May 11 2013) (MINGW32)
+; This file was generated Mon Nov 17 12:00:31 2014
+;--------------------------------------------------------
+	.module frequencimetro_simples
+	.optsdcc -mmcs51 --model-small
+	
+;--------------------------------------------------------
+; Public variables in this module
+;--------------------------------------------------------
+	.globl _main
+	.globl _estourot1
+	.globl _imprimeFrase4bits
+	.globl _imprimeChar4bits
+	.globl _imprimeFrase
+	.globl _imprimeChar
+	.globl _atraso
+	.globl _CY
+	.globl _AC
+	.globl _F0
+	.globl _RS1
+	.globl _RS0
+	.globl _OV
+	.globl _FL
+	.globl _P
+	.globl _TF2
+	.globl _EXF2
+	.globl _RCLK
+	.globl _TCLK
+	.globl _EXEN2
+	.globl _TR2
+	.globl _C_T2
+	.globl _CP_RL2
+	.globl _T2CON_7
+	.globl _T2CON_6
+	.globl _T2CON_5
+	.globl _T2CON_4
+	.globl _T2CON_3
+	.globl _T2CON_2
+	.globl _T2CON_1
+	.globl _T2CON_0
+	.globl _PT2
+	.globl _PS
+	.globl _PT1
+	.globl _PX1
+	.globl _PT0
+	.globl _PX0
+	.globl _RD
+	.globl _WR
+	.globl _T1
+	.globl _T0
+	.globl _INT1
+	.globl _INT0
+	.globl _TXD
+	.globl _RXD
+	.globl _P3_7
+	.globl _P3_6
+	.globl _P3_5
+	.globl _P3_4
+	.globl _P3_3
+	.globl _P3_2
+	.globl _P3_1
+	.globl _P3_0
+	.globl _EA
+	.globl _ET2
+	.globl _ES
+	.globl _ET1
+	.globl _EX1
+	.globl _ET0
+	.globl _EX0
+	.globl _P2_7
+	.globl _P2_6
+	.globl _P2_5
+	.globl _P2_4
+	.globl _P2_3
+	.globl _P2_2
+	.globl _P2_1
+	.globl _P2_0
+	.globl _SM0
+	.globl _SM1
+	.globl _SM2
+	.globl _REN
+	.globl _TB8
+	.globl _RB8
+	.globl _TI
+	.globl _RI
+	.globl _T2EX
+	.globl _T2
+	.globl _P1_7
+	.globl _P1_6
+	.globl _P1_5
+	.globl _P1_4
+	.globl _P1_3
+	.globl _P1_2
+	.globl _P1_1
+	.globl _P1_0
+	.globl _TF1
+	.globl _TR1
+	.globl _TF0
+	.globl _TR0
+	.globl _IE1
+	.globl _IT1
+	.globl _IE0
+	.globl _IT0
+	.globl _P0_7
+	.globl _P0_6
+	.globl _P0_5
+	.globl _P0_4
+	.globl _P0_3
+	.globl _P0_2
+	.globl _P0_1
+	.globl _P0_0
+	.globl _B
+	.globl _A
+	.globl _ACC
+	.globl _PSW
+	.globl _TH2
+	.globl _TL2
+	.globl _RCAP2H
+	.globl _RCAP2L
+	.globl _T2MOD
+	.globl _T2CON
+	.globl _IP
+	.globl _P3
+	.globl _IE
+	.globl _P2
+	.globl _SBUF
+	.globl _SCON
+	.globl _P1
+	.globl _TH1
+	.globl _TH0
+	.globl _TL1
+	.globl _TL0
+	.globl _TMOD
+	.globl _TCON
+	.globl _PCON
+	.globl _DPH
+	.globl _DPL
+	.globl _SP
+	.globl _P0
+	.globl _pow_PARM_2
+	.globl _ascii
+	.globl _estouros
+	.globl _ndigitos
+	.globl _posicionaCursor4bits_PARM_2
+	.globl _posicionaCursor_PARM_2
+	.globl _divideMsg
+	.globl _imprimeInst
+	.globl _initLCD
+	.globl _posicionaCursor
+	.globl _imprimeInst4bits
+	.globl _initLCD4bits
+	.globl _posicionaCursor4bits
+	.globl _pow
+	.globl _asciiNum
+;--------------------------------------------------------
+; special function registers
+;--------------------------------------------------------
+	.area RSEG    (ABS,DATA)
+	.org 0x0000
+G$P0$0$0 == 0x0080
+_P0	=	0x0080
+G$SP$0$0 == 0x0081
+_SP	=	0x0081
+G$DPL$0$0 == 0x0082
+_DPL	=	0x0082
+G$DPH$0$0 == 0x0083
+_DPH	=	0x0083
+G$PCON$0$0 == 0x0087
+_PCON	=	0x0087
+G$TCON$0$0 == 0x0088
+_TCON	=	0x0088
+G$TMOD$0$0 == 0x0089
+_TMOD	=	0x0089
+G$TL0$0$0 == 0x008a
+_TL0	=	0x008a
+G$TL1$0$0 == 0x008b
+_TL1	=	0x008b
+G$TH0$0$0 == 0x008c
+_TH0	=	0x008c
+G$TH1$0$0 == 0x008d
+_TH1	=	0x008d
+G$P1$0$0 == 0x0090
+_P1	=	0x0090
+G$SCON$0$0 == 0x0098
+_SCON	=	0x0098
+G$SBUF$0$0 == 0x0099
+_SBUF	=	0x0099
+G$P2$0$0 == 0x00a0
+_P2	=	0x00a0
+G$IE$0$0 == 0x00a8
+_IE	=	0x00a8
+G$P3$0$0 == 0x00b0
+_P3	=	0x00b0
+G$IP$0$0 == 0x00b8
+_IP	=	0x00b8
+G$T2CON$0$0 == 0x00c8
+_T2CON	=	0x00c8
+G$T2MOD$0$0 == 0x00c9
+_T2MOD	=	0x00c9
+G$RCAP2L$0$0 == 0x00ca
+_RCAP2L	=	0x00ca
+G$RCAP2H$0$0 == 0x00cb
+_RCAP2H	=	0x00cb
+G$TL2$0$0 == 0x00cc
+_TL2	=	0x00cc
+G$TH2$0$0 == 0x00cd
+_TH2	=	0x00cd
+G$PSW$0$0 == 0x00d0
+_PSW	=	0x00d0
+G$ACC$0$0 == 0x00e0
+_ACC	=	0x00e0
+G$A$0$0 == 0x00e0
+_A	=	0x00e0
+G$B$0$0 == 0x00f0
+_B	=	0x00f0
+;--------------------------------------------------------
+; special function bits
+;--------------------------------------------------------
+	.area RSEG    (ABS,DATA)
+	.org 0x0000
+G$P0_0$0$0 == 0x0080
+_P0_0	=	0x0080
+G$P0_1$0$0 == 0x0081
+_P0_1	=	0x0081
+G$P0_2$0$0 == 0x0082
+_P0_2	=	0x0082
+G$P0_3$0$0 == 0x0083
+_P0_3	=	0x0083
+G$P0_4$0$0 == 0x0084
+_P0_4	=	0x0084
+G$P0_5$0$0 == 0x0085
+_P0_5	=	0x0085
+G$P0_6$0$0 == 0x0086
+_P0_6	=	0x0086
+G$P0_7$0$0 == 0x0087
+_P0_7	=	0x0087
+G$IT0$0$0 == 0x0088
+_IT0	=	0x0088
+G$IE0$0$0 == 0x0089
+_IE0	=	0x0089
+G$IT1$0$0 == 0x008a
+_IT1	=	0x008a
+G$IE1$0$0 == 0x008b
+_IE1	=	0x008b
+G$TR0$0$0 == 0x008c
+_TR0	=	0x008c
+G$TF0$0$0 == 0x008d
+_TF0	=	0x008d
+G$TR1$0$0 == 0x008e
+_TR1	=	0x008e
+G$TF1$0$0 == 0x008f
+_TF1	=	0x008f
+G$P1_0$0$0 == 0x0090
+_P1_0	=	0x0090
+G$P1_1$0$0 == 0x0091
+_P1_1	=	0x0091
+G$P1_2$0$0 == 0x0092
+_P1_2	=	0x0092
+G$P1_3$0$0 == 0x0093
+_P1_3	=	0x0093
+G$P1_4$0$0 == 0x0094
+_P1_4	=	0x0094
+G$P1_5$0$0 == 0x0095
+_P1_5	=	0x0095
+G$P1_6$0$0 == 0x0096
+_P1_6	=	0x0096
+G$P1_7$0$0 == 0x0097
+_P1_7	=	0x0097
+G$T2$0$0 == 0x0090
+_T2	=	0x0090
+G$T2EX$0$0 == 0x0091
+_T2EX	=	0x0091
+G$RI$0$0 == 0x0098
+_RI	=	0x0098
+G$TI$0$0 == 0x0099
+_TI	=	0x0099
+G$RB8$0$0 == 0x009a
+_RB8	=	0x009a
+G$TB8$0$0 == 0x009b
+_TB8	=	0x009b
+G$REN$0$0 == 0x009c
+_REN	=	0x009c
+G$SM2$0$0 == 0x009d
+_SM2	=	0x009d
+G$SM1$0$0 == 0x009e
+_SM1	=	0x009e
+G$SM0$0$0 == 0x009f
+_SM0	=	0x009f
+G$P2_0$0$0 == 0x00a0
+_P2_0	=	0x00a0
+G$P2_1$0$0 == 0x00a1
+_P2_1	=	0x00a1
+G$P2_2$0$0 == 0x00a2
+_P2_2	=	0x00a2
+G$P2_3$0$0 == 0x00a3
+_P2_3	=	0x00a3
+G$P2_4$0$0 == 0x00a4
+_P2_4	=	0x00a4
+G$P2_5$0$0 == 0x00a5
+_P2_5	=	0x00a5
+G$P2_6$0$0 == 0x00a6
+_P2_6	=	0x00a6
+G$P2_7$0$0 == 0x00a7
+_P2_7	=	0x00a7
+G$EX0$0$0 == 0x00a8
+_EX0	=	0x00a8
+G$ET0$0$0 == 0x00a9
+_ET0	=	0x00a9
+G$EX1$0$0 == 0x00aa
+_EX1	=	0x00aa
+G$ET1$0$0 == 0x00ab
+_ET1	=	0x00ab
+G$ES$0$0 == 0x00ac
+_ES	=	0x00ac
+G$ET2$0$0 == 0x00ad
+_ET2	=	0x00ad
+G$EA$0$0 == 0x00af
+_EA	=	0x00af
+G$P3_0$0$0 == 0x00b0
+_P3_0	=	0x00b0
+G$P3_1$0$0 == 0x00b1
+_P3_1	=	0x00b1
+G$P3_2$0$0 == 0x00b2
+_P3_2	=	0x00b2
+G$P3_3$0$0 == 0x00b3
+_P3_3	=	0x00b3
+G$P3_4$0$0 == 0x00b4
+_P3_4	=	0x00b4
+G$P3_5$0$0 == 0x00b5
+_P3_5	=	0x00b5
+G$P3_6$0$0 == 0x00b6
+_P3_6	=	0x00b6
+G$P3_7$0$0 == 0x00b7
+_P3_7	=	0x00b7
+G$RXD$0$0 == 0x00b0
+_RXD	=	0x00b0
+G$TXD$0$0 == 0x00b1
+_TXD	=	0x00b1
+G$INT0$0$0 == 0x00b2
+_INT0	=	0x00b2
+G$INT1$0$0 == 0x00b3
+_INT1	=	0x00b3
+G$T0$0$0 == 0x00b4
+_T0	=	0x00b4
+G$T1$0$0 == 0x00b5
+_T1	=	0x00b5
+G$WR$0$0 == 0x00b6
+_WR	=	0x00b6
+G$RD$0$0 == 0x00b7
+_RD	=	0x00b7
+G$PX0$0$0 == 0x00b8
+_PX0	=	0x00b8
+G$PT0$0$0 == 0x00b9
+_PT0	=	0x00b9
+G$PX1$0$0 == 0x00ba
+_PX1	=	0x00ba
+G$PT1$0$0 == 0x00bb
+_PT1	=	0x00bb
+G$PS$0$0 == 0x00bc
+_PS	=	0x00bc
+G$PT2$0$0 == 0x00bd
+_PT2	=	0x00bd
+G$T2CON_0$0$0 == 0x00c8
+_T2CON_0	=	0x00c8
+G$T2CON_1$0$0 == 0x00c9
+_T2CON_1	=	0x00c9
+G$T2CON_2$0$0 == 0x00ca
+_T2CON_2	=	0x00ca
+G$T2CON_3$0$0 == 0x00cb
+_T2CON_3	=	0x00cb
+G$T2CON_4$0$0 == 0x00cc
+_T2CON_4	=	0x00cc
+G$T2CON_5$0$0 == 0x00cd
+_T2CON_5	=	0x00cd
+G$T2CON_6$0$0 == 0x00ce
+_T2CON_6	=	0x00ce
+G$T2CON_7$0$0 == 0x00cf
+_T2CON_7	=	0x00cf
+G$CP_RL2$0$0 == 0x00c8
+_CP_RL2	=	0x00c8
+G$C_T2$0$0 == 0x00c9
+_C_T2	=	0x00c9
+G$TR2$0$0 == 0x00ca
+_TR2	=	0x00ca
+G$EXEN2$0$0 == 0x00cb
+_EXEN2	=	0x00cb
+G$TCLK$0$0 == 0x00cc
+_TCLK	=	0x00cc
+G$RCLK$0$0 == 0x00cd
+_RCLK	=	0x00cd
+G$EXF2$0$0 == 0x00ce
+_EXF2	=	0x00ce
+G$TF2$0$0 == 0x00cf
+_TF2	=	0x00cf
+G$P$0$0 == 0x00d0
+_P	=	0x00d0
+G$FL$0$0 == 0x00d1
+_FL	=	0x00d1
+G$OV$0$0 == 0x00d2
+_OV	=	0x00d2
+G$RS0$0$0 == 0x00d3
+_RS0	=	0x00d3
+G$RS1$0$0 == 0x00d4
+_RS1	=	0x00d4
+G$F0$0$0 == 0x00d5
+_F0	=	0x00d5
+G$AC$0$0 == 0x00d6
+_AC	=	0x00d6
+G$CY$0$0 == 0x00d7
+_CY	=	0x00d7
+;--------------------------------------------------------
+; overlayable register banks
+;--------------------------------------------------------
+	.area REG_BANK_0	(REL,OVR,DATA)
+	.ds 8
+;--------------------------------------------------------
+; internal ram data
+;--------------------------------------------------------
+	.area DSEG    (DATA)
+Lfrequencimetro_simples.posicionaCursor$lin$1$28==.
+_posicionaCursor_PARM_2:
+	.ds 1
+Lfrequencimetro_simples.posicionaCursor4bits$lin$1$41==.
+_posicionaCursor4bits_PARM_2:
+	.ds 1
+G$ndigitos$0$0==.
+_ndigitos::
+	.ds 1
+G$estouros$0$0==.
+_estouros::
+	.ds 1
+G$ascii$0$0==.
+_ascii::
+	.ds 6
+Lfrequencimetro_simples.main$sloc0$1$0==.
+_main_sloc0_1_0:
+	.ds 4
+Lfrequencimetro_simples.pow$pot$1$53==.
+_pow_PARM_2:
+	.ds 1
+Lfrequencimetro_simples.pow$resp$1$54==.
+_pow_resp_1_54:
+	.ds 4
+Lfrequencimetro_simples.asciiNum$num$1$56==.
+_asciiNum_num_1_56:
+	.ds 4
+Lfrequencimetro_simples.asciiNum$a$1$57==.
+_asciiNum_a_1_57:
+	.ds 4
+;--------------------------------------------------------
+; overlayable items in internal ram 
+;--------------------------------------------------------
+;--------------------------------------------------------
+; Stack segment in internal ram 
+;--------------------------------------------------------
+	.area	SSEG	(DATA)
+__start__stack:
+	.ds	1
+
+;--------------------------------------------------------
+; indirectly addressable internal ram data
+;--------------------------------------------------------
+	.area ISEG    (DATA)
+;--------------------------------------------------------
+; absolute internal ram data
+;--------------------------------------------------------
+	.area IABS    (ABS,DATA)
+	.area IABS    (ABS,DATA)
+;--------------------------------------------------------
+; bit data
+;--------------------------------------------------------
+	.area BSEG    (BIT)
+;--------------------------------------------------------
+; paged external ram data
+;--------------------------------------------------------
+	.area PSEG    (PAG,XDATA)
+;--------------------------------------------------------
+; external ram data
+;--------------------------------------------------------
+	.area XSEG    (XDATA)
+;--------------------------------------------------------
+; absolute external ram data
+;--------------------------------------------------------
+	.area XABS    (ABS,XDATA)
+;--------------------------------------------------------
+; external initialized ram data
+;--------------------------------------------------------
+	.area XISEG   (XDATA)
+	.area HOME    (CODE)
+	.area GSINIT0 (CODE)
+	.area GSINIT1 (CODE)
+	.area GSINIT2 (CODE)
+	.area GSINIT3 (CODE)
+	.area GSINIT4 (CODE)
+	.area GSINIT5 (CODE)
+	.area GSINIT  (CODE)
+	.area GSFINAL (CODE)
+	.area CSEG    (CODE)
+;--------------------------------------------------------
+; interrupt vector 
+;--------------------------------------------------------
+	.area HOME    (CODE)
+__interrupt_vect:
+	ljmp	__sdcc_gsinit_startup
+	reti
+	.ds	7
+	reti
+	.ds	7
+	reti
+	.ds	7
+	ljmp	_estourot1
+;--------------------------------------------------------
+; global & static initialisations
+;--------------------------------------------------------
+	.area HOME    (CODE)
+	.area GSINIT  (CODE)
+	.area GSFINAL (CODE)
+	.area GSINIT  (CODE)
+	.globl __sdcc_gsinit_startup
+	.globl __sdcc_program_startup
+	.globl __start__stack
+	.globl __mcs51_genXINIT
+	.globl __mcs51_genXRAMCLEAR
+	.globl __mcs51_genRAMCLEAR
+	C$frequencimetro_simples.c$9$1$57 ==.
+;	frequencimetro_simples.c:9: char ndigitos=0; //deve ser signed por causa do for
+	mov	_ndigitos,#0x00
+	C$frequencimetro_simples.c$10$1$57 ==.
+;	frequencimetro_simples.c:10: volatile unsigned char estouros=0;
+	mov	_estouros,#0x00
+	C$frequencimetro_simples.c$11$1$57 ==.
+;	frequencimetro_simples.c:11: char ascii[6]={48,48,48,48,48,48};  //cm, dm, m, c, d, u
+	mov	_ascii,#0x30
+	mov	(_ascii + 0x0001),#0x30
+	mov	(_ascii + 0x0002),#0x30
+	mov	(_ascii + 0x0003),#0x30
+	mov	(_ascii + 0x0004),#0x30
+	mov	(_ascii + 0x0005),#0x30
+	.area GSFINAL (CODE)
+	ljmp	__sdcc_program_startup
+;--------------------------------------------------------
+; Home
+;--------------------------------------------------------
+	.area HOME    (CODE)
+	.area HOME    (CODE)
+__sdcc_program_startup:
+	ljmp	_main
+;	return from main will return to caller
+;--------------------------------------------------------
+; code
+;--------------------------------------------------------
+	.area CSEG    (CODE)
+;------------------------------------------------------------
+;Allocation info for local variables in function 'atraso'
+;------------------------------------------------------------
+;tempo                     Allocated to registers r7 
+;------------------------------------------------------------
+	G$atraso$0$0 ==.
+	C$atraso.h$5$0$0 ==.
+;	atraso.h:5: void atraso(unsigned char tempo){
+;	-----------------------------------------
+;	 function atraso
+;	-----------------------------------------
+_atraso:
+	ar7 = 0x07
+	ar6 = 0x06
+	ar5 = 0x05
+	ar4 = 0x04
+	ar3 = 0x03
+	ar2 = 0x02
+	ar1 = 0x01
+	ar0 = 0x00
+	mov	r7,dpl
+	C$atraso.h$6$1$2 ==.
+;	atraso.h:6: if(tempo==1){
+	cjne	r7,#0x01,00105$
+	C$atraso.h$8$2$3 ==.
+;	atraso.h:8: TMOD=TMOD & 0xF0;
+	anl	_TMOD,#0xF0
+	C$atraso.h$9$2$3 ==.
+;	atraso.h:9: TL0=0;    /*prescaler de 5bits*/
+	mov	_TL0,#0x00
+	C$atraso.h$10$2$3 ==.
+;	atraso.h:10: TH0=224;
+	mov	_TH0,#0xE0
+	C$atraso.h$11$2$3 ==.
+;	atraso.h:11: TR0=1;
+	setb	_TR0
+	C$atraso.h$12$2$3 ==.
+;	atraso.h:12: while(!TF0);
+00101$:
+	C$atraso.h$13$2$3 ==.
+;	atraso.h:13: TF0=0;
+	jbc	_TF0,00162$
+	sjmp	00101$
+00162$:
+	C$atraso.h$14$2$3 ==.
+;	atraso.h:14: TR0=0;
+	clr	_TR0
+	C$atraso.h$15$2$3 ==.
+;	atraso.h:15: return;
+	sjmp	00122$
+00105$:
+	C$atraso.h$17$1$2 ==.
+;	atraso.h:17: if(tempo==15){
+	cjne	r7,#0x0F,00113$
+	C$atraso.h$18$2$4 ==.
+;	atraso.h:18: TMOD=TMOD & 0xF0;   /*prescaler*/
+	anl	_TMOD,#0xF0
+	C$atraso.h$19$2$4 ==.
+;	atraso.h:19: TL0=0;
+	mov	_TL0,#0x00
+	C$atraso.h$20$2$4 ==.
+;	atraso.h:20: TH0=224;
+	mov	_TH0,#0xE0
+	C$atraso.h$21$2$4 ==.
+;	atraso.h:21: TR0=1;
+	setb	_TR0
+	C$atraso.h$22$2$4 ==.
+;	atraso.h:22: while(tempo>0){
+00109$:
+	mov	a,r7
+	jz	00111$
+	C$atraso.h$23$3$5 ==.
+;	atraso.h:23: while(!TF0);
+00106$:
+	jnb	_TF0,00106$
+	C$atraso.h$24$3$5 ==.
+;	atraso.h:24: tempo--;
+	dec	r7
+	C$atraso.h$25$3$5 ==.
+;	atraso.h:25: TF0=0;
+	clr	_TF0
+	C$atraso.h$26$3$5 ==.
+;	atraso.h:26: TH0=224;
+	mov	_TH0,#0xE0
+	sjmp	00109$
+00111$:
+	C$atraso.h$28$2$4 ==.
+;	atraso.h:28: TR0=0;
+	clr	_TR0
+	C$atraso.h$29$2$4 ==.
+;	atraso.h:29: return;
+	sjmp	00122$
+00113$:
+	C$atraso.h$31$1$2 ==.
+;	atraso.h:31: if(tempo==100){	/*2*50ms*/
+	cjne	r7,#0x64,00122$
+	C$atraso.h$32$2$6 ==.
+;	atraso.h:32: TMOD=TMOD | 0x01;/*16bits*/
+	orl	_TMOD,#0x01
+	C$atraso.h$33$2$6 ==.
+;	atraso.h:33: TR0=1;
+	setb	_TR0
+	C$atraso.h$34$2$6 ==.
+;	atraso.h:34: while(tempo>98){
+00117$:
+	mov	a,r7
+	add	a,#0xff - 0x62
+	jnc	00119$
+	C$atraso.h$35$3$7 ==.
+;	atraso.h:35: TH0=59;
+	mov	_TH0,#0x3B
+	C$atraso.h$36$3$7 ==.
+;	atraso.h:36: while(!TF0);
+00114$:
+	C$atraso.h$37$3$7 ==.
+;	atraso.h:37: TF0=0;
+	jbc	_TF0,00170$
+	sjmp	00114$
+00170$:
+	C$atraso.h$38$3$7 ==.
+;	atraso.h:38: tempo--;
+	dec	r7
+	sjmp	00117$
+00119$:
+	C$atraso.h$40$2$6 ==.
+;	atraso.h:40: TR0=0;
+	clr	_TR0
+	C$atraso.h$41$2$6 ==.
+;	atraso.h:41: return;
+00122$:
+	C$atraso.h$43$1$2 ==.
+	XG$atraso$0$0 ==.
+	ret
+;------------------------------------------------------------
+;Allocation info for local variables in function 'divideMsg'
+;------------------------------------------------------------
+;msg                       Allocated to registers r7 
+;------------------------------------------------------------
+	G$divideMsg$0$0 ==.
+	C$lcd.h$42$1$2 ==.
+;	lcd.h:42: void divideMsg(unsigned char msg){
+;	-----------------------------------------
+;	 function divideMsg
+;	-----------------------------------------
+_divideMsg:
+	mov	r7,dpl
+	C$lcd.h$43$1$18 ==.
+;	lcd.h:43: P0=msg&0xF0;     		/*mantem nibble mais significativo*/
+	mov	a,#0xF0
+	anl	a,r7
+	mov	_P0,a
+	C$lcd.h$44$1$18 ==.
+;	lcd.h:44: P2=msg;		 		/*envia nibble menos significativo*/
+	mov	_P2,r7
+	C$lcd.h$45$1$18 ==.
+;	lcd.h:45: return;
+	C$lcd.h$46$1$18 ==.
+	XG$divideMsg$0$0 ==.
+	ret
+;------------------------------------------------------------
+;Allocation info for local variables in function 'imprimeChar'
+;------------------------------------------------------------
+;msg                       Allocated to registers r7 
+;------------------------------------------------------------
+	G$imprimeChar$0$0 ==.
+	C$lcd.h$48$1$18 ==.
+;	lcd.h:48: void imprimeChar(unsigned char msg){
+;	-----------------------------------------
+;	 function imprimeChar
+;	-----------------------------------------
+_imprimeChar:
+	C$lcd.h$49$1$20 ==.
+;	lcd.h:49: divideMsg(msg);
+	lcall	_divideMsg
+	C$lcd.h$50$1$20 ==.
+;	lcd.h:50: RS=1;			/*dado*/
+	setb	_P0_0
+	C$lcd.h$51$1$20 ==.
+;	lcd.h:51: EN=1;
+	setb	_P0_2
+	C$lcd.h$52$1$20 ==.
+;	lcd.h:52: atraso(15);
+	mov	dpl,#0x0F
+	lcall	_atraso
+	C$lcd.h$53$1$20 ==.
+;	lcd.h:53: EN=0;
+	clr	_P0_2
+	C$lcd.h$54$1$20 ==.
+;	lcd.h:54: return;
+	C$lcd.h$55$1$20 ==.
+	XG$imprimeChar$0$0 ==.
+	ret
+;------------------------------------------------------------
+;Allocation info for local variables in function 'imprimeFrase'
+;------------------------------------------------------------
+;msg                       Allocated to registers r5 r6 r7 
+;i                         Allocated to registers r4 
+;------------------------------------------------------------
+	G$imprimeFrase$0$0 ==.
+	C$lcd.h$57$1$20 ==.
+;	lcd.h:57: void imprimeFrase(unsigned char *msg){
+;	-----------------------------------------
+;	 function imprimeFrase
+;	-----------------------------------------
+_imprimeFrase:
+	mov	r5,dpl
+	mov	r6,dph
+	mov	r7,b
+	C$lcd.h$58$1$20 ==.
+;	lcd.h:58: unsigned char i=0;
+	mov	r4,#0x00
+	C$lcd.h$59$1$22 ==.
+;	lcd.h:59: while(*msg){			/*verifica fim da string*/
+00103$:
+	mov	dpl,r5
+	mov	dph,r6
+	mov	b,r7
+	lcall	__gptrget
+	mov	r3,a
+	jz	00105$
+	C$lcd.h$60$2$23 ==.
+;	lcd.h:60: divideMsg(*msg);
+	mov	dpl,r3
+	push	ar7
+	push	ar6
+	push	ar5
+	push	ar4
+	lcall	_divideMsg
+	C$lcd.h$61$2$23 ==.
+;	lcd.h:61: RS=1;			/*dado*/
+	setb	_P0_0
+	C$lcd.h$62$2$23 ==.
+;	lcd.h:62: EN=1;
+	setb	_P0_2
+	C$lcd.h$63$2$23 ==.
+;	lcd.h:63: atraso(15);
+	mov	dpl,#0x0F
+	lcall	_atraso
+	pop	ar4
+	pop	ar5
+	pop	ar6
+	pop	ar7
+	C$lcd.h$64$2$23 ==.
+;	lcd.h:64: EN=0;
+	clr	_P0_2
+	C$lcd.h$65$2$23 ==.
+;	lcd.h:65: msg++;
+	inc	r5
+	cjne	r5,#0x00,00118$
+	inc	r6
+00118$:
+	C$lcd.h$66$2$23 ==.
+;	lcd.h:66: i++;
+	inc	r4
+	C$lcd.h$67$2$23 ==.
+;	lcd.h:67: if(i==15)
+	cjne	r4,#0x0F,00103$
+	C$lcd.h$68$2$23 ==.
+;	lcd.h:68: posicionaCursor(0, 2);		/*vai para linha 2*/
+	mov	_posicionaCursor_PARM_2,#0x02
+	mov	dpl,#0x00
+	push	ar7
+	push	ar6
+	push	ar5
+	push	ar4
+	lcall	_posicionaCursor
+	pop	ar4
+	pop	ar5
+	pop	ar6
+	pop	ar7
+	sjmp	00103$
+00105$:
+	C$lcd.h$70$1$22 ==.
+;	lcd.h:70: return;
+	C$lcd.h$71$1$22 ==.
+	XG$imprimeFrase$0$0 ==.
+	ret
+;------------------------------------------------------------
+;Allocation info for local variables in function 'imprimeInst'
+;------------------------------------------------------------
+;inst                      Allocated to registers 
+;------------------------------------------------------------
+	G$imprimeInst$0$0 ==.
+	C$lcd.h$73$1$22 ==.
+;	lcd.h:73: void imprimeInst(unsigned char inst){
+;	-----------------------------------------
+;	 function imprimeInst
+;	-----------------------------------------
+_imprimeInst:
+	C$lcd.h$74$1$25 ==.
+;	lcd.h:74: divideMsg(inst);
+	lcall	_divideMsg
+	C$lcd.h$75$1$25 ==.
+;	lcd.h:75: EN=1;
+	setb	_P0_2
+	C$lcd.h$76$1$25 ==.
+;	lcd.h:76: atraso(15);
+	mov	dpl,#0x0F
+	lcall	_atraso
+	C$lcd.h$77$1$25 ==.
+;	lcd.h:77: EN=0;
+	clr	_P0_2
+	C$lcd.h$78$1$25 ==.
+;	lcd.h:78: return;
+	C$lcd.h$79$1$25 ==.
+	XG$imprimeInst$0$0 ==.
+	ret
+;------------------------------------------------------------
+;Allocation info for local variables in function 'initLCD'
+;------------------------------------------------------------
+	G$initLCD$0$0 ==.
+	C$lcd.h$81$1$25 ==.
+;	lcd.h:81: void initLCD(void){
+;	-----------------------------------------
+;	 function initLCD
+;	-----------------------------------------
+_initLCD:
+	C$lcd.h$82$1$27 ==.
+;	lcd.h:82: imprimeInst(0x38);		/*duas linhas e 8bits*/
+	mov	dpl,#0x38
+	lcall	_imprimeInst
+	C$lcd.h$83$1$27 ==.
+;	lcd.h:83: imprimeInst(0x0F);		/*liga LCD e pisca cursor*/
+	mov	dpl,#0x0F
+	lcall	_imprimeInst
+	C$lcd.h$84$1$27 ==.
+;	lcd.h:84: imprimeInst(0x06);		/*LCD para receber e cursor move para direita*/
+	mov	dpl,#0x06
+	lcall	_imprimeInst
+	C$lcd.h$85$1$27 ==.
+;	lcd.h:85: return;
+	C$lcd.h$86$1$27 ==.
+	XG$initLCD$0$0 ==.
+	ret
+;------------------------------------------------------------
+;Allocation info for local variables in function 'posicionaCursor'
+;------------------------------------------------------------
+;lin                       Allocated with name '_posicionaCursor_PARM_2'
+;end                       Allocated to registers r7 
+;------------------------------------------------------------
+	G$posicionaCursor$0$0 ==.
+	C$lcd.h$88$1$27 ==.
+;	lcd.h:88: void posicionaCursor(unsigned char end, unsigned char lin){		/*end=endereço em que se deseja imprimir*/
+;	-----------------------------------------
+;	 function posicionaCursor
+;	-----------------------------------------
+_posicionaCursor:
+	mov	r7,dpl
+	C$lcd.h$90$2$30 ==.
+;	lcd.h:90: end=end+0x80;
+	mov	a,#0x80
+	add	a,r7
+	C$lcd.h$91$2$30 ==.
+;	lcd.h:91: imprimeInst(end);
+	mov	r7,a
+	mov	dpl,a
+	push	ar7
+	lcall	_imprimeInst
+	pop	ar7
+	C$lcd.h$94$2$31 ==.
+;	lcd.h:94: end=end+0xC0;			/*primeira posição da seg.linha=40h*/
+	mov	a,#0xC0
+	add	a,r7
+	C$lcd.h$95$2$31 ==.
+;	lcd.h:95: imprimeInst(end);
+	mov	dpl,a
+	lcall	_imprimeInst
+	C$lcd.h$97$1$29 ==.
+;	lcd.h:97: return;
+	C$lcd.h$98$1$29 ==.
+	XG$posicionaCursor$0$0 ==.
+	ret
+;------------------------------------------------------------
+;Allocation info for local variables in function 'imprimeChar4bits'
+;------------------------------------------------------------
+;msg                       Allocated to registers r7 
+;------------------------------------------------------------
+	G$imprimeChar4bits$0$0 ==.
+	C$lcd.h$101$1$29 ==.
+;	lcd.h:101: void imprimeChar4bits (unsigned char msg){
+;	-----------------------------------------
+;	 function imprimeChar4bits
+;	-----------------------------------------
+_imprimeChar4bits:
+	mov	r7,dpl
+	C$lcd.h$102$1$33 ==.
+;	lcd.h:102: P0=msg&0xF0;/*nibble mais significativo*/
+	mov	a,#0xF0
+	anl	a,r7
+	mov	_P0,a
+	C$lcd.h$103$1$33 ==.
+;	lcd.h:103: RS=1;
+	setb	_P0_0
+	C$lcd.h$104$1$33 ==.
+;	lcd.h:104: EN=1;
+	setb	_P0_2
+	C$lcd.h$105$1$33 ==.
+;	lcd.h:105: atraso(15);
+	mov	dpl,#0x0F
+	push	ar7
+	lcall	_atraso
+	pop	ar7
+	C$lcd.h$106$1$33 ==.
+;	lcd.h:106: EN=0;
+	clr	_P0_2
+	C$lcd.h$107$1$33 ==.
+;	lcd.h:107: P0=(msg<<4)&0xF0;/*nibble menos significativo*/
+	mov	a,r7
+	swap	a
+	anl	a,#0xF0
+	mov	r7,a
+	mov	a,#0xF0
+	anl	a,r7
+	mov	_P0,a
+	C$lcd.h$108$1$33 ==.
+;	lcd.h:108: RS=1;
+	setb	_P0_0
+	C$lcd.h$109$1$33 ==.
+;	lcd.h:109: EN=1;
+	setb	_P0_2
+	C$lcd.h$110$1$33 ==.
+;	lcd.h:110: atraso(15);
+	mov	dpl,#0x0F
+	lcall	_atraso
+	C$lcd.h$111$1$33 ==.
+;	lcd.h:111: EN=0;
+	clr	_P0_2
+	C$lcd.h$112$1$33 ==.
+;	lcd.h:112: return;
+	C$lcd.h$113$1$33 ==.
+	XG$imprimeChar4bits$0$0 ==.
+	ret
+;------------------------------------------------------------
+;Allocation info for local variables in function 'imprimeFrase4bits'
+;------------------------------------------------------------
+;msg                       Allocated to registers r5 r6 r7 
+;i                         Allocated to registers r4 
+;------------------------------------------------------------
+	G$imprimeFrase4bits$0$0 ==.
+	C$lcd.h$115$1$33 ==.
+;	lcd.h:115: void imprimeFrase4bits (unsigned char *msg){
+;	-----------------------------------------
+;	 function imprimeFrase4bits
+;	-----------------------------------------
+_imprimeFrase4bits:
+	mov	r5,dpl
+	mov	r6,dph
+	mov	r7,b
+	C$lcd.h$116$1$33 ==.
+;	lcd.h:116: char i=0;
+	mov	r4,#0x00
+	C$lcd.h$117$1$35 ==.
+;	lcd.h:117: while(*msg){
+00103$:
+	mov	dpl,r5
+	mov	dph,r6
+	mov	b,r7
+	lcall	__gptrget
+	mov	r3,a
+	jz	00105$
+	C$lcd.h$118$2$36 ==.
+;	lcd.h:118: P0=*msg&0xF0;/*nibble mais significativo*/
+	mov	a,#0xF0
+	anl	a,r3
+	mov	_P0,a
+	C$lcd.h$119$2$36 ==.
+;	lcd.h:119: RS=1;
+	setb	_P0_0
+	C$lcd.h$120$2$36 ==.
+;	lcd.h:120: EN=1;
+	setb	_P0_2
+	C$lcd.h$121$2$36 ==.
+;	lcd.h:121: atraso(15);
+	mov	dpl,#0x0F
+	push	ar7
+	push	ar6
+	push	ar5
+	push	ar4
+	lcall	_atraso
+	pop	ar4
+	pop	ar5
+	pop	ar6
+	pop	ar7
+	C$lcd.h$122$2$36 ==.
+;	lcd.h:122: EN=0;
+	clr	_P0_2
+	C$lcd.h$123$2$36 ==.
+;	lcd.h:123: P0=(*msg<<4)&0xF0;/*nibble menos significativo*/
+	mov	dpl,r5
+	mov	dph,r6
+	mov	b,r7
+	lcall	__gptrget
+	mov	r3,a
+	inc	dptr
+	mov	r5,dpl
+	mov	r6,dph
+	mov	a,r3
+	swap	a
+	anl	a,#0xF0
+	mov	r3,a
+	mov	a,#0xF0
+	anl	a,r3
+	mov	_P0,a
+	C$lcd.h$124$2$36 ==.
+;	lcd.h:124: RS=1;
+	setb	_P0_0
+	C$lcd.h$125$2$36 ==.
+;	lcd.h:125: EN=1;
+	setb	_P0_2
+	C$lcd.h$126$2$36 ==.
+;	lcd.h:126: atraso(15);
+	mov	dpl,#0x0F
+	push	ar7
+	push	ar6
+	push	ar5
+	push	ar4
+	lcall	_atraso
+	pop	ar4
+	pop	ar5
+	pop	ar6
+	pop	ar7
+	C$lcd.h$127$2$36 ==.
+;	lcd.h:127: EN=0;
+	clr	_P0_2
+	C$lcd.h$128$2$36 ==.
+;	lcd.h:128: msg++;
+	C$lcd.h$129$2$36 ==.
+;	lcd.h:129: i++;
+	inc	r4
+	C$lcd.h$130$2$36 ==.
+;	lcd.h:130: if(i==15)
+	cjne	r4,#0x0F,00103$
+	C$lcd.h$131$2$36 ==.
+;	lcd.h:131: posicionaCursor4bits(0,2);/*vai para linha 2*/
+	mov	_posicionaCursor4bits_PARM_2,#0x02
+	mov	dpl,#0x00
+	push	ar7
+	push	ar6
+	push	ar5
+	push	ar4
+	lcall	_posicionaCursor4bits
+	pop	ar4
+	pop	ar5
+	pop	ar6
+	pop	ar7
+	ljmp	00103$
+00105$:
+	C$lcd.h$133$1$35 ==.
+;	lcd.h:133: return;
+	C$lcd.h$134$1$35 ==.
+	XG$imprimeFrase4bits$0$0 ==.
+	ret
+;------------------------------------------------------------
+;Allocation info for local variables in function 'imprimeInst4bits'
+;------------------------------------------------------------
+;msg                       Allocated to registers r7 
+;------------------------------------------------------------
+	G$imprimeInst4bits$0$0 ==.
+	C$lcd.h$136$1$35 ==.
+;	lcd.h:136: void imprimeInst4bits(unsigned char msg){
+;	-----------------------------------------
+;	 function imprimeInst4bits
+;	-----------------------------------------
+_imprimeInst4bits:
+	mov	r7,dpl
+	C$lcd.h$137$1$38 ==.
+;	lcd.h:137: P0=msg&0xF0;    		/*nibble mais significativo*/
+	mov	a,#0xF0
+	anl	a,r7
+	mov	_P0,a
+	C$lcd.h$138$1$38 ==.
+;	lcd.h:138: EN=1;
+	setb	_P0_2
+	C$lcd.h$139$1$38 ==.
+;	lcd.h:139: atraso(15);
+	mov	dpl,#0x0F
+	push	ar7
+	lcall	_atraso
+	pop	ar7
+	C$lcd.h$140$1$38 ==.
+;	lcd.h:140: EN=0;
+	clr	_P0_2
+	C$lcd.h$141$1$38 ==.
+;	lcd.h:141: P0=(msg<<4)&0xF0;		/*nibble menos significativo*/
+	mov	a,r7
+	swap	a
+	anl	a,#0xF0
+	mov	r7,a
+	mov	a,#0xF0
+	anl	a,r7
+	mov	_P0,a
+	C$lcd.h$142$1$38 ==.
+;	lcd.h:142: EN=1;
+	setb	_P0_2
+	C$lcd.h$143$1$38 ==.
+;	lcd.h:143: atraso(15);
+	mov	dpl,#0x0F
+	lcall	_atraso
+	C$lcd.h$144$1$38 ==.
+;	lcd.h:144: EN=0;
+	clr	_P0_2
+	C$lcd.h$145$1$38 ==.
+;	lcd.h:145: return;
+	C$lcd.h$146$1$38 ==.
+	XG$imprimeInst4bits$0$0 ==.
+	ret
+;------------------------------------------------------------
+;Allocation info for local variables in function 'initLCD4bits'
+;------------------------------------------------------------
+	G$initLCD4bits$0$0 ==.
+	C$lcd.h$148$1$38 ==.
+;	lcd.h:148: void initLCD4bits(void){
+;	-----------------------------------------
+;	 function initLCD4bits
+;	-----------------------------------------
+_initLCD4bits:
+	C$lcd.h$149$1$40 ==.
+;	lcd.h:149: imprimeInst(0x28);		/*duas linhas e 4bits. Instrução em 8bits*/
+	mov	dpl,#0x28
+	lcall	_imprimeInst
+	C$lcd.h$150$1$40 ==.
+;	lcd.h:150: imprimeInst4bits(0x0F);		/*liga LCD e pisca cursor*/
+	mov	dpl,#0x0F
+	lcall	_imprimeInst4bits
+	C$lcd.h$151$1$40 ==.
+;	lcd.h:151: imprimeInst4bits(0x06);		/*LCD para receber e cursor move para direita*/
+	mov	dpl,#0x06
+	lcall	_imprimeInst4bits
+	C$lcd.h$152$1$40 ==.
+;	lcd.h:152: atraso(100);
+	mov	dpl,#0x64
+	lcall	_atraso
+	C$lcd.h$153$1$40 ==.
+;	lcd.h:153: return;
+	C$lcd.h$154$1$40 ==.
+	XG$initLCD4bits$0$0 ==.
+	ret
+;------------------------------------------------------------
+;Allocation info for local variables in function 'posicionaCursor4bits'
+;------------------------------------------------------------
+;lin                       Allocated with name '_posicionaCursor4bits_PARM_2'
+;end                       Allocated to registers r7 
+;------------------------------------------------------------
+	G$posicionaCursor4bits$0$0 ==.
+	C$lcd.h$156$1$40 ==.
+;	lcd.h:156: void posicionaCursor4bits(unsigned char end, unsigned char lin){	/*end=endereço em que se deseja imprimir.
+;	-----------------------------------------
+;	 function posicionaCursor4bits
+;	-----------------------------------------
+_posicionaCursor4bits:
+	mov	r7,dpl
+	C$lcd.h$160$2$43 ==.
+;	lcd.h:160: end=end+0x80;
+	mov	a,#0x80
+	add	a,r7
+	C$lcd.h$161$2$43 ==.
+;	lcd.h:161: imprimeInst4bits(end);
+	mov	r7,a
+	mov	dpl,a
+	push	ar7
+	lcall	_imprimeInst4bits
+	pop	ar7
+	C$lcd.h$164$2$44 ==.
+;	lcd.h:164: end=end+0xC0;			/*primeira posição da seg.linha=40h*/
+	mov	a,#0xC0
+	add	a,r7
+	C$lcd.h$165$2$44 ==.
+;	lcd.h:165: imprimeInst4bits(end);
+	mov	dpl,a
+	lcall	_imprimeInst4bits
+	C$lcd.h$167$1$42 ==.
+;	lcd.h:167: return;
+	C$lcd.h$168$1$42 ==.
+	XG$posicionaCursor4bits$0$0 ==.
+	ret
+;------------------------------------------------------------
+;Allocation info for local variables in function 'estourot1'
+;------------------------------------------------------------
+	G$estourot1$0$0 ==.
+	C$frequencimetro_simples.c$17$1$42 ==.
+;	frequencimetro_simples.c:17: void estourot1(void)__interrupt(3){ //overflow Timer1
+;	-----------------------------------------
+;	 function estourot1
+;	-----------------------------------------
+_estourot1:
+	C$frequencimetro_simples.c$18$1$48 ==.
+;	frequencimetro_simples.c:18: estouros++;//estouros de TH1
+	inc	_estouros
+	C$frequencimetro_simples.c$19$1$48 ==.
+;	frequencimetro_simples.c:19: TF1=0;
+	clr	_TF1
+	C$frequencimetro_simples.c$20$1$48 ==.
+	XG$estourot1$0$0 ==.
+	reti
+;	eliminated unneeded mov psw,# (no regs used in bank)
+;	eliminated unneeded push/pop psw
+;	eliminated unneeded push/pop dpl
+;	eliminated unneeded push/pop dph
+;	eliminated unneeded push/pop b
+;	eliminated unneeded push/pop acc
+;------------------------------------------------------------
+;Allocation info for local variables in function 'main'
+;------------------------------------------------------------
+;tempo                     Allocated to registers r6 
+;i                         Allocated to registers r7 
+;freq                      Allocated to registers r3 r6 
+;sloc0                     Allocated with name '_main_sloc0_1_0'
+;------------------------------------------------------------
+	G$main$0$0 ==.
+	C$frequencimetro_simples.c$22$1$48 ==.
+;	frequencimetro_simples.c:22: void main(void){
+;	-----------------------------------------
+;	 function main
+;	-----------------------------------------
+_main:
+	C$frequencimetro_simples.c$27$1$50 ==.
+;	frequencimetro_simples.c:27: TMOD=0x51; //timer1 como contador 16bits, timer0 como timer 16bits
+	mov	_TMOD,#0x51
+	C$frequencimetro_simples.c$29$1$50 ==.
+;	frequencimetro_simples.c:29: initLCD4bits();
+	lcall	_initLCD4bits
+	C$frequencimetro_simples.c$31$1$50 ==.
+;	frequencimetro_simples.c:31: while(1){
+00110$:
+	C$frequencimetro_simples.c$32$2$51 ==.
+;	frequencimetro_simples.c:32: apagaLCD4bits;
+	mov	dpl,#0x01
+	lcall	_imprimeInst4bits
+	C$frequencimetro_simples.c$33$2$51 ==.
+;	frequencimetro_simples.c:33: for(i=0; i<6; i++)
+	mov	r7,#0x00
+00112$:
+	C$frequencimetro_simples.c$34$2$51 ==.
+;	frequencimetro_simples.c:34: ascii[i]=48; //reinicia vetor da frequencia em ascii
+	mov	a,r7
+	add	a,#_ascii
+	mov	r0,a
+	mov	@r0,#0x30
+	C$frequencimetro_simples.c$33$2$51 ==.
+;	frequencimetro_simples.c:33: for(i=0; i<6; i++)
+	inc	r7
+	clr	c
+	mov	a,r7
+	xrl	a,#0x80
+	subb	a,#0x86
+	jc	00112$
+	C$frequencimetro_simples.c$35$2$51 ==.
+;	frequencimetro_simples.c:35: estouros=0;
+	mov	_estouros,#0x00
+	C$frequencimetro_simples.c$37$2$51 ==.
+;	frequencimetro_simples.c:37: tempo=20; //scaler pro timer que conta 1s (255 *(255-59)*20)
+	mov	r6,#0x14
+	C$frequencimetro_simples.c$38$2$51 ==.
+;	frequencimetro_simples.c:38: TH1=0;
+	mov	_TH1,#0x00
+	C$frequencimetro_simples.c$39$2$51 ==.
+;	frequencimetro_simples.c:39: TL1=0;
+	mov	_TL1,#0x00
+	C$frequencimetro_simples.c$40$2$51 ==.
+;	frequencimetro_simples.c:40: TR1=1;//começa contagem pulsos
+	setb	_TR1
+	C$frequencimetro_simples.c$41$2$51 ==.
+;	frequencimetro_simples.c:41: TH0=59;//janela de 1 segundo
+	mov	_TH0,#0x3B
+	C$frequencimetro_simples.c$42$2$51 ==.
+;	frequencimetro_simples.c:42: TR0=1;//começa contagem tempo
+	setb	_TR0
+	C$frequencimetro_simples.c$46$2$51 ==.
+;	frequencimetro_simples.c:46: while(tempo>0){
+00105$:
+	mov	a,r6
+	jz	00107$
+	C$frequencimetro_simples.c$47$3$52 ==.
+;	frequencimetro_simples.c:47: while(!TF0);
+00102$:
+	C$frequencimetro_simples.c$48$3$52 ==.
+;	frequencimetro_simples.c:48: TF0=0;
+	jbc	_TF0,00145$
+	sjmp	00102$
+00145$:
+	C$frequencimetro_simples.c$49$3$52 ==.
+;	frequencimetro_simples.c:49: tempo--;
+	dec	r6
+	sjmp	00105$
+00107$:
+	C$frequencimetro_simples.c$51$2$51 ==.
+;	frequencimetro_simples.c:51: TR1=0; //para contagens
+	clr	_TR1
+	C$frequencimetro_simples.c$52$2$51 ==.
+;	frequencimetro_simples.c:52: TR0=0;
+	clr	_TR0
+	C$frequencimetro_simples.c$55$2$51 ==.
+;	frequencimetro_simples.c:55: freq=65535*estouros+256*TH1+TL1;
+	mov	__mullong_PARM_2,_estouros
+	mov	(__mullong_PARM_2 + 1),#0x00
+	mov	(__mullong_PARM_2 + 2),#0x00
+	mov	(__mullong_PARM_2 + 3),#0x00
+	mov	dptr,#0xFFFF
+	clr	a
+	mov	b,a
+	lcall	__mullong
+	mov	_main_sloc0_1_0,dpl
+	mov	(_main_sloc0_1_0 + 1),dph
+	mov	(_main_sloc0_1_0 + 2),b
+	mov	(_main_sloc0_1_0 + 3),a
+	mov	r6,_TH1
+	mov	r2,#0x00
+	mov	a,r6
+	rlc	a
+	subb	a,acc
+	mov	r5,a
+	mov	r4,a
+	mov	a,r2
+	add	a,_main_sloc0_1_0
+	mov	_main_sloc0_1_0,a
+	mov	a,r6
+	addc	a,(_main_sloc0_1_0 + 1)
+	mov	(_main_sloc0_1_0 + 1),a
+	mov	a,r5
+	addc	a,(_main_sloc0_1_0 + 2)
+	mov	(_main_sloc0_1_0 + 2),a
+	mov	a,r4
+	addc	a,(_main_sloc0_1_0 + 3)
+	mov	(_main_sloc0_1_0 + 3),a
+	mov	r3,_TL1
+	clr	a
+	mov	r6,a
+	rlc	a
+	subb	a,acc
+	mov	r5,a
+	mov	r4,a
+	mov	a,r3
+	add	a,_main_sloc0_1_0
+	mov	r3,a
+	mov	a,r6
+	addc	a,(_main_sloc0_1_0 + 1)
+	mov	r6,a
+	mov	a,r5
+	addc	a,(_main_sloc0_1_0 + 2)
+	mov	a,r4
+	addc	a,(_main_sloc0_1_0 + 3)
+	C$frequencimetro_simples.c$58$2$51 ==.
+;	frequencimetro_simples.c:58: imprimeFrase4bits("f: ");
+	mov	dptr,#__str_0
+	mov	b,#0x80
+	push	ar6
+	push	ar3
+	lcall	_imprimeFrase4bits
+	pop	ar3
+	pop	ar6
+	C$frequencimetro_simples.c$59$2$51 ==.
+;	frequencimetro_simples.c:59: asciiNum(freq);
+	mov	r5,#0x00
+	mov	r4,#0x00
+	mov	dpl,r3
+	mov	dph,r6
+	mov	b,r5
+	mov	a,r4
+	lcall	_asciiNum
+	C$frequencimetro_simples.c$60$2$51 ==.
+;	frequencimetro_simples.c:60: for(i=ndigitos; i>=0; i--)
+	mov	r7,_ndigitos
+00115$:
+	mov	a,r7
+	jnb	acc.7,00146$
+	ljmp	00110$
+00146$:
+	C$frequencimetro_simples.c$61$2$51 ==.
+;	frequencimetro_simples.c:61: imprimeChar4bits(ascii[i]);
+	mov	a,r7
+	add	a,#_ascii
+	mov	r1,a
+	mov	dpl,@r1
+	push	ar7
+	lcall	_imprimeChar4bits
+	pop	ar7
+	C$frequencimetro_simples.c$60$2$51 ==.
+;	frequencimetro_simples.c:60: for(i=ndigitos; i>=0; i--)
+	dec	r7
+	sjmp	00115$
+	C$frequencimetro_simples.c$63$1$50 ==.
+	XG$main$0$0 ==.
+	ret
+;------------------------------------------------------------
+;Allocation info for local variables in function 'pow'
+;------------------------------------------------------------
+;pot                       Allocated with name '_pow_PARM_2'
+;base                      Allocated to registers r4 r5 r6 r7 
+;i                         Allocated to registers r3 
+;resp                      Allocated with name '_pow_resp_1_54'
+;------------------------------------------------------------
+	G$pow$0$0 ==.
+	C$frequencimetro_simples.c$65$1$50 ==.
+;	frequencimetro_simples.c:65: long int pow(long int base, unsigned char pot){
+;	-----------------------------------------
+;	 function pow
+;	-----------------------------------------
+_pow:
+	mov	r4,dpl
+	mov	r5,dph
+	mov	r6,b
+	mov	r7,a
+	C$frequencimetro_simples.c$67$1$50 ==.
+;	frequencimetro_simples.c:67: long int resp=base;
+	mov	_pow_resp_1_54,r4
+	mov	(_pow_resp_1_54 + 1),r5
+	mov	(_pow_resp_1_54 + 2),r6
+	mov	(_pow_resp_1_54 + 3),r7
+	C$frequencimetro_simples.c$69$1$54 ==.
+;	frequencimetro_simples.c:69: for(i=1; i<pot; i++){
+	mov	r3,#0x01
+00103$:
+	clr	c
+	mov	a,r3
+	subb	a,_pow_PARM_2
+	jnc	00101$
+	C$frequencimetro_simples.c$70$1$54 ==.
+;	frequencimetro_simples.c:70: resp*=base;
+	mov	__mullong_PARM_2,r4
+	mov	(__mullong_PARM_2 + 1),r5
+	mov	(__mullong_PARM_2 + 2),r6
+	mov	(__mullong_PARM_2 + 3),r7
+	mov	dpl,_pow_resp_1_54
+	mov	dph,(_pow_resp_1_54 + 1)
+	mov	b,(_pow_resp_1_54 + 2)
+	mov	a,(_pow_resp_1_54 + 3)
+	push	ar7
+	push	ar6
+	push	ar5
+	push	ar4
+	push	ar3
+	lcall	__mullong
+	mov	_pow_resp_1_54,dpl
+	mov	(_pow_resp_1_54 + 1),dph
+	mov	(_pow_resp_1_54 + 2),b
+	mov	(_pow_resp_1_54 + 3),a
+	pop	ar3
+	pop	ar4
+	pop	ar5
+	pop	ar6
+	pop	ar7
+	C$frequencimetro_simples.c$69$1$54 ==.
+;	frequencimetro_simples.c:69: for(i=1; i<pot; i++){
+	inc	r3
+	sjmp	00103$
+00101$:
+	C$frequencimetro_simples.c$72$1$54 ==.
+;	frequencimetro_simples.c:72: return(resp);
+	mov	dpl,_pow_resp_1_54
+	mov	dph,(_pow_resp_1_54 + 1)
+	mov	b,(_pow_resp_1_54 + 2)
+	mov	a,(_pow_resp_1_54 + 3)
+	C$frequencimetro_simples.c$73$1$54 ==.
+	XG$pow$0$0 ==.
+	ret
+;------------------------------------------------------------
+;Allocation info for local variables in function 'asciiNum'
+;------------------------------------------------------------
+;num                       Allocated with name '_asciiNum_num_1_56'
+;i                         Allocated to registers r3 
+;a                         Allocated with name '_asciiNum_a_1_57'
+;------------------------------------------------------------
+	G$asciiNum$0$0 ==.
+	C$frequencimetro_simples.c$75$1$54 ==.
+;	frequencimetro_simples.c:75: void asciiNum (long int num){//Imprime número decimal (ASCII), ord=ordem da base 10
+;	-----------------------------------------
+;	 function asciiNum
+;	-----------------------------------------
+_asciiNum:
+	mov	_asciiNum_num_1_56,dpl
+	mov	(_asciiNum_num_1_56 + 1),dph
+	mov	(_asciiNum_num_1_56 + 2),b
+	mov	(_asciiNum_num_1_56 + 3),a
+	C$frequencimetro_simples.c$76$1$54 ==.
+;	frequencimetro_simples.c:76: char i=5;
+	mov	r3,#0x05
+	C$frequencimetro_simples.c$79$1$57 ==.
+;	frequencimetro_simples.c:79: ndigitos=0;
+	mov	_ndigitos,#0x00
+	C$frequencimetro_simples.c$80$3$59 ==.
+;	frequencimetro_simples.c:80: while(i>0){
+00105$:
+	clr	c
+	clr	a
+	xrl	a,#0x80
+	mov	b,r3
+	xrl	b,#0x80
+	subb	a,b
+	jc	00122$
+	ljmp	00107$
+00122$:
+	C$frequencimetro_simples.c$81$2$58 ==.
+;	frequencimetro_simples.c:81: a=pow(10,i);
+	mov	_pow_PARM_2,r3
+	mov	dptr,#(0x0A&0x00ff)
+	clr	a
+	mov	b,a
+	push	ar3
+	lcall	_pow
+	mov	_asciiNum_a_1_57,dpl
+	mov	(_asciiNum_a_1_57 + 1),dph
+	mov	(_asciiNum_a_1_57 + 2),b
+	mov	(_asciiNum_a_1_57 + 3),a
+	C$frequencimetro_simples.c$82$1$57 ==.
+;	frequencimetro_simples.c:82: if(num/a>0){
+	mov	__divslong_PARM_2,_asciiNum_a_1_57
+	mov	(__divslong_PARM_2 + 1),(_asciiNum_a_1_57 + 1)
+	mov	(__divslong_PARM_2 + 2),(_asciiNum_a_1_57 + 2)
+	mov	(__divslong_PARM_2 + 3),(_asciiNum_a_1_57 + 3)
+	mov	dpl,_asciiNum_num_1_56
+	mov	dph,(_asciiNum_num_1_56 + 1)
+	mov	b,(_asciiNum_num_1_56 + 2)
+	mov	a,(_asciiNum_num_1_56 + 3)
+	lcall	__divslong
+	mov	r2,dpl
+	mov	r5,dph
+	mov	r6,b
+	mov	r7,a
+	pop	ar3
+	clr	c
+	clr	a
+	subb	a,r2
+	clr	a
+	subb	a,r5
+	clr	a
+	subb	a,r6
+	clr	a
+	xrl	a,#0x80
+	mov	b,r7
+	xrl	b,#0x80
+	subb	a,b
+	jnc	00104$
+	C$frequencimetro_simples.c$83$3$59 ==.
+;	frequencimetro_simples.c:83: ascii[i]=num/a+48; //ascii do digito
+	mov	a,r3
+	add	a,#_ascii
+	mov	r1,a
+	mov	a,#0x30
+	add	a,r2
+	mov	@r1,a
+	C$frequencimetro_simples.c$84$3$59 ==.
+;	frequencimetro_simples.c:84: if(ndigitos==0) //se ndigitos ainda não foi alterado
+	mov	a,_ndigitos
+	jnz	00102$
+	C$frequencimetro_simples.c$85$3$59 ==.
+;	frequencimetro_simples.c:85: ndigitos=i;
+	mov	_ndigitos,r3
+00102$:
+	C$frequencimetro_simples.c$87$1$57 ==.
+;	frequencimetro_simples.c:87: num=num%a;
+	mov	__modslong_PARM_2,_asciiNum_a_1_57
+	mov	(__modslong_PARM_2 + 1),(_asciiNum_a_1_57 + 1)
+	mov	(__modslong_PARM_2 + 2),(_asciiNum_a_1_57 + 2)
+	mov	(__modslong_PARM_2 + 3),(_asciiNum_a_1_57 + 3)
+	mov	dpl,_asciiNum_num_1_56
+	mov	dph,(_asciiNum_num_1_56 + 1)
+	mov	b,(_asciiNum_num_1_56 + 2)
+	mov	a,(_asciiNum_num_1_56 + 3)
+	push	ar3
+	lcall	__modslong
+	mov	_asciiNum_num_1_56,dpl
+	mov	(_asciiNum_num_1_56 + 1),dph
+	mov	(_asciiNum_num_1_56 + 2),b
+	mov	(_asciiNum_num_1_56 + 3),a
+	pop	ar3
+00104$:
+	C$frequencimetro_simples.c$89$2$58 ==.
+;	frequencimetro_simples.c:89: i--;
+	dec	r3
+	ljmp	00105$
+00107$:
+	C$frequencimetro_simples.c$91$1$57 ==.
+;	frequencimetro_simples.c:91: ascii[0]=(num%10)+48;//ASCII da unidade
+	mov	__modslong_PARM_2,#0x0A
+	clr	a
+	mov	(__modslong_PARM_2 + 1),a
+	mov	(__modslong_PARM_2 + 2),a
+	mov	(__modslong_PARM_2 + 3),a
+	mov	dpl,_asciiNum_num_1_56
+	mov	dph,(_asciiNum_num_1_56 + 1)
+	mov	b,(_asciiNum_num_1_56 + 2)
+	mov	a,(_asciiNum_num_1_56 + 3)
+	lcall	__modslong
+	mov	r4,dpl
+	mov	a,#0x30
+	add	a,r4
+	mov	_ascii,a
+	C$frequencimetro_simples.c$92$1$57 ==.
+	XG$asciiNum$0$0 ==.
+	ret
+	.area CSEG    (CODE)
+	.area CONST   (CODE)
+Ffrequencimetro_simples$_str_0$0$0 == .
+__str_0:
+	.ascii "f: "
+	.db 0x00
+	.area XINIT   (CODE)
+	.area CABS    (ABS,CODE)

@@ -1,0 +1,1469 @@
+ASxxxx Linker V03.00 + NoICE + sdld,  page 1.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CABS                                00000000    00000000 =           0. bytes (ABS,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   FFFFFF00  s_BSEG                          
+C:   00000000  l_BIT_BANK                      
+C:   00000000  l_BSEG                          
+C:   00000000  l_BSEG_BYTES                    
+C:   00000000  l_CABS                          
+C:   00000000  l_GSINIT1                       
+C:   00000000  l_GSINIT5                       
+C:   00000000  l_IABS                          
+C:   00000000  l_ISEG                          
+C:   00000000  l_PSEG                          
+C:   00000000  l_REG_BANK_1                    
+C:   00000000  l_REG_BANK_2                    
+C:   00000000  l_REG_BANK_3                    
+C:   00000000  l_RSEG                          
+C:   00000000  l_RSEG0                         
+C:   00000000  l_RSEG1                         
+C:   00000000  l_XABS                          
+C:   00000000  l_XINIT                         
+C:   00000000  l_XISEG                         
+C:   00000000  l_XSEG                          
+C:   00000000  l__CODE                         
+C:   00000000  s_BSEG_BYTES                    
+C:   00000000  s_CABS                          
+C:   00000000  s_DSEG                          
+C:   00000000  s_HOME                          
+C:   00000000  s_IABS                          
+C:   00000000  s_ISEG                          
+C:   00000000  s_PSEG                          
+C:   00000000  s_REG_BANK_0                    
+C:   00000000  s_RSEG                          
+C:   00000000  s_RSEG0                         
+C:   00000000  s_RSEG1                         
+C:   00000000  s_XABS                          
+C:   00000000  s_XISEG                         
+C:   00000000  s_XSEG                          
+C:   00000003  l_GSFINAL                       
+C:   00000003  l_GSINIT0                       
+C:   00000004  l_CONST                         
+C:   00000004  l_OSEG                          
+C:   00000008  l_REG_BANK_0                    
+C:   00000008  s_REG_BANK_1                    
+C:   0000000A  l_GSINIT2                       
+C:   00000010  s_REG_BANK_2                    
+C:   00000018  l_GSINIT                        
+C:   00000018  s_BIT_BANK                      
+C:   00000018  s_REG_BANK_3                    
+C:   00000020  s__CODE                         
+C:   00000021  l_HOME                          
+C:   00000021  s_GSINIT0                       
+C:   00000022  l_GSINIT3                       
+ASxxxx Linker V03.00 + NoICE + sdld,  page 2.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CABS                                00000000    00000000 =           0. bytes (ABS,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000023  s_OSEG                          
+C:   00000024  s_GSINIT1                       
+C:   00000024  s_GSINIT2                       
+C:   00000027  s_SSEG                          
+C:   0000002A  l_GSINIT4                       
+C:   0000002E  s_GSINIT3                       
+C:   00000050  s_GSINIT4                       
+C:   0000007A  s_GSINIT                        
+C:   0000007A  s_GSINIT5                       
+C:   00000080  l_DSEG                          
+C:   00000092  s_GSFINAL                       
+C:   00000095  s_CSEG                          
+C:   000000D9  l_SSEG                          
+C:   00000100  l_IRAM                          
+C:   00000623  l_CSEG                          
+C:   000006B8  s_CONST                         
+C:   000006BC  s_XINIT                         
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 3.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00000000  .__.ABS.                           _startup
+     00000080  G$P0$0$0                           frequencimetro_simples
+     00000080  G$P0_0$0$0                         frequencimetro_simples
+     00000080  _P0                                frequencimetro_simples
+     00000080  _P0_0                              frequencimetro_simples
+     00000081  G$P0_1$0$0                         frequencimetro_simples
+     00000081  G$SP$0$0                           frequencimetro_simples
+     00000081  _P0_1                              frequencimetro_simples
+     00000081  _SP                                frequencimetro_simples
+     00000082  G$DPL$0$0                          frequencimetro_simples
+     00000082  G$P0_2$0$0                         frequencimetro_simples
+     00000082  _DPL                               frequencimetro_simples
+     00000082  _P0_2                              frequencimetro_simples
+     00000083  G$DPH$0$0                          frequencimetro_simples
+     00000083  G$P0_3$0$0                         frequencimetro_simples
+     00000083  _DPH                               frequencimetro_simples
+     00000083  _P0_3                              frequencimetro_simples
+     00000084  G$P0_4$0$0                         frequencimetro_simples
+     00000084  _P0_4                              frequencimetro_simples
+     00000085  G$P0_5$0$0                         frequencimetro_simples
+     00000085  _P0_5                              frequencimetro_simples
+     00000086  G$P0_6$0$0                         frequencimetro_simples
+     00000086  _P0_6                              frequencimetro_simples
+     00000087  G$P0_7$0$0                         frequencimetro_simples
+     00000087  G$PCON$0$0                         frequencimetro_simples
+     00000087  _P0_7                              frequencimetro_simples
+     00000087  _PCON                              frequencimetro_simples
+     00000088  G$IT0$0$0                          frequencimetro_simples
+     00000088  G$TCON$0$0                         frequencimetro_simples
+     00000088  _IT0                               frequencimetro_simples
+     00000088  _TCON                              frequencimetro_simples
+     00000089  G$IE0$0$0                          frequencimetro_simples
+     00000089  G$TMOD$0$0                         frequencimetro_simples
+     00000089  _IE0                               frequencimetro_simples
+     00000089  _TMOD                              frequencimetro_simples
+     0000008A  G$IT1$0$0                          frequencimetro_simples
+     0000008A  G$TL0$0$0                          frequencimetro_simples
+     0000008A  _IT1                               frequencimetro_simples
+     0000008A  _TL0                               frequencimetro_simples
+     0000008B  G$IE1$0$0                          frequencimetro_simples
+     0000008B  G$TL1$0$0                          frequencimetro_simples
+     0000008B  _IE1                               frequencimetro_simples
+     0000008B  _TL1                               frequencimetro_simples
+     0000008C  G$TH0$0$0                          frequencimetro_simples
+     0000008C  G$TR0$0$0                          frequencimetro_simples
+     0000008C  _TH0                               frequencimetro_simples
+     0000008C  _TR0                               frequencimetro_simples
+     0000008D  G$TF0$0$0                          frequencimetro_simples
+     0000008D  G$TH1$0$0                          frequencimetro_simples
+     0000008D  _TF0                               frequencimetro_simples
+ASxxxx Linker V03.00 + NoICE + sdld,  page 4.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     0000008D  _TH1                               frequencimetro_simples
+     0000008E  G$TR1$0$0                          frequencimetro_simples
+     0000008E  _TR1                               frequencimetro_simples
+     0000008F  G$TF1$0$0                          frequencimetro_simples
+     0000008F  _TF1                               frequencimetro_simples
+     00000090  G$P1$0$0                           frequencimetro_simples
+     00000090  G$P1_0$0$0                         frequencimetro_simples
+     00000090  G$T2$0$0                           frequencimetro_simples
+     00000090  _P1                                frequencimetro_simples
+     00000090  _P1_0                              frequencimetro_simples
+     00000090  _T2                                frequencimetro_simples
+     00000091  G$P1_1$0$0                         frequencimetro_simples
+     00000091  G$T2EX$0$0                         frequencimetro_simples
+     00000091  _P1_1                              frequencimetro_simples
+     00000091  _T2EX                              frequencimetro_simples
+     00000092  G$P1_2$0$0                         frequencimetro_simples
+     00000092  _P1_2                              frequencimetro_simples
+     00000093  G$P1_3$0$0                         frequencimetro_simples
+     00000093  _P1_3                              frequencimetro_simples
+     00000094  G$P1_4$0$0                         frequencimetro_simples
+     00000094  _P1_4                              frequencimetro_simples
+     00000095  G$P1_5$0$0                         frequencimetro_simples
+     00000095  _P1_5                              frequencimetro_simples
+     00000096  G$P1_6$0$0                         frequencimetro_simples
+     00000096  _P1_6                              frequencimetro_simples
+     00000097  G$P1_7$0$0                         frequencimetro_simples
+     00000097  _P1_7                              frequencimetro_simples
+     00000098  G$RI$0$0                           frequencimetro_simples
+     00000098  G$SCON$0$0                         frequencimetro_simples
+     00000098  _RI                                frequencimetro_simples
+     00000098  _SCON                              frequencimetro_simples
+     00000099  G$SBUF$0$0                         frequencimetro_simples
+     00000099  G$TI$0$0                           frequencimetro_simples
+     00000099  _SBUF                              frequencimetro_simples
+     00000099  _TI                                frequencimetro_simples
+     0000009A  G$RB8$0$0                          frequencimetro_simples
+     0000009A  _RB8                               frequencimetro_simples
+     0000009B  G$TB8$0$0                          frequencimetro_simples
+     0000009B  _TB8                               frequencimetro_simples
+     0000009C  G$REN$0$0                          frequencimetro_simples
+     0000009C  _REN                               frequencimetro_simples
+     0000009D  G$SM2$0$0                          frequencimetro_simples
+     0000009D  _SM2                               frequencimetro_simples
+     0000009E  G$SM1$0$0                          frequencimetro_simples
+     0000009E  _SM1                               frequencimetro_simples
+     0000009F  G$SM0$0$0                          frequencimetro_simples
+     0000009F  _SM0                               frequencimetro_simples
+     000000A0  G$P2$0$0                           frequencimetro_simples
+     000000A0  G$P2_0$0$0                         frequencimetro_simples
+     000000A0  _P2                                frequencimetro_simples
+     000000A0  _P2_0                              frequencimetro_simples
+ASxxxx Linker V03.00 + NoICE + sdld,  page 5.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000000A0  __XPAGE                            
+     000000A1  G$P2_1$0$0                         frequencimetro_simples
+     000000A1  _P2_1                              frequencimetro_simples
+     000000A2  G$P2_2$0$0                         frequencimetro_simples
+     000000A2  _P2_2                              frequencimetro_simples
+     000000A3  G$P2_3$0$0                         frequencimetro_simples
+     000000A3  _P2_3                              frequencimetro_simples
+     000000A4  G$P2_4$0$0                         frequencimetro_simples
+     000000A4  _P2_4                              frequencimetro_simples
+     000000A5  G$P2_5$0$0                         frequencimetro_simples
+     000000A5  _P2_5                              frequencimetro_simples
+     000000A6  G$P2_6$0$0                         frequencimetro_simples
+     000000A6  _P2_6                              frequencimetro_simples
+     000000A7  G$P2_7$0$0                         frequencimetro_simples
+     000000A7  _P2_7                              frequencimetro_simples
+     000000A8  G$EX0$0$0                          frequencimetro_simples
+     000000A8  G$IE$0$0                           frequencimetro_simples
+     000000A8  _EX0                               frequencimetro_simples
+     000000A8  _IE                                frequencimetro_simples
+     000000A9  G$ET0$0$0                          frequencimetro_simples
+     000000A9  _ET0                               frequencimetro_simples
+     000000AA  G$EX1$0$0                          frequencimetro_simples
+     000000AA  _EX1                               frequencimetro_simples
+     000000AB  G$ET1$0$0                          frequencimetro_simples
+     000000AB  _ET1                               frequencimetro_simples
+     000000AC  G$ES$0$0                           frequencimetro_simples
+     000000AC  _ES                                frequencimetro_simples
+     000000AD  G$ET2$0$0                          frequencimetro_simples
+     000000AD  _ET2                               frequencimetro_simples
+     000000AF  G$EA$0$0                           frequencimetro_simples
+     000000AF  _EA                                frequencimetro_simples
+     000000B0  G$P3$0$0                           frequencimetro_simples
+     000000B0  G$P3_0$0$0                         frequencimetro_simples
+     000000B0  G$RXD$0$0                          frequencimetro_simples
+     000000B0  _P3                                frequencimetro_simples
+     000000B0  _P3_0                              frequencimetro_simples
+     000000B0  _RXD                               frequencimetro_simples
+     000000B1  G$P3_1$0$0                         frequencimetro_simples
+     000000B1  G$TXD$0$0                          frequencimetro_simples
+     000000B1  _P3_1                              frequencimetro_simples
+     000000B1  _TXD                               frequencimetro_simples
+     000000B2  G$INT0$0$0                         frequencimetro_simples
+     000000B2  G$P3_2$0$0                         frequencimetro_simples
+     000000B2  _INT0                              frequencimetro_simples
+     000000B2  _P3_2                              frequencimetro_simples
+     000000B3  G$INT1$0$0                         frequencimetro_simples
+     000000B3  G$P3_3$0$0                         frequencimetro_simples
+     000000B3  _INT1                              frequencimetro_simples
+     000000B3  _P3_3                              frequencimetro_simples
+     000000B4  G$P3_4$0$0                         frequencimetro_simples
+     000000B4  G$T0$0$0                           frequencimetro_simples
+ASxxxx Linker V03.00 + NoICE + sdld,  page 6.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000000B4  _P3_4                              frequencimetro_simples
+     000000B4  _T0                                frequencimetro_simples
+     000000B5  G$P3_5$0$0                         frequencimetro_simples
+     000000B5  G$T1$0$0                           frequencimetro_simples
+     000000B5  _P3_5                              frequencimetro_simples
+     000000B5  _T1                                frequencimetro_simples
+     000000B6  G$P3_6$0$0                         frequencimetro_simples
+     000000B6  G$WR$0$0                           frequencimetro_simples
+     000000B6  _P3_6                              frequencimetro_simples
+     000000B6  _WR                                frequencimetro_simples
+     000000B7  G$P3_7$0$0                         frequencimetro_simples
+     000000B7  G$RD$0$0                           frequencimetro_simples
+     000000B7  _P3_7                              frequencimetro_simples
+     000000B7  _RD                                frequencimetro_simples
+     000000B8  G$IP$0$0                           frequencimetro_simples
+     000000B8  G$PX0$0$0                          frequencimetro_simples
+     000000B8  _IP                                frequencimetro_simples
+     000000B8  _PX0                               frequencimetro_simples
+     000000B9  G$PT0$0$0                          frequencimetro_simples
+     000000B9  _PT0                               frequencimetro_simples
+     000000BA  G$PX1$0$0                          frequencimetro_simples
+     000000BA  _PX1                               frequencimetro_simples
+     000000BB  G$PT1$0$0                          frequencimetro_simples
+     000000BB  _PT1                               frequencimetro_simples
+     000000BC  G$PS$0$0                           frequencimetro_simples
+     000000BC  _PS                                frequencimetro_simples
+     000000BD  G$PT2$0$0                          frequencimetro_simples
+     000000BD  _PT2                               frequencimetro_simples
+     000000C8  G$CP_RL2$0$0                       frequencimetro_simples
+     000000C8  G$T2CON$0$0                        frequencimetro_simples
+     000000C8  G$T2CON_0$0$0                      frequencimetro_simples
+     000000C8  _CP_RL2                            frequencimetro_simples
+     000000C8  _T2CON                             frequencimetro_simples
+     000000C8  _T2CON_0                           frequencimetro_simples
+     000000C9  G$C_T2$0$0                         frequencimetro_simples
+     000000C9  G$T2CON_1$0$0                      frequencimetro_simples
+     000000C9  G$T2MOD$0$0                        frequencimetro_simples
+     000000C9  _C_T2                              frequencimetro_simples
+     000000C9  _T2CON_1                           frequencimetro_simples
+     000000C9  _T2MOD                             frequencimetro_simples
+     000000CA  G$RCAP2L$0$0                       frequencimetro_simples
+     000000CA  G$T2CON_2$0$0                      frequencimetro_simples
+     000000CA  G$TR2$0$0                          frequencimetro_simples
+     000000CA  _RCAP2L                            frequencimetro_simples
+     000000CA  _T2CON_2                           frequencimetro_simples
+     000000CA  _TR2                               frequencimetro_simples
+     000000CB  G$EXEN2$0$0                        frequencimetro_simples
+     000000CB  G$RCAP2H$0$0                       frequencimetro_simples
+     000000CB  G$T2CON_3$0$0                      frequencimetro_simples
+     000000CB  _EXEN2                             frequencimetro_simples
+     000000CB  _RCAP2H                            frequencimetro_simples
+ASxxxx Linker V03.00 + NoICE + sdld,  page 7.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+.  .ABS.                            00000000    00000000 =           0. bytes (ABS,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     000000CB  _T2CON_3                           frequencimetro_simples
+     000000CC  G$T2CON_4$0$0                      frequencimetro_simples
+     000000CC  G$TCLK$0$0                         frequencimetro_simples
+     000000CC  G$TL2$0$0                          frequencimetro_simples
+     000000CC  _T2CON_4                           frequencimetro_simples
+     000000CC  _TCLK                              frequencimetro_simples
+     000000CC  _TL2                               frequencimetro_simples
+     000000CD  G$RCLK$0$0                         frequencimetro_simples
+     000000CD  G$T2CON_5$0$0                      frequencimetro_simples
+     000000CD  G$TH2$0$0                          frequencimetro_simples
+     000000CD  _RCLK                              frequencimetro_simples
+     000000CD  _T2CON_5                           frequencimetro_simples
+     000000CD  _TH2                               frequencimetro_simples
+     000000CE  G$EXF2$0$0                         frequencimetro_simples
+     000000CE  G$T2CON_6$0$0                      frequencimetro_simples
+     000000CE  _EXF2                              frequencimetro_simples
+     000000CE  _T2CON_6                           frequencimetro_simples
+     000000CF  G$T2CON_7$0$0                      frequencimetro_simples
+     000000CF  G$TF2$0$0                          frequencimetro_simples
+     000000CF  _T2CON_7                           frequencimetro_simples
+     000000CF  _TF2                               frequencimetro_simples
+     000000D0  G$P$0$0                            frequencimetro_simples
+     000000D0  G$PSW$0$0                          frequencimetro_simples
+     000000D0  _P                                 frequencimetro_simples
+     000000D0  _PSW                               frequencimetro_simples
+     000000D1  G$FL$0$0                           frequencimetro_simples
+     000000D1  _FL                                frequencimetro_simples
+     000000D2  G$OV$0$0                           frequencimetro_simples
+     000000D2  _OV                                frequencimetro_simples
+     000000D3  G$RS0$0$0                          frequencimetro_simples
+     000000D3  _RS0                               frequencimetro_simples
+     000000D4  G$RS1$0$0                          frequencimetro_simples
+     000000D4  _RS1                               frequencimetro_simples
+     000000D5  G$F0$0$0                           frequencimetro_simples
+     000000D5  _F0                                frequencimetro_simples
+     000000D6  G$AC$0$0                           frequencimetro_simples
+     000000D6  _AC                                frequencimetro_simples
+     000000D7  G$CY$0$0                           frequencimetro_simples
+     000000D7  _CY                                frequencimetro_simples
+     000000E0  G$A$0$0                            frequencimetro_simples
+     000000E0  G$ACC$0$0                          frequencimetro_simples
+     000000E0  _A                                 frequencimetro_simples
+     000000E0  _ACC                               frequencimetro_simples
+     000000F0  G$B$0$0                            frequencimetro_simples
+     000000F0  _B                                 frequencimetro_simples
+     000000F5  _B_5                               _gptrget
+     000000F6  _B_6                               _gptrget
+     000000F7  _B_7                               _gptrget
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 8.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+REG_BANK_0                          00000000    00000008 =           8. bytes (REL,OVR)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+ASxxxx Linker V03.00 + NoICE + sdld,  page 9.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+DSEG                                00000000    00000080 =         128. bytes (REL,CON)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00000008  Lfrequencimetro_simples.posicion   frequencimetro_simples
+     00000008  _posicionaCursor_PARM_2            frequencimetro_simples
+     00000009  Lfrequencimetro_simples.posicion   frequencimetro_simples
+     00000009  _posicionaCursor4bits_PARM_2       frequencimetro_simples
+     0000000A  G$ndigitos$0$0                     frequencimetro_simples
+     0000000A  _ndigitos                          frequencimetro_simples
+     0000000B  G$estouros$0$0                     frequencimetro_simples
+     0000000B  _estouros                          frequencimetro_simples
+     0000000C  G$ascii$0$0                        frequencimetro_simples
+     0000000C  _ascii                             frequencimetro_simples
+     00000012  Lfrequencimetro_simples.main$slo   frequencimetro_simples
+     00000016  Lfrequencimetro_simples.pow$pot$   frequencimetro_simples
+     00000016  _pow_PARM_2                        frequencimetro_simples
+     00000017  Lfrequencimetro_simples.pow$resp   frequencimetro_simples
+     0000001B  Lfrequencimetro_simples.asciiNum   frequencimetro_simples
+     0000001F  Lfrequencimetro_simples.asciiNum   frequencimetro_simples
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 10.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+OSEG                                00000023    00000004 =           4. bytes (REL,OVR)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00000023  __divslong_PARM_2                  _divulong
+     00000023  __divulong_PARM_2                  _divulong
+     00000023  __modslong_PARM_2                  _modulong
+     00000023  __modulong_PARM_2                  _modulong
+     00000023  __mullong_PARM_2                   _mullong
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 11.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+SSEG                                00000027    000000D9 =         217. bytes (REL,OVR)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+     00000027  __start__stack                     frequencimetro_simples
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 12.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+HOME                                00000000    00000021 =          33. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000000  A$frequencimetro_simples$506       frequencimetro_simples
+C:   00000003  A$frequencimetro_simples$507       frequencimetro_simples
+C:   0000000B  A$frequencimetro_simples$509       frequencimetro_simples
+C:   00000013  A$frequencimetro_simples$511       frequencimetro_simples
+C:   0000001B  A$frequencimetro_simples$513       frequencimetro_simples
+C:   0000001E  A$frequencimetro_simples$549       frequencimetro_simples
+C:   0000001E  __sdcc_program_startup             frequencimetro_simples
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 13.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSINIT0                             00000021    00000003 =           3. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000021  __sdcc_gsinit_startup              
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 14.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSINIT2                             00000024    0000000A =          10. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+ASxxxx Linker V03.00 + NoICE + sdld,  page 15.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSINIT3                             0000002E    00000022 =          34. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   0000002E  __mcs51_genXINIT                   
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 16.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSINIT4                             00000050    0000002A =          42. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000050  __mcs51_genRAMCLEAR                
+C:   00000056  __mcs51_genXRAMCLEAR               
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 17.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSINIT                              0000007A    00000018 =          24. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   0000007A  A$frequencimetro_simples$529       frequencimetro_simples
+C:   0000007A  C$frequencimetro_simples.c$9$1$5   frequencimetro_simples
+C:   0000007D  A$frequencimetro_simples$532       frequencimetro_simples
+C:   0000007D  C$frequencimetro_simples.c$10$1$   frequencimetro_simples
+C:   00000080  A$frequencimetro_simples$535       frequencimetro_simples
+C:   00000080  C$frequencimetro_simples.c$11$1$   frequencimetro_simples
+C:   00000083  A$frequencimetro_simples$536       frequencimetro_simples
+C:   00000086  A$frequencimetro_simples$537       frequencimetro_simples
+C:   00000089  A$frequencimetro_simples$538       frequencimetro_simples
+C:   0000008C  A$frequencimetro_simples$539       frequencimetro_simples
+C:   0000008F  A$frequencimetro_simples$540       frequencimetro_simples
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 18.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+GSFINAL                             00000092    00000003 =           3. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000092  A$frequencimetro_simples$542       frequencimetro_simples
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 19.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                00000095    00000623 =        1571. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000095  A$frequencimetro_simples$575       frequencimetro_simples
+C:   00000095  C$atraso.h$5$0$0                   frequencimetro_simples
+C:   00000095  G$atraso$0$0                       frequencimetro_simples
+C:   00000095  _atraso                            frequencimetro_simples
+C:   00000097  A$frequencimetro_simples$578       frequencimetro_simples
+C:   00000097  C$atraso.h$6$1$2                   frequencimetro_simples
+C:   0000009A  A$frequencimetro_simples$581       frequencimetro_simples
+C:   0000009A  C$atraso.h$8$2$3                   frequencimetro_simples
+C:   0000009D  A$frequencimetro_simples$584       frequencimetro_simples
+C:   0000009D  C$atraso.h$9$2$3                   frequencimetro_simples
+C:   000000A0  A$frequencimetro_simples$587       frequencimetro_simples
+C:   000000A0  C$atraso.h$10$2$3                  frequencimetro_simples
+C:   000000A3  A$frequencimetro_simples$590       frequencimetro_simples
+C:   000000A3  C$atraso.h$11$2$3                  frequencimetro_simples
+C:   000000A5  A$frequencimetro_simples$596       frequencimetro_simples
+C:   000000A5  C$atraso.h$12$2$3                  frequencimetro_simples
+C:   000000A5  C$atraso.h$13$2$3                  frequencimetro_simples
+C:   000000A8  A$frequencimetro_simples$597       frequencimetro_simples
+C:   000000AA  A$frequencimetro_simples$601       frequencimetro_simples
+C:   000000AA  C$atraso.h$14$2$3                  frequencimetro_simples
+C:   000000AC  A$frequencimetro_simples$604       frequencimetro_simples
+C:   000000AC  C$atraso.h$15$2$3                  frequencimetro_simples
+C:   000000AE  A$frequencimetro_simples$608       frequencimetro_simples
+C:   000000AE  C$atraso.h$17$1$2                  frequencimetro_simples
+C:   000000B1  A$frequencimetro_simples$611       frequencimetro_simples
+C:   000000B1  C$atraso.h$18$2$4                  frequencimetro_simples
+C:   000000B4  A$frequencimetro_simples$614       frequencimetro_simples
+C:   000000B4  C$atraso.h$19$2$4                  frequencimetro_simples
+C:   000000B7  A$frequencimetro_simples$617       frequencimetro_simples
+C:   000000B7  C$atraso.h$20$2$4                  frequencimetro_simples
+C:   000000BA  A$frequencimetro_simples$620       frequencimetro_simples
+C:   000000BA  C$atraso.h$21$2$4                  frequencimetro_simples
+C:   000000BC  A$frequencimetro_simples$624       frequencimetro_simples
+C:   000000BC  C$atraso.h$22$2$4                  frequencimetro_simples
+C:   000000BD  A$frequencimetro_simples$625       frequencimetro_simples
+C:   000000BF  A$frequencimetro_simples$629       frequencimetro_simples
+C:   000000BF  C$atraso.h$23$3$5                  frequencimetro_simples
+C:   000000C2  A$frequencimetro_simples$632       frequencimetro_simples
+C:   000000C2  C$atraso.h$24$3$5                  frequencimetro_simples
+C:   000000C3  A$frequencimetro_simples$635       frequencimetro_simples
+C:   000000C3  C$atraso.h$25$3$5                  frequencimetro_simples
+C:   000000C5  A$frequencimetro_simples$638       frequencimetro_simples
+C:   000000C5  C$atraso.h$26$3$5                  frequencimetro_simples
+C:   000000C8  A$frequencimetro_simples$639       frequencimetro_simples
+C:   000000CA  A$frequencimetro_simples$643       frequencimetro_simples
+C:   000000CA  C$atraso.h$28$2$4                  frequencimetro_simples
+C:   000000CC  A$frequencimetro_simples$646       frequencimetro_simples
+C:   000000CC  C$atraso.h$29$2$4                  frequencimetro_simples
+C:   000000CE  A$frequencimetro_simples$650       frequencimetro_simples
+C:   000000CE  C$atraso.h$31$1$2                  frequencimetro_simples
+ASxxxx Linker V03.00 + NoICE + sdld,  page 20.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                00000095    00000623 =        1571. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   000000D1  A$frequencimetro_simples$653       frequencimetro_simples
+C:   000000D1  C$atraso.h$32$2$6                  frequencimetro_simples
+C:   000000D4  A$frequencimetro_simples$656       frequencimetro_simples
+C:   000000D4  C$atraso.h$33$2$6                  frequencimetro_simples
+C:   000000D6  A$frequencimetro_simples$660       frequencimetro_simples
+C:   000000D6  C$atraso.h$34$2$6                  frequencimetro_simples
+C:   000000D7  A$frequencimetro_simples$661       frequencimetro_simples
+C:   000000D9  A$frequencimetro_simples$662       frequencimetro_simples
+C:   000000DB  A$frequencimetro_simples$665       frequencimetro_simples
+C:   000000DB  C$atraso.h$35$3$7                  frequencimetro_simples
+C:   000000DE  A$frequencimetro_simples$671       frequencimetro_simples
+C:   000000DE  C$atraso.h$36$3$7                  frequencimetro_simples
+C:   000000DE  C$atraso.h$37$3$7                  frequencimetro_simples
+C:   000000E1  A$frequencimetro_simples$672       frequencimetro_simples
+C:   000000E3  A$frequencimetro_simples$676       frequencimetro_simples
+C:   000000E3  C$atraso.h$38$3$7                  frequencimetro_simples
+C:   000000E4  A$frequencimetro_simples$677       frequencimetro_simples
+C:   000000E6  A$frequencimetro_simples$681       frequencimetro_simples
+C:   000000E6  C$atraso.h$40$2$6                  frequencimetro_simples
+C:   000000E8  A$frequencimetro_simples$687       frequencimetro_simples
+C:   000000E8  C$atraso.h$41$2$6                  frequencimetro_simples
+C:   000000E8  C$atraso.h$43$1$2                  frequencimetro_simples
+C:   000000E8  XG$atraso$0$0                      frequencimetro_simples
+C:   000000E9  A$frequencimetro_simples$700       frequencimetro_simples
+C:   000000E9  C$lcd.h$42$1$2                     frequencimetro_simples
+C:   000000E9  G$divideMsg$0$0                    frequencimetro_simples
+C:   000000E9  _divideMsg                         frequencimetro_simples
+C:   000000EB  A$frequencimetro_simples$703       frequencimetro_simples
+C:   000000EB  C$lcd.h$43$1$18                    frequencimetro_simples
+C:   000000ED  A$frequencimetro_simples$704       frequencimetro_simples
+C:   000000EE  A$frequencimetro_simples$705       frequencimetro_simples
+C:   000000F0  A$frequencimetro_simples$708       frequencimetro_simples
+C:   000000F0  C$lcd.h$44$1$18                    frequencimetro_simples
+C:   000000F2  A$frequencimetro_simples$713       frequencimetro_simples
+C:   000000F2  C$lcd.h$45$1$18                    frequencimetro_simples
+C:   000000F2  C$lcd.h$46$1$18                    frequencimetro_simples
+C:   000000F2  XG$divideMsg$0$0                   frequencimetro_simples
+C:   000000F3  A$frequencimetro_simples$728       frequencimetro_simples
+C:   000000F3  C$lcd.h$48$1$18                    frequencimetro_simples
+C:   000000F3  C$lcd.h$49$1$20                    frequencimetro_simples
+C:   000000F3  G$imprimeChar$0$0                  frequencimetro_simples
+C:   000000F3  _imprimeChar                       frequencimetro_simples
+C:   000000F6  A$frequencimetro_simples$731       frequencimetro_simples
+C:   000000F6  C$lcd.h$50$1$20                    frequencimetro_simples
+C:   000000F8  A$frequencimetro_simples$734       frequencimetro_simples
+C:   000000F8  C$lcd.h$51$1$20                    frequencimetro_simples
+C:   000000FA  A$frequencimetro_simples$737       frequencimetro_simples
+C:   000000FA  C$lcd.h$52$1$20                    frequencimetro_simples
+C:   000000FD  A$frequencimetro_simples$738       frequencimetro_simples
+C:   00000100  A$frequencimetro_simples$741       frequencimetro_simples
+C:   00000100  C$lcd.h$53$1$20                    frequencimetro_simples
+ASxxxx Linker V03.00 + NoICE + sdld,  page 21.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                00000095    00000623 =        1571. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000102  A$frequencimetro_simples$746       frequencimetro_simples
+C:   00000102  C$lcd.h$54$1$20                    frequencimetro_simples
+C:   00000102  C$lcd.h$55$1$20                    frequencimetro_simples
+C:   00000102  XG$imprimeChar$0$0                 frequencimetro_simples
+C:   00000103  A$frequencimetro_simples$760       frequencimetro_simples
+C:   00000103  C$lcd.h$57$1$20                    frequencimetro_simples
+C:   00000103  G$imprimeFrase$0$0                 frequencimetro_simples
+C:   00000103  _imprimeFrase                      frequencimetro_simples
+C:   00000105  A$frequencimetro_simples$761       frequencimetro_simples
+C:   00000107  A$frequencimetro_simples$762       frequencimetro_simples
+C:   00000109  A$frequencimetro_simples$765       frequencimetro_simples
+C:   00000109  C$lcd.h$58$1$20                    frequencimetro_simples
+C:   0000010B  A$frequencimetro_simples$769       frequencimetro_simples
+C:   0000010B  C$lcd.h$59$1$22                    frequencimetro_simples
+C:   0000010D  A$frequencimetro_simples$770       frequencimetro_simples
+C:   0000010F  A$frequencimetro_simples$771       frequencimetro_simples
+C:   00000111  A$frequencimetro_simples$772       frequencimetro_simples
+C:   00000114  A$frequencimetro_simples$773       frequencimetro_simples
+C:   00000115  A$frequencimetro_simples$774       frequencimetro_simples
+C:   00000117  A$frequencimetro_simples$777       frequencimetro_simples
+C:   00000117  C$lcd.h$60$2$23                    frequencimetro_simples
+C:   00000119  A$frequencimetro_simples$778       frequencimetro_simples
+C:   0000011B  A$frequencimetro_simples$779       frequencimetro_simples
+C:   0000011D  A$frequencimetro_simples$780       frequencimetro_simples
+C:   0000011F  A$frequencimetro_simples$781       frequencimetro_simples
+C:   00000121  A$frequencimetro_simples$782       frequencimetro_simples
+C:   00000124  A$frequencimetro_simples$785       frequencimetro_simples
+C:   00000124  C$lcd.h$61$2$23                    frequencimetro_simples
+C:   00000126  A$frequencimetro_simples$788       frequencimetro_simples
+C:   00000126  C$lcd.h$62$2$23                    frequencimetro_simples
+C:   00000128  A$frequencimetro_simples$791       frequencimetro_simples
+C:   00000128  C$lcd.h$63$2$23                    frequencimetro_simples
+C:   0000012B  A$frequencimetro_simples$792       frequencimetro_simples
+C:   0000012E  A$frequencimetro_simples$793       frequencimetro_simples
+C:   00000130  A$frequencimetro_simples$794       frequencimetro_simples
+C:   00000132  A$frequencimetro_simples$795       frequencimetro_simples
+C:   00000134  A$frequencimetro_simples$796       frequencimetro_simples
+C:   00000136  A$frequencimetro_simples$799       frequencimetro_simples
+C:   00000136  C$lcd.h$64$2$23                    frequencimetro_simples
+C:   00000138  A$frequencimetro_simples$802       frequencimetro_simples
+C:   00000138  C$lcd.h$65$2$23                    frequencimetro_simples
+C:   00000139  A$frequencimetro_simples$803       frequencimetro_simples
+C:   0000013C  A$frequencimetro_simples$804       frequencimetro_simples
+C:   0000013D  A$frequencimetro_simples$808       frequencimetro_simples
+C:   0000013D  C$lcd.h$66$2$23                    frequencimetro_simples
+C:   0000013E  A$frequencimetro_simples$811       frequencimetro_simples
+C:   0000013E  C$lcd.h$67$2$23                    frequencimetro_simples
+C:   00000141  A$frequencimetro_simples$814       frequencimetro_simples
+C:   00000141  C$lcd.h$68$2$23                    frequencimetro_simples
+C:   00000144  A$frequencimetro_simples$815       frequencimetro_simples
+C:   00000147  A$frequencimetro_simples$816       frequencimetro_simples
+ASxxxx Linker V03.00 + NoICE + sdld,  page 22.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                00000095    00000623 =        1571. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000149  A$frequencimetro_simples$817       frequencimetro_simples
+C:   0000014B  A$frequencimetro_simples$818       frequencimetro_simples
+C:   0000014D  A$frequencimetro_simples$819       frequencimetro_simples
+C:   0000014F  A$frequencimetro_simples$820       frequencimetro_simples
+C:   00000152  A$frequencimetro_simples$821       frequencimetro_simples
+C:   00000154  A$frequencimetro_simples$822       frequencimetro_simples
+C:   00000156  A$frequencimetro_simples$823       frequencimetro_simples
+C:   00000158  A$frequencimetro_simples$824       frequencimetro_simples
+C:   0000015A  A$frequencimetro_simples$825       frequencimetro_simples
+C:   0000015C  A$frequencimetro_simples$831       frequencimetro_simples
+C:   0000015C  C$lcd.h$70$1$22                    frequencimetro_simples
+C:   0000015C  C$lcd.h$71$1$22                    frequencimetro_simples
+C:   0000015C  XG$imprimeFrase$0$0                frequencimetro_simples
+C:   0000015D  A$frequencimetro_simples$846       frequencimetro_simples
+C:   0000015D  C$lcd.h$73$1$22                    frequencimetro_simples
+C:   0000015D  C$lcd.h$74$1$25                    frequencimetro_simples
+C:   0000015D  G$imprimeInst$0$0                  frequencimetro_simples
+C:   0000015D  _imprimeInst                       frequencimetro_simples
+C:   00000160  A$frequencimetro_simples$849       frequencimetro_simples
+C:   00000160  C$lcd.h$75$1$25                    frequencimetro_simples
+C:   00000162  A$frequencimetro_simples$852       frequencimetro_simples
+C:   00000162  C$lcd.h$76$1$25                    frequencimetro_simples
+C:   00000165  A$frequencimetro_simples$853       frequencimetro_simples
+C:   00000168  A$frequencimetro_simples$856       frequencimetro_simples
+C:   00000168  C$lcd.h$77$1$25                    frequencimetro_simples
+C:   0000016A  A$frequencimetro_simples$861       frequencimetro_simples
+C:   0000016A  C$lcd.h$78$1$25                    frequencimetro_simples
+C:   0000016A  C$lcd.h$79$1$25                    frequencimetro_simples
+C:   0000016A  XG$imprimeInst$0$0                 frequencimetro_simples
+C:   0000016B  A$frequencimetro_simples$874       frequencimetro_simples
+C:   0000016B  C$lcd.h$81$1$25                    frequencimetro_simples
+C:   0000016B  C$lcd.h$82$1$27                    frequencimetro_simples
+C:   0000016B  G$initLCD$0$0                      frequencimetro_simples
+C:   0000016B  _initLCD                           frequencimetro_simples
+C:   0000016E  A$frequencimetro_simples$875       frequencimetro_simples
+C:   00000171  A$frequencimetro_simples$878       frequencimetro_simples
+C:   00000171  C$lcd.h$83$1$27                    frequencimetro_simples
+C:   00000174  A$frequencimetro_simples$879       frequencimetro_simples
+C:   00000177  A$frequencimetro_simples$882       frequencimetro_simples
+C:   00000177  C$lcd.h$84$1$27                    frequencimetro_simples
+C:   0000017A  A$frequencimetro_simples$883       frequencimetro_simples
+C:   0000017D  A$frequencimetro_simples$888       frequencimetro_simples
+C:   0000017D  C$lcd.h$85$1$27                    frequencimetro_simples
+C:   0000017D  C$lcd.h$86$1$27                    frequencimetro_simples
+C:   0000017D  XG$initLCD$0$0                     frequencimetro_simples
+C:   0000017E  A$frequencimetro_simples$902       frequencimetro_simples
+C:   0000017E  C$lcd.h$88$1$27                    frequencimetro_simples
+C:   0000017E  G$posicionaCursor$0$0              frequencimetro_simples
+C:   0000017E  _posicionaCursor                   frequencimetro_simples
+C:   00000180  A$frequencimetro_simples$905       frequencimetro_simples
+C:   00000180  C$lcd.h$90$2$30                    frequencimetro_simples
+ASxxxx Linker V03.00 + NoICE + sdld,  page 23.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                00000095    00000623 =        1571. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000182  A$frequencimetro_simples$906       frequencimetro_simples
+C:   00000183  A$frequencimetro_simples$909       frequencimetro_simples
+C:   00000183  C$lcd.h$91$2$30                    frequencimetro_simples
+C:   00000184  A$frequencimetro_simples$910       frequencimetro_simples
+C:   00000186  A$frequencimetro_simples$911       frequencimetro_simples
+C:   00000188  A$frequencimetro_simples$912       frequencimetro_simples
+C:   0000018B  A$frequencimetro_simples$913       frequencimetro_simples
+C:   0000018D  A$frequencimetro_simples$916       frequencimetro_simples
+C:   0000018D  C$lcd.h$94$2$31                    frequencimetro_simples
+C:   0000018F  A$frequencimetro_simples$917       frequencimetro_simples
+C:   00000190  A$frequencimetro_simples$920       frequencimetro_simples
+C:   00000190  C$lcd.h$95$2$31                    frequencimetro_simples
+C:   00000192  A$frequencimetro_simples$921       frequencimetro_simples
+C:   00000195  A$frequencimetro_simples$926       frequencimetro_simples
+C:   00000195  C$lcd.h$97$1$29                    frequencimetro_simples
+C:   00000195  C$lcd.h$98$1$29                    frequencimetro_simples
+C:   00000195  XG$posicionaCursor$0$0             frequencimetro_simples
+C:   00000196  A$frequencimetro_simples$939       frequencimetro_simples
+C:   00000196  C$lcd.h$101$1$29                   frequencimetro_simples
+C:   00000196  G$imprimeChar4bits$0$0             frequencimetro_simples
+C:   00000196  _imprimeChar4bits                  frequencimetro_simples
+C:   00000198  A$frequencimetro_simples$942       frequencimetro_simples
+C:   00000198  C$lcd.h$102$1$33                   frequencimetro_simples
+C:   0000019A  A$frequencimetro_simples$943       frequencimetro_simples
+C:   0000019B  A$frequencimetro_simples$944       frequencimetro_simples
+C:   0000019D  A$frequencimetro_simples$947       frequencimetro_simples
+C:   0000019D  C$lcd.h$103$1$33                   frequencimetro_simples
+C:   0000019F  A$frequencimetro_simples$950       frequencimetro_simples
+C:   0000019F  C$lcd.h$104$1$33                   frequencimetro_simples
+C:   000001A1  A$frequencimetro_simples$953       frequencimetro_simples
+C:   000001A1  C$lcd.h$105$1$33                   frequencimetro_simples
+C:   000001A4  A$frequencimetro_simples$954       frequencimetro_simples
+C:   000001A6  A$frequencimetro_simples$955       frequencimetro_simples
+C:   000001A9  A$frequencimetro_simples$956       frequencimetro_simples
+C:   000001AB  A$frequencimetro_simples$959       frequencimetro_simples
+C:   000001AB  C$lcd.h$106$1$33                   frequencimetro_simples
+C:   000001AD  A$frequencimetro_simples$962       frequencimetro_simples
+C:   000001AD  C$lcd.h$107$1$33                   frequencimetro_simples
+C:   000001AE  A$frequencimetro_simples$963       frequencimetro_simples
+C:   000001AF  A$frequencimetro_simples$964       frequencimetro_simples
+C:   000001B1  A$frequencimetro_simples$965       frequencimetro_simples
+C:   000001B2  A$frequencimetro_simples$966       frequencimetro_simples
+C:   000001B4  A$frequencimetro_simples$967       frequencimetro_simples
+C:   000001B5  A$frequencimetro_simples$968       frequencimetro_simples
+C:   000001B7  A$frequencimetro_simples$971       frequencimetro_simples
+C:   000001B7  C$lcd.h$108$1$33                   frequencimetro_simples
+C:   000001B9  A$frequencimetro_simples$974       frequencimetro_simples
+C:   000001B9  C$lcd.h$109$1$33                   frequencimetro_simples
+C:   000001BB  A$frequencimetro_simples$977       frequencimetro_simples
+C:   000001BB  C$lcd.h$110$1$33                   frequencimetro_simples
+C:   000001BE  A$frequencimetro_simples$978       frequencimetro_simples
+ASxxxx Linker V03.00 + NoICE + sdld,  page 24.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                00000095    00000623 =        1571. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   000001C1  A$frequencimetro_simples$981       frequencimetro_simples
+C:   000001C1  C$lcd.h$111$1$33                   frequencimetro_simples
+C:   000001C3  A$frequencimetro_simples$986       frequencimetro_simples
+C:   000001C3  C$lcd.h$112$1$33                   frequencimetro_simples
+C:   000001C3  C$lcd.h$113$1$33                   frequencimetro_simples
+C:   000001C3  XG$imprimeChar4bits$0$0            frequencimetro_simples
+C:   000001C4  A$frequencimetro_simples$1000      frequencimetro_simples
+C:   000001C4  C$lcd.h$115$1$33                   frequencimetro_simples
+C:   000001C4  G$imprimeFrase4bits$0$0            frequencimetro_simples
+C:   000001C4  _imprimeFrase4bits                 frequencimetro_simples
+C:   000001C6  A$frequencimetro_simples$1001      frequencimetro_simples
+C:   000001C8  A$frequencimetro_simples$1002      frequencimetro_simples
+C:   000001CA  A$frequencimetro_simples$1005      frequencimetro_simples
+C:   000001CA  C$lcd.h$116$1$33                   frequencimetro_simples
+C:   000001CC  A$frequencimetro_simples$1009      frequencimetro_simples
+C:   000001CC  C$lcd.h$117$1$35                   frequencimetro_simples
+C:   000001CE  A$frequencimetro_simples$1010      frequencimetro_simples
+C:   000001D0  A$frequencimetro_simples$1011      frequencimetro_simples
+C:   000001D2  A$frequencimetro_simples$1012      frequencimetro_simples
+C:   000001D5  A$frequencimetro_simples$1013      frequencimetro_simples
+C:   000001D6  A$frequencimetro_simples$1014      frequencimetro_simples
+C:   000001D8  A$frequencimetro_simples$1017      frequencimetro_simples
+C:   000001D8  C$lcd.h$118$2$36                   frequencimetro_simples
+C:   000001DA  A$frequencimetro_simples$1018      frequencimetro_simples
+C:   000001DB  A$frequencimetro_simples$1019      frequencimetro_simples
+C:   000001DD  A$frequencimetro_simples$1022      frequencimetro_simples
+C:   000001DD  C$lcd.h$119$2$36                   frequencimetro_simples
+C:   000001DF  A$frequencimetro_simples$1025      frequencimetro_simples
+C:   000001DF  C$lcd.h$120$2$36                   frequencimetro_simples
+C:   000001E1  A$frequencimetro_simples$1028      frequencimetro_simples
+C:   000001E1  C$lcd.h$121$2$36                   frequencimetro_simples
+C:   000001E4  A$frequencimetro_simples$1029      frequencimetro_simples
+C:   000001E6  A$frequencimetro_simples$1030      frequencimetro_simples
+C:   000001E8  A$frequencimetro_simples$1031      frequencimetro_simples
+C:   000001EA  A$frequencimetro_simples$1032      frequencimetro_simples
+C:   000001EC  A$frequencimetro_simples$1033      frequencimetro_simples
+C:   000001EF  A$frequencimetro_simples$1034      frequencimetro_simples
+C:   000001F1  A$frequencimetro_simples$1035      frequencimetro_simples
+C:   000001F3  A$frequencimetro_simples$1036      frequencimetro_simples
+C:   000001F5  A$frequencimetro_simples$1037      frequencimetro_simples
+C:   000001F7  A$frequencimetro_simples$1040      frequencimetro_simples
+C:   000001F7  C$lcd.h$122$2$36                   frequencimetro_simples
+C:   000001F9  A$frequencimetro_simples$1043      frequencimetro_simples
+C:   000001F9  C$lcd.h$123$2$36                   frequencimetro_simples
+C:   000001FB  A$frequencimetro_simples$1044      frequencimetro_simples
+C:   000001FD  A$frequencimetro_simples$1045      frequencimetro_simples
+C:   000001FF  A$frequencimetro_simples$1046      frequencimetro_simples
+C:   00000202  A$frequencimetro_simples$1047      frequencimetro_simples
+C:   00000203  A$frequencimetro_simples$1048      frequencimetro_simples
+C:   00000204  A$frequencimetro_simples$1049      frequencimetro_simples
+C:   00000206  A$frequencimetro_simples$1050      frequencimetro_simples
+ASxxxx Linker V03.00 + NoICE + sdld,  page 25.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                00000095    00000623 =        1571. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000208  A$frequencimetro_simples$1051      frequencimetro_simples
+C:   00000209  A$frequencimetro_simples$1052      frequencimetro_simples
+C:   0000020A  A$frequencimetro_simples$1053      frequencimetro_simples
+C:   0000020C  A$frequencimetro_simples$1054      frequencimetro_simples
+C:   0000020D  A$frequencimetro_simples$1055      frequencimetro_simples
+C:   0000020F  A$frequencimetro_simples$1056      frequencimetro_simples
+C:   00000210  A$frequencimetro_simples$1057      frequencimetro_simples
+C:   00000212  A$frequencimetro_simples$1060      frequencimetro_simples
+C:   00000212  C$lcd.h$124$2$36                   frequencimetro_simples
+C:   00000214  A$frequencimetro_simples$1063      frequencimetro_simples
+C:   00000214  C$lcd.h$125$2$36                   frequencimetro_simples
+C:   00000216  A$frequencimetro_simples$1066      frequencimetro_simples
+C:   00000216  C$lcd.h$126$2$36                   frequencimetro_simples
+C:   00000219  A$frequencimetro_simples$1067      frequencimetro_simples
+C:   0000021B  A$frequencimetro_simples$1068      frequencimetro_simples
+C:   0000021D  A$frequencimetro_simples$1069      frequencimetro_simples
+C:   0000021F  A$frequencimetro_simples$1070      frequencimetro_simples
+C:   00000221  A$frequencimetro_simples$1071      frequencimetro_simples
+C:   00000224  A$frequencimetro_simples$1072      frequencimetro_simples
+C:   00000226  A$frequencimetro_simples$1073      frequencimetro_simples
+C:   00000228  A$frequencimetro_simples$1074      frequencimetro_simples
+C:   0000022A  A$frequencimetro_simples$1075      frequencimetro_simples
+C:   0000022C  A$frequencimetro_simples$1078      frequencimetro_simples
+C:   0000022C  C$lcd.h$127$2$36                   frequencimetro_simples
+C:   0000022E  A$frequencimetro_simples$1083      frequencimetro_simples
+C:   0000022E  C$lcd.h$128$2$36                   frequencimetro_simples
+C:   0000022E  C$lcd.h$129$2$36                   frequencimetro_simples
+C:   0000022F  A$frequencimetro_simples$1086      frequencimetro_simples
+C:   0000022F  C$lcd.h$130$2$36                   frequencimetro_simples
+C:   00000232  A$frequencimetro_simples$1089      frequencimetro_simples
+C:   00000232  C$lcd.h$131$2$36                   frequencimetro_simples
+C:   00000235  A$frequencimetro_simples$1090      frequencimetro_simples
+C:   00000238  A$frequencimetro_simples$1091      frequencimetro_simples
+C:   0000023A  A$frequencimetro_simples$1092      frequencimetro_simples
+C:   0000023C  A$frequencimetro_simples$1093      frequencimetro_simples
+C:   0000023E  A$frequencimetro_simples$1094      frequencimetro_simples
+C:   00000240  A$frequencimetro_simples$1095      frequencimetro_simples
+C:   00000243  A$frequencimetro_simples$1096      frequencimetro_simples
+C:   00000245  A$frequencimetro_simples$1097      frequencimetro_simples
+C:   00000247  A$frequencimetro_simples$1098      frequencimetro_simples
+C:   00000249  A$frequencimetro_simples$1099      frequencimetro_simples
+C:   0000024B  A$frequencimetro_simples$1100      frequencimetro_simples
+C:   0000024E  A$frequencimetro_simples$1106      frequencimetro_simples
+C:   0000024E  C$lcd.h$133$1$35                   frequencimetro_simples
+C:   0000024E  C$lcd.h$134$1$35                   frequencimetro_simples
+C:   0000024E  XG$imprimeFrase4bits$0$0           frequencimetro_simples
+C:   0000024F  A$frequencimetro_simples$1119      frequencimetro_simples
+C:   0000024F  C$lcd.h$136$1$35                   frequencimetro_simples
+C:   0000024F  G$imprimeInst4bits$0$0             frequencimetro_simples
+C:   0000024F  _imprimeInst4bits                  frequencimetro_simples
+C:   00000251  A$frequencimetro_simples$1122      frequencimetro_simples
+ASxxxx Linker V03.00 + NoICE + sdld,  page 26.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                00000095    00000623 =        1571. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000251  C$lcd.h$137$1$38                   frequencimetro_simples
+C:   00000253  A$frequencimetro_simples$1123      frequencimetro_simples
+C:   00000254  A$frequencimetro_simples$1124      frequencimetro_simples
+C:   00000256  A$frequencimetro_simples$1127      frequencimetro_simples
+C:   00000256  C$lcd.h$138$1$38                   frequencimetro_simples
+C:   00000258  A$frequencimetro_simples$1130      frequencimetro_simples
+C:   00000258  C$lcd.h$139$1$38                   frequencimetro_simples
+C:   0000025B  A$frequencimetro_simples$1131      frequencimetro_simples
+C:   0000025D  A$frequencimetro_simples$1132      frequencimetro_simples
+C:   00000260  A$frequencimetro_simples$1133      frequencimetro_simples
+C:   00000262  A$frequencimetro_simples$1136      frequencimetro_simples
+C:   00000262  C$lcd.h$140$1$38                   frequencimetro_simples
+C:   00000264  A$frequencimetro_simples$1139      frequencimetro_simples
+C:   00000264  C$lcd.h$141$1$38                   frequencimetro_simples
+C:   00000265  A$frequencimetro_simples$1140      frequencimetro_simples
+C:   00000266  A$frequencimetro_simples$1141      frequencimetro_simples
+C:   00000268  A$frequencimetro_simples$1142      frequencimetro_simples
+C:   00000269  A$frequencimetro_simples$1143      frequencimetro_simples
+C:   0000026B  A$frequencimetro_simples$1144      frequencimetro_simples
+C:   0000026C  A$frequencimetro_simples$1145      frequencimetro_simples
+C:   0000026E  A$frequencimetro_simples$1148      frequencimetro_simples
+C:   0000026E  C$lcd.h$142$1$38                   frequencimetro_simples
+C:   00000270  A$frequencimetro_simples$1151      frequencimetro_simples
+C:   00000270  C$lcd.h$143$1$38                   frequencimetro_simples
+C:   00000273  A$frequencimetro_simples$1152      frequencimetro_simples
+C:   00000276  A$frequencimetro_simples$1155      frequencimetro_simples
+C:   00000276  C$lcd.h$144$1$38                   frequencimetro_simples
+C:   00000278  A$frequencimetro_simples$1160      frequencimetro_simples
+C:   00000278  C$lcd.h$145$1$38                   frequencimetro_simples
+C:   00000278  C$lcd.h$146$1$38                   frequencimetro_simples
+C:   00000278  XG$imprimeInst4bits$0$0            frequencimetro_simples
+C:   00000279  A$frequencimetro_simples$1173      frequencimetro_simples
+C:   00000279  C$lcd.h$148$1$38                   frequencimetro_simples
+C:   00000279  C$lcd.h$149$1$40                   frequencimetro_simples
+C:   00000279  G$initLCD4bits$0$0                 frequencimetro_simples
+C:   00000279  _initLCD4bits                      frequencimetro_simples
+C:   0000027C  A$frequencimetro_simples$1174      frequencimetro_simples
+C:   0000027F  A$frequencimetro_simples$1177      frequencimetro_simples
+C:   0000027F  C$lcd.h$150$1$40                   frequencimetro_simples
+C:   00000282  A$frequencimetro_simples$1178      frequencimetro_simples
+C:   00000285  A$frequencimetro_simples$1181      frequencimetro_simples
+C:   00000285  C$lcd.h$151$1$40                   frequencimetro_simples
+C:   00000288  A$frequencimetro_simples$1182      frequencimetro_simples
+C:   0000028B  A$frequencimetro_simples$1185      frequencimetro_simples
+C:   0000028B  C$lcd.h$152$1$40                   frequencimetro_simples
+C:   0000028E  A$frequencimetro_simples$1186      frequencimetro_simples
+C:   00000291  A$frequencimetro_simples$1191      frequencimetro_simples
+C:   00000291  C$lcd.h$153$1$40                   frequencimetro_simples
+C:   00000291  C$lcd.h$154$1$40                   frequencimetro_simples
+C:   00000291  XG$initLCD4bits$0$0                frequencimetro_simples
+C:   00000292  A$frequencimetro_simples$1205      frequencimetro_simples
+ASxxxx Linker V03.00 + NoICE + sdld,  page 27.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                00000095    00000623 =        1571. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000292  C$lcd.h$156$1$40                   frequencimetro_simples
+C:   00000292  G$posicionaCursor4bits$0$0         frequencimetro_simples
+C:   00000292  _posicionaCursor4bits              frequencimetro_simples
+C:   00000294  A$frequencimetro_simples$1208      frequencimetro_simples
+C:   00000294  C$lcd.h$160$2$43                   frequencimetro_simples
+C:   00000296  A$frequencimetro_simples$1209      frequencimetro_simples
+C:   00000297  A$frequencimetro_simples$1212      frequencimetro_simples
+C:   00000297  C$lcd.h$161$2$43                   frequencimetro_simples
+C:   00000298  A$frequencimetro_simples$1213      frequencimetro_simples
+C:   0000029A  A$frequencimetro_simples$1214      frequencimetro_simples
+C:   0000029C  A$frequencimetro_simples$1215      frequencimetro_simples
+C:   0000029F  A$frequencimetro_simples$1216      frequencimetro_simples
+C:   000002A1  A$frequencimetro_simples$1219      frequencimetro_simples
+C:   000002A1  C$lcd.h$164$2$44                   frequencimetro_simples
+C:   000002A3  A$frequencimetro_simples$1220      frequencimetro_simples
+C:   000002A4  A$frequencimetro_simples$1223      frequencimetro_simples
+C:   000002A4  C$lcd.h$165$2$44                   frequencimetro_simples
+C:   000002A6  A$frequencimetro_simples$1224      frequencimetro_simples
+C:   000002A9  A$frequencimetro_simples$1229      frequencimetro_simples
+C:   000002A9  C$lcd.h$167$1$42                   frequencimetro_simples
+C:   000002A9  C$lcd.h$168$1$42                   frequencimetro_simples
+C:   000002A9  XG$posicionaCursor4bits$0$0        frequencimetro_simples
+C:   000002AA  A$frequencimetro_simples$1242      frequencimetro_simples
+C:   000002AA  C$frequencimetro_simples.c$17$1$   frequencimetro_simples
+C:   000002AA  C$frequencimetro_simples.c$18$1$   frequencimetro_simples
+C:   000002AA  G$estourot1$0$0                    frequencimetro_simples
+C:   000002AA  _estourot1                         frequencimetro_simples
+C:   000002AC  A$frequencimetro_simples$1245      frequencimetro_simples
+C:   000002AC  C$frequencimetro_simples.c$19$1$   frequencimetro_simples
+C:   000002AE  A$frequencimetro_simples$1248      frequencimetro_simples
+C:   000002AE  C$frequencimetro_simples.c$20$1$   frequencimetro_simples
+C:   000002AE  XG$estourot1$0$0                   frequencimetro_simples
+C:   000002AF  A$frequencimetro_simples$1272      frequencimetro_simples
+C:   000002AF  C$frequencimetro_simples.c$22$1$   frequencimetro_simples
+C:   000002AF  C$frequencimetro_simples.c$27$1$   frequencimetro_simples
+C:   000002AF  G$main$0$0                         frequencimetro_simples
+C:   000002AF  _main                              frequencimetro_simples
+C:   000002B2  A$frequencimetro_simples$1275      frequencimetro_simples
+C:   000002B2  C$frequencimetro_simples.c$28$1$   frequencimetro_simples
+C:   000002B4  A$frequencimetro_simples$1278      frequencimetro_simples
+C:   000002B4  C$frequencimetro_simples.c$29$1$   frequencimetro_simples
+C:   000002B7  A$frequencimetro_simples$1284      frequencimetro_simples
+C:   000002B7  C$frequencimetro_simples.c$31$1$   frequencimetro_simples
+C:   000002B7  C$frequencimetro_simples.c$32$2$   frequencimetro_simples
+C:   000002BA  A$frequencimetro_simples$1285      frequencimetro_simples
+C:   000002BD  A$frequencimetro_simples$1288      frequencimetro_simples
+C:   000002BF  A$frequencimetro_simples$1292      frequencimetro_simples
+C:   000002BF  C$frequencimetro_simples.c$34$2$   frequencimetro_simples
+C:   000002C0  A$frequencimetro_simples$1293      frequencimetro_simples
+C:   000002C2  A$frequencimetro_simples$1294      frequencimetro_simples
+C:   000002C3  A$frequencimetro_simples$1295      frequencimetro_simples
+ASxxxx Linker V03.00 + NoICE + sdld,  page 28.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                00000095    00000623 =        1571. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   000002C5  A$frequencimetro_simples$1298      frequencimetro_simples
+C:   000002C5  C$frequencimetro_simples.c$33$2$   frequencimetro_simples
+C:   000002C6  A$frequencimetro_simples$1299      frequencimetro_simples
+C:   000002C7  A$frequencimetro_simples$1300      frequencimetro_simples
+C:   000002C8  A$frequencimetro_simples$1301      frequencimetro_simples
+C:   000002CA  A$frequencimetro_simples$1302      frequencimetro_simples
+C:   000002CC  A$frequencimetro_simples$1303      frequencimetro_simples
+C:   000002CE  A$frequencimetro_simples$1306      frequencimetro_simples
+C:   000002CE  C$frequencimetro_simples.c$35$2$   frequencimetro_simples
+C:   000002D1  A$frequencimetro_simples$1309      frequencimetro_simples
+C:   000002D1  C$frequencimetro_simples.c$37$2$   frequencimetro_simples
+C:   000002D3  A$frequencimetro_simples$1312      frequencimetro_simples
+C:   000002D3  C$frequencimetro_simples.c$38$2$   frequencimetro_simples
+C:   000002D6  A$frequencimetro_simples$1315      frequencimetro_simples
+C:   000002D6  C$frequencimetro_simples.c$39$2$   frequencimetro_simples
+C:   000002D9  A$frequencimetro_simples$1318      frequencimetro_simples
+C:   000002D9  C$frequencimetro_simples.c$40$2$   frequencimetro_simples
+C:   000002DB  A$frequencimetro_simples$1321      frequencimetro_simples
+C:   000002DB  C$frequencimetro_simples.c$41$2$   frequencimetro_simples
+C:   000002DE  A$frequencimetro_simples$1324      frequencimetro_simples
+C:   000002DE  C$frequencimetro_simples.c$42$2$   frequencimetro_simples
+C:   000002E0  A$frequencimetro_simples$1328      frequencimetro_simples
+C:   000002E0  C$frequencimetro_simples.c$46$2$   frequencimetro_simples
+C:   000002E1  A$frequencimetro_simples$1329      frequencimetro_simples
+C:   000002E3  A$frequencimetro_simples$1335      frequencimetro_simples
+C:   000002E3  C$frequencimetro_simples.c$47$3$   frequencimetro_simples
+C:   000002E3  C$frequencimetro_simples.c$48$3$   frequencimetro_simples
+C:   000002E6  A$frequencimetro_simples$1336      frequencimetro_simples
+C:   000002E8  A$frequencimetro_simples$1340      frequencimetro_simples
+C:   000002E8  C$frequencimetro_simples.c$49$3$   frequencimetro_simples
+C:   000002E9  A$frequencimetro_simples$1341      frequencimetro_simples
+C:   000002EB  A$frequencimetro_simples$1345      frequencimetro_simples
+C:   000002EB  C$frequencimetro_simples.c$51$2$   frequencimetro_simples
+C:   000002ED  A$frequencimetro_simples$1348      frequencimetro_simples
+C:   000002ED  C$frequencimetro_simples.c$52$2$   frequencimetro_simples
+C:   000002EF  A$frequencimetro_simples$1351      frequencimetro_simples
+C:   000002EF  C$frequencimetro_simples.c$55$2$   frequencimetro_simples
+C:   000002F2  A$frequencimetro_simples$1352      frequencimetro_simples
+C:   000002F5  A$frequencimetro_simples$1353      frequencimetro_simples
+C:   000002F8  A$frequencimetro_simples$1354      frequencimetro_simples
+C:   000002FB  A$frequencimetro_simples$1355      frequencimetro_simples
+C:   000002FE  A$frequencimetro_simples$1356      frequencimetro_simples
+C:   000002FF  A$frequencimetro_simples$1357      frequencimetro_simples
+C:   00000301  A$frequencimetro_simples$1358      frequencimetro_simples
+C:   00000304  A$frequencimetro_simples$1359      frequencimetro_simples
+C:   00000307  A$frequencimetro_simples$1360      frequencimetro_simples
+C:   0000030A  A$frequencimetro_simples$1361      frequencimetro_simples
+C:   0000030D  A$frequencimetro_simples$1362      frequencimetro_simples
+C:   0000030F  A$frequencimetro_simples$1363      frequencimetro_simples
+C:   00000311  A$frequencimetro_simples$1364      frequencimetro_simples
+C:   00000313  A$frequencimetro_simples$1365      frequencimetro_simples
+ASxxxx Linker V03.00 + NoICE + sdld,  page 29.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                00000095    00000623 =        1571. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000314  A$frequencimetro_simples$1366      frequencimetro_simples
+C:   00000315  A$frequencimetro_simples$1367      frequencimetro_simples
+C:   00000317  A$frequencimetro_simples$1368      frequencimetro_simples
+C:   00000318  A$frequencimetro_simples$1369      frequencimetro_simples
+C:   00000319  A$frequencimetro_simples$1370      frequencimetro_simples
+C:   0000031A  A$frequencimetro_simples$1371      frequencimetro_simples
+C:   0000031C  A$frequencimetro_simples$1372      frequencimetro_simples
+C:   0000031E  A$frequencimetro_simples$1373      frequencimetro_simples
+C:   0000031F  A$frequencimetro_simples$1374      frequencimetro_simples
+C:   00000321  A$frequencimetro_simples$1375      frequencimetro_simples
+C:   00000323  A$frequencimetro_simples$1376      frequencimetro_simples
+C:   00000324  A$frequencimetro_simples$1377      frequencimetro_simples
+C:   00000326  A$frequencimetro_simples$1378      frequencimetro_simples
+C:   00000328  A$frequencimetro_simples$1379      frequencimetro_simples
+C:   00000329  A$frequencimetro_simples$1380      frequencimetro_simples
+C:   0000032B  A$frequencimetro_simples$1381      frequencimetro_simples
+C:   0000032D  A$frequencimetro_simples$1382      frequencimetro_simples
+C:   0000032F  A$frequencimetro_simples$1383      frequencimetro_simples
+C:   00000330  A$frequencimetro_simples$1384      frequencimetro_simples
+C:   00000331  A$frequencimetro_simples$1385      frequencimetro_simples
+C:   00000332  A$frequencimetro_simples$1386      frequencimetro_simples
+C:   00000334  A$frequencimetro_simples$1387      frequencimetro_simples
+C:   00000335  A$frequencimetro_simples$1388      frequencimetro_simples
+C:   00000336  A$frequencimetro_simples$1389      frequencimetro_simples
+C:   00000337  A$frequencimetro_simples$1390      frequencimetro_simples
+C:   00000339  A$frequencimetro_simples$1391      frequencimetro_simples
+C:   0000033A  A$frequencimetro_simples$1392      frequencimetro_simples
+C:   0000033B  A$frequencimetro_simples$1393      frequencimetro_simples
+C:   0000033D  A$frequencimetro_simples$1394      frequencimetro_simples
+C:   0000033E  A$frequencimetro_simples$1395      frequencimetro_simples
+C:   0000033F  A$frequencimetro_simples$1396      frequencimetro_simples
+C:   00000341  A$frequencimetro_simples$1397      frequencimetro_simples
+C:   00000342  A$frequencimetro_simples$1398      frequencimetro_simples
+C:   00000344  A$frequencimetro_simples$1401      frequencimetro_simples
+C:   00000344  C$frequencimetro_simples.c$58$2$   frequencimetro_simples
+C:   00000347  A$frequencimetro_simples$1402      frequencimetro_simples
+C:   0000034A  A$frequencimetro_simples$1403      frequencimetro_simples
+C:   0000034C  A$frequencimetro_simples$1404      frequencimetro_simples
+C:   0000034E  A$frequencimetro_simples$1405      frequencimetro_simples
+C:   00000351  A$frequencimetro_simples$1406      frequencimetro_simples
+C:   00000353  A$frequencimetro_simples$1407      frequencimetro_simples
+C:   00000355  A$frequencimetro_simples$1410      frequencimetro_simples
+C:   00000355  C$frequencimetro_simples.c$59$2$   frequencimetro_simples
+C:   00000357  A$frequencimetro_simples$1411      frequencimetro_simples
+C:   00000359  A$frequencimetro_simples$1412      frequencimetro_simples
+C:   0000035B  A$frequencimetro_simples$1413      frequencimetro_simples
+C:   0000035D  A$frequencimetro_simples$1414      frequencimetro_simples
+C:   0000035F  A$frequencimetro_simples$1415      frequencimetro_simples
+C:   00000360  A$frequencimetro_simples$1416      frequencimetro_simples
+C:   00000363  A$frequencimetro_simples$1419      frequencimetro_simples
+C:   00000365  A$frequencimetro_simples$1421      frequencimetro_simples
+ASxxxx Linker V03.00 + NoICE + sdld,  page 30.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                00000095    00000623 =        1571. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000366  A$frequencimetro_simples$1422      frequencimetro_simples
+C:   00000369  A$frequencimetro_simples$1423      frequencimetro_simples
+C:   0000036C  A$frequencimetro_simples$1427      frequencimetro_simples
+C:   0000036C  C$frequencimetro_simples.c$61$2$   frequencimetro_simples
+C:   0000036D  A$frequencimetro_simples$1428      frequencimetro_simples
+C:   0000036F  A$frequencimetro_simples$1429      frequencimetro_simples
+C:   00000370  A$frequencimetro_simples$1430      frequencimetro_simples
+C:   00000372  A$frequencimetro_simples$1431      frequencimetro_simples
+C:   00000374  A$frequencimetro_simples$1432      frequencimetro_simples
+C:   00000377  A$frequencimetro_simples$1433      frequencimetro_simples
+C:   00000379  A$frequencimetro_simples$1436      frequencimetro_simples
+C:   00000379  C$frequencimetro_simples.c$60$2$   frequencimetro_simples
+C:   0000037A  A$frequencimetro_simples$1437      frequencimetro_simples
+C:   0000037C  A$frequencimetro_simples$1440      frequencimetro_simples
+C:   0000037C  C$frequencimetro_simples.c$63$1$   frequencimetro_simples
+C:   0000037C  XG$main$0$0                        frequencimetro_simples
+C:   0000037D  A$frequencimetro_simples$1456      frequencimetro_simples
+C:   0000037D  C$frequencimetro_simples.c$65$1$   frequencimetro_simples
+C:   0000037D  G$pow$0$0                          frequencimetro_simples
+C:   0000037D  _pow                               frequencimetro_simples
+C:   0000037F  A$frequencimetro_simples$1457      frequencimetro_simples
+C:   00000381  A$frequencimetro_simples$1458      frequencimetro_simples
+C:   00000383  A$frequencimetro_simples$1459      frequencimetro_simples
+C:   00000384  A$frequencimetro_simples$1462      frequencimetro_simples
+C:   00000384  C$frequencimetro_simples.c$67$1$   frequencimetro_simples
+C:   00000386  A$frequencimetro_simples$1463      frequencimetro_simples
+C:   00000388  A$frequencimetro_simples$1464      frequencimetro_simples
+C:   0000038A  A$frequencimetro_simples$1465      frequencimetro_simples
+C:   0000038C  A$frequencimetro_simples$1468      frequencimetro_simples
+C:   0000038E  A$frequencimetro_simples$1470      frequencimetro_simples
+C:   0000038F  A$frequencimetro_simples$1471      frequencimetro_simples
+C:   00000390  A$frequencimetro_simples$1472      frequencimetro_simples
+C:   00000392  A$frequencimetro_simples$1473      frequencimetro_simples
+C:   00000394  A$frequencimetro_simples$1476      frequencimetro_simples
+C:   00000394  C$frequencimetro_simples.c$70$1$   frequencimetro_simples
+C:   00000396  A$frequencimetro_simples$1477      frequencimetro_simples
+C:   00000398  A$frequencimetro_simples$1478      frequencimetro_simples
+C:   0000039A  A$frequencimetro_simples$1479      frequencimetro_simples
+C:   0000039C  A$frequencimetro_simples$1480      frequencimetro_simples
+C:   0000039F  A$frequencimetro_simples$1481      frequencimetro_simples
+C:   000003A2  A$frequencimetro_simples$1482      frequencimetro_simples
+C:   000003A5  A$frequencimetro_simples$1483      frequencimetro_simples
+C:   000003A7  A$frequencimetro_simples$1484      frequencimetro_simples
+C:   000003A9  A$frequencimetro_simples$1485      frequencimetro_simples
+C:   000003AB  A$frequencimetro_simples$1486      frequencimetro_simples
+C:   000003AD  A$frequencimetro_simples$1487      frequencimetro_simples
+C:   000003AF  A$frequencimetro_simples$1488      frequencimetro_simples
+C:   000003B1  A$frequencimetro_simples$1489      frequencimetro_simples
+C:   000003B4  A$frequencimetro_simples$1490      frequencimetro_simples
+C:   000003B7  A$frequencimetro_simples$1491      frequencimetro_simples
+C:   000003BA  A$frequencimetro_simples$1492      frequencimetro_simples
+ASxxxx Linker V03.00 + NoICE + sdld,  page 31.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                00000095    00000623 =        1571. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   000003BD  A$frequencimetro_simples$1493      frequencimetro_simples
+C:   000003BF  A$frequencimetro_simples$1494      frequencimetro_simples
+C:   000003C1  A$frequencimetro_simples$1495      frequencimetro_simples
+C:   000003C3  A$frequencimetro_simples$1496      frequencimetro_simples
+C:   000003C5  A$frequencimetro_simples$1497      frequencimetro_simples
+C:   000003C7  A$frequencimetro_simples$1498      frequencimetro_simples
+C:   000003C9  A$frequencimetro_simples$1501      frequencimetro_simples
+C:   000003C9  C$frequencimetro_simples.c$69$1$   frequencimetro_simples
+C:   000003CA  A$frequencimetro_simples$1502      frequencimetro_simples
+C:   000003CC  A$frequencimetro_simples$1506      frequencimetro_simples
+C:   000003CC  C$frequencimetro_simples.c$72$1$   frequencimetro_simples
+C:   000003CF  A$frequencimetro_simples$1507      frequencimetro_simples
+C:   000003D2  A$frequencimetro_simples$1508      frequencimetro_simples
+C:   000003D5  A$frequencimetro_simples$1509      frequencimetro_simples
+C:   000003D7  A$frequencimetro_simples$1512      frequencimetro_simples
+C:   000003D7  C$frequencimetro_simples.c$73$1$   frequencimetro_simples
+C:   000003D7  XG$pow$0$0                         frequencimetro_simples
+C:   000003D8  A$frequencimetro_simples$1527      frequencimetro_simples
+C:   000003D8  C$frequencimetro_simples.c$75$1$   frequencimetro_simples
+C:   000003D8  G$asciiNum$0$0                     frequencimetro_simples
+C:   000003D8  _asciiNum                          frequencimetro_simples
+C:   000003DB  A$frequencimetro_simples$1528      frequencimetro_simples
+C:   000003DE  A$frequencimetro_simples$1529      frequencimetro_simples
+C:   000003E1  A$frequencimetro_simples$1530      frequencimetro_simples
+C:   000003E3  A$frequencimetro_simples$1533      frequencimetro_simples
+C:   000003E3  C$frequencimetro_simples.c$76$1$   frequencimetro_simples
+C:   000003E5  A$frequencimetro_simples$1536      frequencimetro_simples
+C:   000003E5  C$frequencimetro_simples.c$79$1$   frequencimetro_simples
+C:   000003E8  A$frequencimetro_simples$1540      frequencimetro_simples
+C:   000003E8  C$frequencimetro_simples.c$80$3$   frequencimetro_simples
+C:   000003E9  A$frequencimetro_simples$1541      frequencimetro_simples
+C:   000003EA  A$frequencimetro_simples$1542      frequencimetro_simples
+C:   000003EC  A$frequencimetro_simples$1543      frequencimetro_simples
+C:   000003EE  A$frequencimetro_simples$1544      frequencimetro_simples
+C:   000003F1  A$frequencimetro_simples$1545      frequencimetro_simples
+C:   000003F3  A$frequencimetro_simples$1546      frequencimetro_simples
+C:   000003F5  A$frequencimetro_simples$1547      frequencimetro_simples
+C:   000003F8  A$frequencimetro_simples$1551      frequencimetro_simples
+C:   000003F8  C$frequencimetro_simples.c$81$2$   frequencimetro_simples
+C:   000003FA  A$frequencimetro_simples$1552      frequencimetro_simples
+C:   000003FD  A$frequencimetro_simples$1553      frequencimetro_simples
+C:   000003FE  A$frequencimetro_simples$1554      frequencimetro_simples
+C:   00000400  A$frequencimetro_simples$1555      frequencimetro_simples
+C:   00000402  A$frequencimetro_simples$1556      frequencimetro_simples
+C:   00000405  A$frequencimetro_simples$1557      frequencimetro_simples
+C:   00000408  A$frequencimetro_simples$1558      frequencimetro_simples
+C:   0000040B  A$frequencimetro_simples$1559      frequencimetro_simples
+C:   0000040E  A$frequencimetro_simples$1560      frequencimetro_simples
+C:   00000410  A$frequencimetro_simples$1563      frequencimetro_simples
+C:   00000410  C$frequencimetro_simples.c$82$1$   frequencimetro_simples
+C:   00000413  A$frequencimetro_simples$1564      frequencimetro_simples
+ASxxxx Linker V03.00 + NoICE + sdld,  page 32.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                00000095    00000623 =        1571. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000416  A$frequencimetro_simples$1565      frequencimetro_simples
+C:   00000419  A$frequencimetro_simples$1566      frequencimetro_simples
+C:   0000041C  A$frequencimetro_simples$1567      frequencimetro_simples
+C:   0000041F  A$frequencimetro_simples$1568      frequencimetro_simples
+C:   00000422  A$frequencimetro_simples$1569      frequencimetro_simples
+C:   00000425  A$frequencimetro_simples$1570      frequencimetro_simples
+C:   00000427  A$frequencimetro_simples$1571      frequencimetro_simples
+C:   0000042A  A$frequencimetro_simples$1572      frequencimetro_simples
+C:   0000042C  A$frequencimetro_simples$1573      frequencimetro_simples
+C:   0000042E  A$frequencimetro_simples$1574      frequencimetro_simples
+C:   00000430  A$frequencimetro_simples$1575      frequencimetro_simples
+C:   00000431  A$frequencimetro_simples$1576      frequencimetro_simples
+C:   00000433  A$frequencimetro_simples$1577      frequencimetro_simples
+C:   00000434  A$frequencimetro_simples$1578      frequencimetro_simples
+C:   00000435  A$frequencimetro_simples$1579      frequencimetro_simples
+C:   00000436  A$frequencimetro_simples$1580      frequencimetro_simples
+C:   00000437  A$frequencimetro_simples$1581      frequencimetro_simples
+C:   00000438  A$frequencimetro_simples$1582      frequencimetro_simples
+C:   00000439  A$frequencimetro_simples$1583      frequencimetro_simples
+C:   0000043A  A$frequencimetro_simples$1584      frequencimetro_simples
+C:   0000043B  A$frequencimetro_simples$1585      frequencimetro_simples
+C:   0000043D  A$frequencimetro_simples$1586      frequencimetro_simples
+C:   0000043F  A$frequencimetro_simples$1587      frequencimetro_simples
+C:   00000442  A$frequencimetro_simples$1588      frequencimetro_simples
+C:   00000444  A$frequencimetro_simples$1589      frequencimetro_simples
+C:   00000446  A$frequencimetro_simples$1592      frequencimetro_simples
+C:   00000446  C$frequencimetro_simples.c$83$3$   frequencimetro_simples
+C:   00000447  A$frequencimetro_simples$1593      frequencimetro_simples
+C:   00000449  A$frequencimetro_simples$1594      frequencimetro_simples
+C:   0000044A  A$frequencimetro_simples$1595      frequencimetro_simples
+C:   0000044C  A$frequencimetro_simples$1596      frequencimetro_simples
+C:   0000044D  A$frequencimetro_simples$1597      frequencimetro_simples
+C:   0000044E  A$frequencimetro_simples$1600      frequencimetro_simples
+C:   0000044E  C$frequencimetro_simples.c$84$3$   frequencimetro_simples
+C:   00000450  A$frequencimetro_simples$1601      frequencimetro_simples
+C:   00000452  A$frequencimetro_simples$1604      frequencimetro_simples
+C:   00000452  C$frequencimetro_simples.c$85$3$   frequencimetro_simples
+C:   00000454  A$frequencimetro_simples$1608      frequencimetro_simples
+C:   00000454  C$frequencimetro_simples.c$87$1$   frequencimetro_simples
+C:   00000457  A$frequencimetro_simples$1609      frequencimetro_simples
+C:   0000045A  A$frequencimetro_simples$1610      frequencimetro_simples
+C:   0000045D  A$frequencimetro_simples$1611      frequencimetro_simples
+C:   00000460  A$frequencimetro_simples$1612      frequencimetro_simples
+C:   00000463  A$frequencimetro_simples$1613      frequencimetro_simples
+C:   00000466  A$frequencimetro_simples$1614      frequencimetro_simples
+C:   00000469  A$frequencimetro_simples$1615      frequencimetro_simples
+C:   0000046B  A$frequencimetro_simples$1616      frequencimetro_simples
+C:   0000046D  A$frequencimetro_simples$1617      frequencimetro_simples
+C:   00000470  A$frequencimetro_simples$1618      frequencimetro_simples
+C:   00000473  A$frequencimetro_simples$1619      frequencimetro_simples
+C:   00000476  A$frequencimetro_simples$1620      frequencimetro_simples
+ASxxxx Linker V03.00 + NoICE + sdld,  page 33.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CSEG                                00000095    00000623 =        1571. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   00000479  A$frequencimetro_simples$1621      frequencimetro_simples
+C:   0000047B  A$frequencimetro_simples$1622      frequencimetro_simples
+C:   0000047D  A$frequencimetro_simples$1626      frequencimetro_simples
+C:   0000047D  C$frequencimetro_simples.c$89$2$   frequencimetro_simples
+C:   0000047E  A$frequencimetro_simples$1627      frequencimetro_simples
+C:   00000481  A$frequencimetro_simples$1631      frequencimetro_simples
+C:   00000481  C$frequencimetro_simples.c$91$1$   frequencimetro_simples
+C:   00000484  A$frequencimetro_simples$1632      frequencimetro_simples
+C:   00000485  A$frequencimetro_simples$1633      frequencimetro_simples
+C:   00000487  A$frequencimetro_simples$1634      frequencimetro_simples
+C:   00000489  A$frequencimetro_simples$1635      frequencimetro_simples
+C:   0000048B  A$frequencimetro_simples$1636      frequencimetro_simples
+C:   0000048E  A$frequencimetro_simples$1637      frequencimetro_simples
+C:   00000491  A$frequencimetro_simples$1638      frequencimetro_simples
+C:   00000494  A$frequencimetro_simples$1639      frequencimetro_simples
+C:   00000496  A$frequencimetro_simples$1640      frequencimetro_simples
+C:   00000499  A$frequencimetro_simples$1641      frequencimetro_simples
+C:   0000049B  A$frequencimetro_simples$1642      frequencimetro_simples
+C:   0000049D  A$frequencimetro_simples$1643      frequencimetro_simples
+C:   0000049E  A$frequencimetro_simples$1644      frequencimetro_simples
+C:   000004A0  A$frequencimetro_simples$1647      frequencimetro_simples
+C:   000004A0  C$frequencimetro_simples.c$92$1$   frequencimetro_simples
+C:   000004A0  XG$asciiNum$0$0                    frequencimetro_simples
+C:   000004A1  __modulong                         _modulong
+C:   00000524  __divulong                         _divulong
+C:   00000589  __mullong                          _mullong
+C:   00000589  __mullong_dummy                    _mullong
+C:   000005F7  __modslong                         _modslong
+C:   00000646  __divslong                         _divslong
+C:   00000698  __gptrget                          _gptrget
+C:   000006B4  __sdcc_external_startup            _startup
+ASxxxx Linker V03.00 + NoICE + sdld,  page 34.
+Hexadecimal  [32-Bits]
+
+Area                                    Addr        Size        Decimal Bytes (Attributes)
+--------------------------------        ----        ----        ------- ----- ------------
+CONST                               000006B8    00000004 =           4. bytes (REL,CON,CODE)
+
+      Value  Global                              Global Defined In Module
+      -----  --------------------------------   ------------------------
+C:   000006B8  Ffrequencimetro_simples$_str_0$0   frequencimetro_simples
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 35.
+
+Files Linked                              [ module(s) ]
+
+frequencimetro_simples.rel                [  ]
+
+
+Libraries Linked                          [ object file ]
+
+C:\Program Files (x86)\SDCC\bin\..\lib\small/liblong.lib
+                                          [ _modulong.rel ]
+C:\Program Files (x86)\SDCC\bin\..\lib\small/liblong.lib
+                                          [ _divulong.rel ]
+C:\Program Files (x86)\SDCC\bin\..\lib\small/mcs51.lib
+                                          [ crtclear.rel ]
+C:\Program Files (x86)\SDCC\bin\..\lib\small/mcs51.lib
+                                          [ crtxinit.rel ]
+C:\Program Files (x86)\SDCC\bin\..\lib\small/liblong.lib
+                                          [ _mullong.rel ]
+C:\Program Files (x86)\SDCC\bin\..\lib\small/mcs51.lib
+                                          [ crtxclear.rel ]
+C:\Program Files (x86)\SDCC\bin\..\lib\small/liblong.lib
+                                          [ _modslong.rel ]
+C:\Program Files (x86)\SDCC\bin\..\lib\small/liblong.lib
+                                          [ _divslong.rel ]
+C:\Program Files (x86)\SDCC\bin\..\lib\small/mcs51.lib
+                                          [ crtpagesfr.rel ]
+C:\Program Files (x86)\SDCC\bin\..\lib\small/mcs51.lib
+                                          [ crtstart.rel ]
+C:\Program Files (x86)\SDCC\bin\..\lib\small/libsdcc.lib
+                                          [ _gptrget.rel ]
+C:\Program Files (x86)\SDCC\bin\..\lib\small/libsdcc.lib
+                                          [ _startup.rel ]
+
+ASxxxx Linker V03.00 + NoICE + sdld,  page 36.
+
+User Base Address Definitions
+
+HOME = 0x0000
+ISEG = 0x0000
+BSEG = 0x0000
+
+

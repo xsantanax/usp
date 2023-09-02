@@ -1,0 +1,1497 @@
+;!FILE frequencimetro_simples.asm
+XH
+H 1B areas 407 global symbols
+M frequencimetro_simples
+O -mmcs51 --model-small
+S __modslong_PARM_2 Ref0000
+S G$TCLK$0$0 Def00CC
+S G$RXD$0$0 Def00B0
+S _EXEN2 Def00CB
+S _SP Def0081
+S _T2EX Def0091
+S _PS Def00BC
+S G$TXD$0$0 Def00B1
+S G$SBUF$0$0 Def0099
+S G$PCON$0$0 Def0087
+S _RCAP2L Def00CA
+S __divslong_PARM_2 Ref0000
+S _REN Def009C
+S _OV Def00D2
+S _T2CON Def00C8
+S _T2MOD Def00C9
+S G$SCON$0$0 Def0098
+S __mcs51_genRAMCLEAR Ref0000
+S G$TMOD$0$0 Def0089
+S G$TCON$0$0 Def0088
+S _C_T2 Def00C9
+S G$T2CON_0$0$0 Def00C8
+S _WR Def00B6
+S G$F0$0$0 Def00D5
+S G$T2CON_1$0$0 Def00C9
+S G$T2CON_2$0$0 Def00CA
+S G$T2CON_3$0$0 Def00CB
+S _RCLK Def00CD
+S __mcs51_genXINIT Ref0000
+S G$T2CON_4$0$0 Def00CC
+S G$T2CON_5$0$0 Def00CD
+S G$PSW$0$0 Def00D0
+S _RXD Def00B0
+S _TCLK Def00CC
+S G$T2CON_6$0$0 Def00CE
+S G$T2CON_7$0$0 Def00CF
+S _PCON Def0087
+S _SBUF Def0099
+S _TXD Def00B1
+S G$IE0$0$0 Def0089
+S G$IE1$0$0 Def008B
+S _SCON Def0098
+S G$P0$0$0 Def0080
+S _TCON Def0088
+S _TMOD Def0089
+S G$A$0$0 Def00E0
+S G$P1$0$0 Def0090
+S _T2CON_0 Def00C8
+S G$CP_RL2$0$0 Def00C8
+S G$B$0$0 Def00F0
+S G$P2$0$0 Def00A0
+S _T2CON_1 Def00C9
+S _F0 Def00D5
+S G$P3$0$0 Def00B0
+S _T2CON_2 Def00CA
+S G$AC$0$0 Def00D6
+S G$T0$0$0 Def00B4
+S _T2CON_3 Def00CB
+S G$T1$0$0 Def00B5
+S _T2CON_4 Def00CC
+S G$EA$0$0 Def00AF
+S G$T2$0$0 Def0090
+S _PSW Def00D0
+S _T2CON_5 Def00CD
+S G$ACC$0$0 Def00E0
+S _T2CON_6 Def00CE
+S _T2CON_7 Def00CF
+S __mullong_PARM_2 Ref0000
+S G$ET0$0$0 Def00A9
+S G$ET1$0$0 Def00AB
+S G$TF0$0$0 Def008D
+S _IE0 Def0089
+S G$ET2$0$0 Def00AD
+S G$TF1$0$0 Def008F
+S _IE1 Def008B
+S .__.ABS. Def0000
+S __mcs51_genXRAMCLEAR Ref0000
+S G$TF2$0$0 Def00CF
+S G$RB8$0$0 Def009A
+S G$TH0$0$0 Def008C
+S _P0 Def0080
+S G$EX0$0$0 Def00A8
+S G$IT0$0$0 Def0088
+S G$TH1$0$0 Def008D
+S _P1 Def0090
+S _A Def00E0
+S __modslong Ref0000
+S G$EX1$0$0 Def00AA
+S G$TB8$0$0 Def009B
+S G$IT1$0$0 Def008A
+S G$TH2$0$0 Def00CD
+S G$IE$0$0 Def00A8
+S _P2 Def00A0
+S _B Def00F0
+S _CP_RL2 Def00C8
+S G$P0_0$0$0 Def0080
+S _P3 Def00B0
+S G$P$0$0 Def00D0
+S G$SM0$0$0 Def009F
+S G$P1_0$0$0 Def0090
+S G$P0_1$0$0 Def0081
+S G$TL0$0$0 Def008A
+S _T0 Def00B4
+S _AC Def00D6
+S __divslong Ref0000
+S G$P2_0$0$0 Def00A0
+S G$SM1$0$0 Def009E
+S G$P1_1$0$0 Def0091
+S G$P0_2$0$0 Def0082
+S G$TL1$0$0 Def008B
+S _T1 Def00B5
+S G$FL$0$0 Def00D1
+S G$P3_0$0$0 Def00B0
+S G$P2_1$0$0 Def00A1
+S G$SM2$0$0 Def009D
+S G$P1_2$0$0 Def0092
+S G$P0_3$0$0 Def0083
+S G$TL2$0$0 Def00CC
+S _T2 Def0090
+S _EA Def00AF
+S G$P3_1$0$0 Def00B1
+S G$P2_2$0$0 Def00A2
+S G$P1_3$0$0 Def0093
+S G$P0_4$0$0 Def0084
+S _ACC Def00E0
+S G$PT0$0$0 Def00B9
+S G$P3_2$0$0 Def00B2
+S G$P2_3$0$0 Def00A3
+S G$P1_4$0$0 Def0094
+S G$P0_5$0$0 Def0085
+S G$RS0$0$0 Def00D3
+S G$EXF2$0$0 Def00CE
+S G$PT1$0$0 Def00BB
+S G$P3_3$0$0 Def00B3
+S G$P2_4$0$0 Def00A4
+S G$P1_5$0$0 Def0095
+S G$P0_6$0$0 Def0086
+S _ET0 Def00A9
+S G$RS1$0$0 Def00D4
+S G$PT2$0$0 Def00BD
+S G$RD$0$0 Def00B7
+S G$P3_4$0$0 Def00B4
+S G$P2_5$0$0 Def00A5
+S G$P1_6$0$0 Def0096
+S G$TR0$0$0 Def008C
+S G$P0_7$0$0 Def0087
+S _TF0 Def008D
+S _ET1 Def00AB
+S G$P3_5$0$0 Def00B5
+S G$P2_6$0$0 Def00A6
+S G$P1_7$0$0 Def0097
+S G$TR1$0$0 Def008E
+S _TF1 Def008F
+S _ET2 Def00AD
+S G$TR2$0$0 Def00CA
+S G$PX0$0$0 Def00B8
+S G$P3_6$0$0 Def00B6
+S G$ES$0$0 Def00AC
+S G$P2_7$0$0 Def00A7
+S _TH0 Def008C
+S _RB8 Def009A
+S _TF2 Def00CF
+S G$PX1$0$0 Def00BA
+S G$P3_7$0$0 Def00B7
+S G$IP$0$0 Def00B8
+S _TH1 Def008D
+S _IT0 Def0088
+S _EX0 Def00A8
+S _IE Def00A8
+S _TH2 Def00CD
+S _IT1 Def008A
+S _TB8 Def009B
+S _EX1 Def00AA
+S G$INT0$0$0 Def00B2
+S G$RI$0$0 Def0098
+S _P0_0 Def0080
+S G$CY$0$0 Def00D7
+S G$INT1$0$0 Def00B3
+S G$DPH$0$0 Def0083
+S _TL0 Def008A
+S _P0_1 Def0081
+S _P1_0 Def0090
+S _SM0 Def009F
+S _P Def00D0
+S G$TI$0$0 Def0099
+S _TL1 Def008B
+S _P0_2 Def0082
+S _P1_1 Def0091
+S _SM1 Def009E
+S _P2_0 Def00A0
+S _TL2 Def00CC
+S _P0_3 Def0083
+S _P1_2 Def0092
+S _SM2 Def009D
+S _P2_1 Def00A1
+S _P3_0 Def00B0
+S _FL Def00D1
+S _P0_4 Def0084
+S _P1_3 Def0093
+S _P2_2 Def00A2
+S _P3_1 Def00B1
+S G$RCAP2H$0$0 Def00CB
+S G$DPL$0$0 Def0082
+S _P0_5 Def0085
+S _P1_4 Def0094
+S _P2_3 Def00A3
+S _P3_2 Def00B2
+S _PT0 Def00B9
+S _P0_6 Def0086
+S _P1_5 Def0095
+S _P2_4 Def00A4
+S _P3_3 Def00B3
+S _PT1 Def00BB
+S _EXF2 Def00CE
+S _RS0 Def00D3
+S G$EXEN2$0$0 Def00CB
+S _P0_7 Def0087
+S _TR0 Def008C
+S _P1_6 Def0096
+S _P2_5 Def00A5
+S _P3_4 Def00B4
+S _RD Def00B7
+S _PT2 Def00BD
+S _RS1 Def00D4
+S G$PS$0$0 Def00BC
+S G$T2EX$0$0 Def0091
+S G$SP$0$0 Def0081
+S _TR1 Def008E
+S _P1_7 Def0097
+S _P2_6 Def00A6
+S _P3_5 Def00B5
+S G$RCAP2L$0$0 Def00CA
+S _P2_7 Def00A7
+S _ES Def00AC
+S _P3_6 Def00B6
+S _PX0 Def00B8
+S _TR2 Def00CA
+S G$OV$0$0 Def00D2
+S G$REN$0$0 Def009C
+S _IP Def00B8
+S _P3_7 Def00B7
+S _PX1 Def00BA
+S G$T2MOD$0$0 Def00C9
+S G$T2CON$0$0 Def00C8
+S __sdcc_gsinit_startup Ref0000
+S _RI Def0098
+S _INT0 Def00B2
+S __gptrget Ref0000
+S G$C_T2$0$0 Def00C9
+S _DPH Def0083
+S _INT1 Def00B3
+S _CY Def00D7
+S __mullong Ref0000
+S G$WR$0$0 Def00B6
+S _TI Def0099
+S G$RCLK$0$0 Def00CD
+S _DPL Def0082
+S _RCAP2H Def00CB
+A _CODE size 0 flags 0 addr 0
+A RSEG size 0 flags 8 addr 0
+A RSEG0 size 0 flags 8 addr 0
+A RSEG1 size 0 flags 8 addr 0
+A REG_BANK_0 size 8 flags 4 addr 0
+A DSEG size 1B flags 0 addr 0
+S _ndigitos Def0002
+S _posicionaCursor_PARM_2 Def0000
+S Lfrequencimetro_simples.posicionaCursor$lin$1$28 Def0000
+S Lfrequencimetro_simples.asciiNum$num$1$56 Def0013
+S Lfrequencimetro_simples.main$sloc0$1$0 Def000A
+S Lfrequencimetro_simples.pow$resp$1$54 Def000F
+S _pow_PARM_2 Def000E
+S G$estouros$0$0 Def0003
+S G$ascii$0$0 Def0004
+S Lfrequencimetro_simples.asciiNum$a$1$57 Def0017
+S _estouros Def0003
+S _posicionaCursor4bits_PARM_2 Def0001
+S _ascii Def0004
+S Lfrequencimetro_simples.pow$pot$1$53 Def000E
+S Lfrequencimetro_simples.posicionaCursor4bits$lin$1$41 Def0001
+S G$ndigitos$0$0 Def0002
+A SSEG size 1 flags 0 addr 0
+S __start__stack Def0000
+A ISEG size 0 flags 0 addr 0
+A IABS size 0 flags 8 addr 0
+A BSEG size 0 flags 80 addr 0
+A PSEG size 0 flags 50 addr 0
+A XSEG size 0 flags 40 addr 0
+A XABS size 0 flags 48 addr 0
+A XISEG size 0 flags 40 addr 0
+A HOME size 21 flags 20 addr 0
+S __sdcc_program_startup Def001E
+S A$frequencimetro_simples$511 Def0013
+S A$frequencimetro_simples$513 Def001B
+S A$frequencimetro_simples$506 Def0000
+S A$frequencimetro_simples$507 Def0003
+S A$frequencimetro_simples$509 Def000B
+S A$frequencimetro_simples$549 Def001E
+A GSINIT0 size 0 flags 20 addr 0
+A GSINIT1 size 0 flags 20 addr 0
+A GSINIT2 size 0 flags 20 addr 0
+A GSINIT3 size 0 flags 20 addr 0
+A GSINIT4 size 0 flags 20 addr 0
+A GSINIT5 size 0 flags 20 addr 0
+A GSINIT size 18 flags 20 addr 0
+S A$frequencimetro_simples$540 Def0015
+S C$frequencimetro_simples.c$10$1$57 Def0003
+S A$frequencimetro_simples$532 Def0003
+S C$frequencimetro_simples.c$11$1$57 Def0006
+S A$frequencimetro_simples$535 Def0006
+S A$frequencimetro_simples$536 Def0009
+S A$frequencimetro_simples$537 Def000C
+S A$frequencimetro_simples$538 Def000F
+S A$frequencimetro_simples$529 Def0000
+S A$frequencimetro_simples$539 Def0012
+S C$frequencimetro_simples.c$9$1$57 Def0000
+A GSFINAL size 3 flags 20 addr 0
+S A$frequencimetro_simples$542 Def0000
+A CSEG size 40C flags 20 addr 0
+S G$initLCD4bits$0$0 Def01E4
+S C$atraso.h$41$2$6 Def0053
+S C$atraso.h$32$2$6 Def003C
+S C$atraso.h$23$3$5 Def002A
+S XG$pow$0$0 Def0342
+S C$atraso.h$33$2$6 Def003F
+S C$atraso.h$24$3$5 Def002D
+S XG$imprimeChar4bits$0$0 Def012E
+S C$atraso.h$34$2$6 Def0041
+S C$atraso.h$25$3$5 Def002E
+S C$atraso.h$18$2$4 Def001C
+S C$atraso.h$28$2$4 Def0035
+S C$atraso.h$26$3$5 Def0030
+S C$atraso.h$19$2$4 Def001F
+S _imprimeFrase Def006E
+S G$imprimeChar$0$0 Def005E
+S C$atraso.h$29$2$4 Def0037
+S _main Def021A
+S C$lcd.h$110$1$33 Def0126
+S C$atraso.h$35$3$7 Def0046
+S C$lcd.h$111$1$33 Def012C
+S C$lcd.h$102$1$33 Def0103
+S C$atraso.h$36$3$7 Def0049
+S C$lcd.h$150$1$40 Def01EA
+S C$lcd.h$112$1$33 Def012E
+S C$lcd.h$103$1$33 Def0108
+S XG$divideMsg$0$0 Def005D
+S C$atraso.h$37$3$7 Def0049
+S C$lcd.h$151$1$40 Def01F0
+S C$lcd.h$113$1$33 Def012E
+S C$lcd.h$104$1$33 Def010A
+S C$atraso.h$38$3$7 Def004E
+S C$atraso.h$5$0$0 Def0000
+S _posicionaCursor4bits Def01FD
+S G$estourot1$0$0 Def0215
+S C$lcd.h$152$1$40 Def01F6
+S C$lcd.h$105$1$33 Def010C
+S C$lcd.h$153$1$40 Def01FC
+S G$imprimeInst4bits$0$0 Def01BA
+S C$lcd.h$120$2$36 Def014A
+S C$lcd.h$115$1$33 Def012F
+S C$lcd.h$106$1$33 Def0116
+S C$lcd.h$101$1$29 Def0101
+S C$lcd.h$154$1$40 Def01FC
+S C$lcd.h$130$2$36 Def019A
+S C$lcd.h$121$2$36 Def014C
+S C$lcd.h$116$1$33 Def0135
+S C$lcd.h$107$1$33 Def0118
+S G$asciiNum$0$0 Def0343
+S C$lcd.h$160$2$43 Def01FF
+S C$lcd.h$133$1$35 Def01B9
+S C$lcd.h$131$2$36 Def019D
+S C$lcd.h$122$2$36 Def0162
+S C$lcd.h$108$1$33 Def0122
+S C$atraso.h$6$1$2 Def0002
+S _initLCD4bits Def01E4
+S C$lcd.h$161$2$43 Def0202
+S C$lcd.h$156$1$40 Def01FD
+S C$lcd.h$140$1$38 Def01CD
+S C$lcd.h$134$1$35 Def01B9
+S C$lcd.h$123$2$36 Def0164
+S C$lcd.h$109$1$33 Def0124
+S C$lcd.h$141$1$38 Def01CF
+S C$lcd.h$124$2$36 Def017D
+S C$lcd.h$117$1$35 Def0137
+S A$frequencimetro_simples$1000 Def012F
+S C$lcd.h$149$1$40 Def01E4
+S C$lcd.h$142$1$38 Def01D9
+S C$lcd.h$136$1$35 Def01BA
+S C$lcd.h$125$2$36 Def017F
+S XG$imprimeFrase$0$0 Def00C7
+S A$frequencimetro_simples$1100 Def01B6
+S A$frequencimetro_simples$1010 Def0139
+S A$frequencimetro_simples$1001 Def0131
+S XG$main$0$0 Def02E7
+S C$lcd.h$143$1$38 Def01DB
+S C$lcd.h$126$2$36 Def0181
+S C$atraso.h$8$2$3 Def0005
+S _imprimeChar Def005E
+S A$frequencimetro_simples$1011 Def013B
+S A$frequencimetro_simples$1002 Def0133
+S C$lcd.h$167$1$42 Def0214
+S C$lcd.h$164$2$44 Def020C
+S C$lcd.h$144$1$38 Def01E1
+S C$lcd.h$127$2$36 Def0197
+S C$lcd.h$118$2$36 Def0143
+S C$atraso.h$9$2$3 Def0008
+S A$frequencimetro_simples$1300 Def0232
+S A$frequencimetro_simples$1030 Def0151
+S A$frequencimetro_simples$1012 Def013D
+S C$lcd.h$168$1$42 Def0214
+S C$lcd.h$165$2$44 Def020F
+S C$lcd.h$145$1$38 Def01E3
+S C$lcd.h$128$2$36 Def0199
+S C$lcd.h$119$2$36 Def0148
+S A$frequencimetro_simples$1301 Def0233
+S A$frequencimetro_simples$1220 Def020E
+S A$frequencimetro_simples$1130 Def01C3
+S A$frequencimetro_simples$1040 Def0162
+S A$frequencimetro_simples$1031 Def0153
+S A$frequencimetro_simples$1022 Def0148
+S A$frequencimetro_simples$1013 Def0140
+S C$lcd.h$146$1$38 Def01E3
+S C$lcd.h$137$1$38 Def01BC
+S C$lcd.h$129$2$36 Def0199
+S A$frequencimetro_simples$1410 Def02C0
+S A$frequencimetro_simples$1401 Def02AF
+S A$frequencimetro_simples$1302 Def0235
+S A$frequencimetro_simples$1212 Def0202
+S A$frequencimetro_simples$1140 Def01D0
+S A$frequencimetro_simples$1131 Def01C6
+S A$frequencimetro_simples$1122 Def01BC
+S A$frequencimetro_simples$1050 Def0171
+S A$frequencimetro_simples$1032 Def0155
+S A$frequencimetro_simples$1014 Def0141
+S A$frequencimetro_simples$1005 Def0135
+S XG$posicionaCursor4bits$0$0 Def0214
+S C$lcd.h$138$1$38 Def01C1
+S C$lcd.h$50$1$20 Def0061
+S A$frequencimetro_simples$1600 Def03B9
+S A$frequencimetro_simples$1501 Def0334
+S A$frequencimetro_simples$1411 Def02C2
+S A$frequencimetro_simples$1402 Def02B2
+S A$frequencimetro_simples$1321 Def0246
+S A$frequencimetro_simples$1312 Def023E
+S A$frequencimetro_simples$1303 Def0237
+S A$frequencimetro_simples$1213 Def0203
+S A$frequencimetro_simples$1141 Def01D1
+S A$frequencimetro_simples$1132 Def01C8
+S A$frequencimetro_simples$1123 Def01BE
+S A$frequencimetro_simples$1060 Def017D
+S A$frequencimetro_simples$1051 Def0173
+S A$frequencimetro_simples$1033 Def0157
+S C$lcd.h$148$1$38 Def01E4
+S C$lcd.h$139$1$38 Def01C3
+S C$lcd.h$51$1$20 Def0063
+S _estourot1 Def0215
+S A$frequencimetro_simples$1610 Def03C5
+S A$frequencimetro_simples$1601 Def03BB
+S A$frequencimetro_simples$1502 Def0335
+S A$frequencimetro_simples$1430 Def02DB
+S A$frequencimetro_simples$1421 Def02D0
+S A$frequencimetro_simples$1412 Def02C4
+S A$frequencimetro_simples$1403 Def02B5
+S A$frequencimetro_simples$1340 Def0253
+S A$frequencimetro_simples$1223 Def020F
+S A$frequencimetro_simples$1214 Def0205
+S A$frequencimetro_simples$1205 Def01FD
+S A$frequencimetro_simples$1160 Def01E3
+S A$frequencimetro_simples$1151 Def01DB
+S A$frequencimetro_simples$1142 Def01D3
+S A$frequencimetro_simples$1133 Def01CB
+S A$frequencimetro_simples$1124 Def01BF
+S A$frequencimetro_simples$1106 Def01B9
+S A$frequencimetro_simples$1070 Def018A
+S A$frequencimetro_simples$1052 Def0174
+S A$frequencimetro_simples$1043 Def0164
+S A$frequencimetro_simples$1034 Def015A
+S A$frequencimetro_simples$1025 Def014A
+S G$posicionaCursor$0$0 Def00E9
+S C$lcd.h$52$1$20 Def0065
+S _imprimeInst4bits Def01BA
+S A$frequencimetro_simples$1620 Def03E1
+S A$frequencimetro_simples$1611 Def03C8
+S A$frequencimetro_simples$1530 Def034C
+S A$frequencimetro_simples$1512 Def0342
+S A$frequencimetro_simples$1440 Def02E7
+S A$frequencimetro_simples$1431 Def02DD
+S A$frequencimetro_simples$1422 Def02D1
+S A$frequencimetro_simples$1413 Def02C6
+S A$frequencimetro_simples$1404 Def02B7
+S A$frequencimetro_simples$1341 Def0254
+S A$frequencimetro_simples$1242 Def0215
+S A$frequencimetro_simples$1224 Def0211
+S A$frequencimetro_simples$1215 Def0207
+S A$frequencimetro_simples$1152 Def01DE
+S A$frequencimetro_simples$1143 Def01D4
+S A$frequencimetro_simples$1071 Def018C
+S A$frequencimetro_simples$1053 Def0175
+S A$frequencimetro_simples$1044 Def0166
+S A$frequencimetro_simples$1035 Def015C
+S A$frequencimetro_simples$1017 Def0143
+S C$lcd.h$53$1$20 Def006B
+S A$frequencimetro_simples$1621 Def03E4
+S A$frequencimetro_simples$1612 Def03CB
+S A$frequencimetro_simples$1540 Def0353
+S A$frequencimetro_simples$1432 Def02DF
+S A$frequencimetro_simples$1423 Def02D4
+S A$frequencimetro_simples$1414 Def02C8
+S A$frequencimetro_simples$1405 Def02B9
+S A$frequencimetro_simples$1360 Def0272
+S A$frequencimetro_simples$1351 Def025A
+S A$frequencimetro_simples$1324 Def0249
+S A$frequencimetro_simples$1315 Def0241
+S A$frequencimetro_simples$1306 Def0239
+S A$frequencimetro_simples$1216 Def020A
+S A$frequencimetro_simples$1144 Def01D6
+S A$frequencimetro_simples$1090 Def01A0
+S A$frequencimetro_simples$1072 Def018F
+S A$frequencimetro_simples$1063 Def017F
+S A$frequencimetro_simples$1054 Def0177
+S A$frequencimetro_simples$1045 Def0168
+S A$frequencimetro_simples$1036 Def015E
+S A$frequencimetro_simples$1018 Def0145
+S A$frequencimetro_simples$1009 Def0137
+S XG$initLCD4bits$0$0 Def01FC
+S C$lcd.h$70$1$22 Def00C7
+S C$lcd.h$54$1$20 Def006D
+S _asciiNum Def0343
+S A$frequencimetro_simples$1640 Def0401
+S A$frequencimetro_simples$1631 Def03EC
+S A$frequencimetro_simples$1622 Def03E6
+S A$frequencimetro_simples$1613 Def03CE
+S A$frequencimetro_simples$1604 Def03BD
+S A$frequencimetro_simples$1541 Def0354
+S A$frequencimetro_simples$1433 Def02E2
+S A$frequencimetro_simples$1415 Def02CA
+S A$frequencimetro_simples$1406 Def02BC
+S A$frequencimetro_simples$1370 Def0284
+S A$frequencimetro_simples$1361 Def0275
+S A$frequencimetro_simples$1352 Def025D
+S A$frequencimetro_simples$1208 Def01FF
+S A$frequencimetro_simples$1181 Def01F0
+S A$frequencimetro_simples$1145 Def01D7
+S A$frequencimetro_simples$1136 Def01CD
+S A$frequencimetro_simples$1127 Def01C1
+S A$frequencimetro_simples$1091 Def01A3
+S A$frequencimetro_simples$1073 Def0191
+S A$frequencimetro_simples$1055 Def0178
+S A$frequencimetro_simples$1046 Def016A
+S A$frequencimetro_simples$1037 Def0160
+S A$frequencimetro_simples$1028 Def014C
+S A$frequencimetro_simples$1019 Def0146
+S C$lcd.h$71$1$22 Def00C7
+S C$lcd.h$60$2$23 Def0082
+S C$lcd.h$55$1$20 Def006D
+S A$frequencimetro_simples$1641 Def0404
+S A$frequencimetro_simples$1632 Def03EF
+S A$frequencimetro_simples$1614 Def03D1
+S A$frequencimetro_simples$1560 Def0379
+S A$frequencimetro_simples$1551 Def0363
+S A$frequencimetro_simples$1542 Def0355
+S A$frequencimetro_simples$1533 Def034E
+S A$frequencimetro_simples$1506 Def0337
+S A$frequencimetro_simples$1470 Def02F9
+S A$frequencimetro_simples$1416 Def02CB
+S A$frequencimetro_simples$1407 Def02BE
+S A$frequencimetro_simples$1380 Def0294
+S A$frequencimetro_simples$1371 Def0285
+S A$frequencimetro_simples$1362 Def0278
+S A$frequencimetro_simples$1353 Def0260
+S A$frequencimetro_simples$1335 Def024E
+S A$frequencimetro_simples$1272 Def021A
+S A$frequencimetro_simples$1245 Def0217
+S A$frequencimetro_simples$1209 Def0201
+S A$frequencimetro_simples$1191 Def01FC
+S A$frequencimetro_simples$1182 Def01F3
+S A$frequencimetro_simples$1173 Def01E4
+S A$frequencimetro_simples$1155 Def01E1
+S A$frequencimetro_simples$1119 Def01BA
+S A$frequencimetro_simples$1092 Def01A5
+S A$frequencimetro_simples$1083 Def0199
+S A$frequencimetro_simples$1074 Def0193
+S A$frequencimetro_simples$1056 Def017A
+S A$frequencimetro_simples$1047 Def016D
+S A$frequencimetro_simples$1029 Def014F
+S C$lcd.h$90$2$30 Def00EB
+S G$initLCD$0$0 Def00D6
+S C$lcd.h$61$2$23 Def008F
+S A$frequencimetro_simples$1642 Def0406
+S A$frequencimetro_simples$1633 Def03F0
+S A$frequencimetro_simples$1615 Def03D4
+S A$frequencimetro_simples$1570 Def0390
+S A$frequencimetro_simples$1552 Def0365
+S A$frequencimetro_simples$1543 Def0357
+S A$frequencimetro_simples$1507 Def033A
+S A$frequencimetro_simples$1480 Def0307
+S A$frequencimetro_simples$1471 Def02FA
+S A$frequencimetro_simples$1462 Def02EF
+S A$frequencimetro_simples$1390 Def02A2
+S A$frequencimetro_simples$1381 Def0296
+S A$frequencimetro_simples$1372 Def0287
+S A$frequencimetro_simples$1363 Def027A
+S A$frequencimetro_simples$1354 Def0263
+S A$frequencimetro_simples$1345 Def0256
+S A$frequencimetro_simples$1336 Def0251
+S A$frequencimetro_simples$1318 Def0244
+S A$frequencimetro_simples$1309 Def023C
+S A$frequencimetro_simples$1219 Def020C
+S A$frequencimetro_simples$1174 Def01E7
+S A$frequencimetro_simples$1093 Def01A7
+S A$frequencimetro_simples$1075 Def0195
+S A$frequencimetro_simples$1066 Def0181
+S A$frequencimetro_simples$1057 Def017B
+S A$frequencimetro_simples$1048 Def016E
+S C$lcd.h$91$2$30 Def00EE
+S C$lcd.h$73$1$22 Def00C8
+S C$lcd.h$62$2$23 Def0091
+S C$lcd.h$57$1$20 Def006E
+S A$frequencimetro_simples$1643 Def0408
+S A$frequencimetro_simples$1634 Def03F2
+S A$frequencimetro_simples$1616 Def03D6
+S A$frequencimetro_simples$1580 Def03A1
+S A$frequencimetro_simples$1571 Def0392
+S A$frequencimetro_simples$1553 Def0368
+S A$frequencimetro_simples$1544 Def0359
+S A$frequencimetro_simples$1508 Def033D
+S A$frequencimetro_simples$1490 Def031F
+S A$frequencimetro_simples$1481 Def030A
+S A$frequencimetro_simples$1472 Def02FB
+S A$frequencimetro_simples$1463 Def02F1
+S A$frequencimetro_simples$1436 Def02E4
+S A$frequencimetro_simples$1427 Def02D7
+S A$frequencimetro_simples$1391 Def02A4
+S A$frequencimetro_simples$1382 Def0298
+S A$frequencimetro_simples$1373 Def0289
+S A$frequencimetro_simples$1364 Def027C
+S A$frequencimetro_simples$1355 Def0266
+S A$frequencimetro_simples$1328 Def024B
+S A$frequencimetro_simples$1292 Def022A
+S A$frequencimetro_simples$1229 Def0214
+S A$frequencimetro_simples$1148 Def01D9
+S A$frequencimetro_simples$1139 Def01CF
+S A$frequencimetro_simples$1094 Def01A9
+S A$frequencimetro_simples$1067 Def0184
+S A$frequencimetro_simples$1049 Def016F
+S C$lcd.h$63$2$23 Def0093
+S C$lcd.h$58$1$20 Def0074
+S XG$imprimeChar$0$0 Def006D
+S C$lcd.h$49$1$20 Def005E
+S A$frequencimetro_simples$1644 Def0409
+S A$frequencimetro_simples$1635 Def03F4
+S A$frequencimetro_simples$1626 Def03E8
+S A$frequencimetro_simples$1617 Def03D8
+S A$frequencimetro_simples$1608 Def03BF
+S A$frequencimetro_simples$1581 Def03A2
+S A$frequencimetro_simples$1572 Def0395
+S A$frequencimetro_simples$1563 Def037B
+S A$frequencimetro_simples$1554 Def0369
+S A$frequencimetro_simples$1545 Def035C
+S A$frequencimetro_simples$1536 Def0350
+S A$frequencimetro_simples$1527 Def0343
+S A$frequencimetro_simples$1509 Def0340
+S A$frequencimetro_simples$1491 Def0322
+S A$frequencimetro_simples$1482 Def030D
+S A$frequencimetro_simples$1473 Def02FD
+S A$frequencimetro_simples$1464 Def02F3
+S A$frequencimetro_simples$1437 Def02E5
+S A$frequencimetro_simples$1428 Def02D8
+S A$frequencimetro_simples$1419 Def02CE
+S A$frequencimetro_simples$1392 Def02A5
+S A$frequencimetro_simples$1383 Def029A
+S A$frequencimetro_simples$1374 Def028A
+S A$frequencimetro_simples$1365 Def027E
+S A$frequencimetro_simples$1356 Def0269
+S A$frequencimetro_simples$1329 Def024C
+S A$frequencimetro_simples$1293 Def022B
+S A$frequencimetro_simples$1284 Def0222
+S A$frequencimetro_simples$1275 Def021D
+S A$frequencimetro_simples$1248 Def0219
+S A$frequencimetro_simples$1185 Def01F6
+S A$frequencimetro_simples$1095 Def01AB
+S A$frequencimetro_simples$1086 Def019A
+S A$frequencimetro_simples$1068 Def0186
+S G$imprimeFrase4bits$0$0 Def012F
+S C$lcd.h$81$1$25 Def00D6
+S C$lcd.h$64$2$23 Def00A1
+S C$lcd.h$43$1$18 Def0056
+S G$atraso$0$0 Def0000
+S A$frequencimetro_simples$1636 Def03F6
+S A$frequencimetro_simples$1627 Def03E9
+S A$frequencimetro_simples$1618 Def03DB
+S A$frequencimetro_simples$1609 Def03C2
+S A$frequencimetro_simples$1582 Def03A3
+S A$frequencimetro_simples$1573 Def0397
+S A$frequencimetro_simples$1564 Def037E
+S A$frequencimetro_simples$1555 Def036B
+S A$frequencimetro_simples$1546 Def035E
+S A$frequencimetro_simples$1528 Def0346
+S A$frequencimetro_simples$1492 Def0325
+S A$frequencimetro_simples$1483 Def0310
+S A$frequencimetro_simples$1465 Def02F5
+S A$frequencimetro_simples$1456 Def02E8
+S A$frequencimetro_simples$1429 Def02DA
+S A$frequencimetro_simples$1393 Def02A6
+S A$frequencimetro_simples$1384 Def029B
+S A$frequencimetro_simples$1375 Def028C
+S A$frequencimetro_simples$1366 Def027F
+S A$frequencimetro_simples$1357 Def026A
+S A$frequencimetro_simples$1348 Def0258
+S A$frequencimetro_simples$1294 Def022D
+S A$frequencimetro_simples$1285 Def0225
+S A$frequencimetro_simples$1186 Def01F9
+S A$frequencimetro_simples$1177 Def01EA
+S A$frequencimetro_simples$1096 Def01AE
+S A$frequencimetro_simples$1078 Def0197
+S A$frequencimetro_simples$1069 Def0188
+S C$lcd.h$65$2$23 Def00A3
+S C$lcd.h$44$1$18 Def005B
+S A$frequencimetro_simples$1637 Def03F9
+S A$frequencimetro_simples$1619 Def03DE
+S A$frequencimetro_simples$1592 Def03B1
+S A$frequencimetro_simples$1583 Def03A4
+S A$frequencimetro_simples$1574 Def0399
+S A$frequencimetro_simples$1565 Def0381
+S A$frequencimetro_simples$1556 Def036D
+S A$frequencimetro_simples$1547 Def0360
+S A$frequencimetro_simples$1529 Def0349
+S A$frequencimetro_simples$1493 Def0328
+S A$frequencimetro_simples$1484 Def0312
+S A$frequencimetro_simples$1457 Def02EA
+S A$frequencimetro_simples$1394 Def02A8
+S A$frequencimetro_simples$1385 Def029C
+S A$frequencimetro_simples$1376 Def028E
+S A$frequencimetro_simples$1367 Def0280
+S A$frequencimetro_simples$1358 Def026C
+S A$frequencimetro_simples$1295 Def022E
+S A$frequencimetro_simples$1178 Def01ED
+S A$frequencimetro_simples$1097 Def01B0
+S C$lcd.h$94$2$31 Def00F8
+S C$lcd.h$74$1$25 Def00C8
+S C$lcd.h$66$2$23 Def00A8
+S C$lcd.h$59$1$22 Def0076
+S C$lcd.h$45$1$18 Def005D
+S A$frequencimetro_simples$1647 Def040B
+S A$frequencimetro_simples$1638 Def03FC
+S A$frequencimetro_simples$1593 Def03B2
+S A$frequencimetro_simples$1584 Def03A5
+S A$frequencimetro_simples$1575 Def039B
+S A$frequencimetro_simples$1566 Def0384
+S A$frequencimetro_simples$1557 Def0370
+S A$frequencimetro_simples$1494 Def032A
+S A$frequencimetro_simples$1485 Def0314
+S A$frequencimetro_simples$1476 Def02FF
+S A$frequencimetro_simples$1458 Def02EC
+S A$frequencimetro_simples$1395 Def02A9
+S A$frequencimetro_simples$1386 Def029D
+S A$frequencimetro_simples$1377 Def028F
+S A$frequencimetro_simples$1368 Def0282
+S A$frequencimetro_simples$1359 Def026F
+S A$frequencimetro_simples$1278 Def021F
+S A$frequencimetro_simples$1098 Def01B2
+S A$frequencimetro_simples$1089 Def019D
+S C$lcd.h$95$2$31 Def00FB
+S C$lcd.h$82$1$27 Def00D6
+S C$lcd.h$75$1$25 Def00CB
+S C$lcd.h$67$2$23 Def00A9
+S C$lcd.h$46$1$18 Def005D
+S A$frequencimetro_simples$1639 Def03FF
+S A$frequencimetro_simples$1594 Def03B4
+S A$frequencimetro_simples$1585 Def03A6
+S A$frequencimetro_simples$1576 Def039C
+S A$frequencimetro_simples$1567 Def0387
+S A$frequencimetro_simples$1558 Def0373
+S A$frequencimetro_simples$1495 Def032C
+S A$frequencimetro_simples$1486 Def0316
+S A$frequencimetro_simples$1477 Def0301
+S A$frequencimetro_simples$1468 Def02F7
+S A$frequencimetro_simples$1459 Def02EE
+S A$frequencimetro_simples$1396 Def02AA
+S A$frequencimetro_simples$1387 Def029F
+S A$frequencimetro_simples$1378 Def0291
+S A$frequencimetro_simples$1369 Def0283
+S A$frequencimetro_simples$1288 Def0228
+S A$frequencimetro_simples$1099 Def01B4
+S XG$estourot1$0$0 Def0219
+S C$lcd.h$83$1$27 Def00DC
+S C$lcd.h$76$1$25 Def00CD
+S C$lcd.h$68$2$23 Def00AC
+S A$frequencimetro_simples$1595 Def03B5
+S A$frequencimetro_simples$1586 Def03A8
+S A$frequencimetro_simples$1577 Def039E
+S A$frequencimetro_simples$1568 Def038A
+S A$frequencimetro_simples$1559 Def0376
+S A$frequencimetro_simples$1496 Def032E
+S A$frequencimetro_simples$1487 Def0318
+S A$frequencimetro_simples$1478 Def0303
+S A$frequencimetro_simples$1397 Def02AC
+S A$frequencimetro_simples$1388 Def02A0
+S A$frequencimetro_simples$1379 Def0293
+S A$frequencimetro_simples$1298 Def0230
+S XG$imprimeInst4bits$0$0 Def01E3
+S C$lcd.h$84$1$27 Def00E2
+S C$lcd.h$77$1$25 Def00D3
+S C$lcd.h$48$1$18 Def005E
+S _posicionaCursor Def00E9
+S A$frequencimetro_simples$1596 Def03B7
+S A$frequencimetro_simples$1587 Def03AA
+S A$frequencimetro_simples$1578 Def039F
+S A$frequencimetro_simples$1569 Def038D
+S A$frequencimetro_simples$1497 Def0330
+S A$frequencimetro_simples$1488 Def031A
+S A$frequencimetro_simples$1479 Def0305
+S A$frequencimetro_simples$1398 Def02AD
+S A$frequencimetro_simples$1389 Def02A1
+S A$frequencimetro_simples$1299 Def0231
+S C$frequencimetro_simples.c$31$1$50 Def0222
+S C$lcd.h$85$1$27 Def00E8
+S C$lcd.h$78$1$25 Def00D5
+S A$frequencimetro_simples$1597 Def03B8
+S A$frequencimetro_simples$1588 Def03AD
+S A$frequencimetro_simples$1579 Def03A0
+S A$frequencimetro_simples$1498 Def0332
+S A$frequencimetro_simples$1489 Def031C
+S XG$asciiNum$0$0 Def040B
+S C$lcd.h$86$1$27 Def00E8
+S C$lcd.h$79$1$25 Def00D5
+S G$imprimeInst$0$0 Def00C8
+S A$frequencimetro_simples$1589 Def03AF
+S A$frequencimetro_simples$700 Def0054
+S A$frequencimetro_simples$601 Def0015
+S C$frequencimetro_simples.c$40$2$51 Def0244
+S C$lcd.h$42$1$2 Def0054
+S A$frequencimetro_simples$620 Def0025
+S A$frequencimetro_simples$611 Def001C
+S C$frequencimetro_simples.c$41$2$51 Def0246
+S C$frequencimetro_simples.c$32$2$51 Def0222
+S C$lcd.h$88$1$27 Def00E9
+S _initLCD Def00D6
+S C$frequencimetro_simples.c$60$2$51 Def02E4
+S C$frequencimetro_simples.c$51$2$51 Def0256
+S C$frequencimetro_simples.c$42$2$51 Def0249
+S C$frequencimetro_simples.c$33$2$51 Def0230
+S A$frequencimetro_simples$910 Def00EF
+S A$frequencimetro_simples$820 Def00BA
+S A$frequencimetro_simples$811 Def00A9
+S A$frequencimetro_simples$802 Def00A3
+S A$frequencimetro_simples$703 Def0056
+S A$frequencimetro_simples$604 Def0017
+S C$frequencimetro_simples.c$63$1$50 Def02E7
+S C$frequencimetro_simples.c$61$2$51 Def02D7
+S C$frequencimetro_simples.c$52$2$51 Def0258
+S C$frequencimetro_simples.c$34$2$51 Def022A
+S C$frequencimetro_simples.c$27$1$50 Def021A
+S C$frequencimetro_simples.c$20$1$48 Def0219
+S C$frequencimetro_simples.c$17$1$42 Def0215
+S C$lcd.h$97$1$29 Def0100
+S A$frequencimetro_simples$920 Def00FB
+S A$frequencimetro_simples$911 Def00F1
+S A$frequencimetro_simples$902 Def00E9
+S A$frequencimetro_simples$821 Def00BD
+S A$frequencimetro_simples$803 Def00A4
+S A$frequencimetro_simples$731 Def0061
+S A$frequencimetro_simples$713 Def005D
+S A$frequencimetro_simples$704 Def0058
+S A$frequencimetro_simples$650 Def0039
+S A$frequencimetro_simples$632 Def002D
+S A$frequencimetro_simples$614 Def001F
+S G$pow$0$0 Def02E8
+S C$frequencimetro_simples.c$35$2$51 Def0239
+S C$frequencimetro_simples.c$28$1$50 Def021D
+S C$lcd.h$98$1$29 Def0100
+S _atraso Def0000
+S _imprimeFrase4bits Def012F
+S A$frequencimetro_simples$921 Def00FD
+S A$frequencimetro_simples$912 Def00F3
+S A$frequencimetro_simples$831 Def00C7
+S A$frequencimetro_simples$822 Def00BF
+S A$frequencimetro_simples$804 Def00A7
+S A$frequencimetro_simples$741 Def006B
+S A$frequencimetro_simples$705 Def0059
+S A$frequencimetro_simples$660 Def0041
+S A$frequencimetro_simples$624 Def0027
+S C$frequencimetro_simples.c$70$1$54 Def02FF
+S C$frequencimetro_simples.c$65$1$50 Def02E8
+S C$frequencimetro_simples.c$29$1$50 Def021F
+S C$frequencimetro_simples.c$22$1$48 Def021A
+S G$imprimeChar4bits$0$0 Def0101
+S A$frequencimetro_simples$913 Def00F6
+S A$frequencimetro_simples$823 Def00C1
+S A$frequencimetro_simples$814 Def00AC
+S A$frequencimetro_simples$760 Def006E
+S A$frequencimetro_simples$661 Def0042
+S A$frequencimetro_simples$643 Def0035
+S A$frequencimetro_simples$625 Def0028
+S C$frequencimetro_simples.c$55$2$51 Def025A
+S C$frequencimetro_simples.c$46$2$51 Def024B
+S C$frequencimetro_simples.c$37$2$51 Def023C
+S A$frequencimetro_simples$950 Def010A
+S A$frequencimetro_simples$905 Def00EB
+S A$frequencimetro_simples$824 Def00C3
+S A$frequencimetro_simples$815 Def00AF
+S A$frequencimetro_simples$770 Def0078
+S A$frequencimetro_simples$761 Def0070
+S A$frequencimetro_simples$734 Def0063
+S A$frequencimetro_simples$671 Def0049
+S A$frequencimetro_simples$662 Def0044
+S A$frequencimetro_simples$653 Def003C
+S A$frequencimetro_simples$635 Def002E
+S A$frequencimetro_simples$617 Def0022
+S A$frequencimetro_simples$608 Def0019
+S A$frequencimetro_simples$590 Def000E
+S A$frequencimetro_simples$581 Def0005
+S C$frequencimetro_simples.c$72$1$54 Def0337
+S C$frequencimetro_simples.c$67$1$50 Def02EF
+S C$frequencimetro_simples.c$38$2$51 Def023E
+S A$frequencimetro_simples$942 Def0103
+S A$frequencimetro_simples$906 Def00ED
+S A$frequencimetro_simples$861 Def00D5
+S A$frequencimetro_simples$852 Def00CD
+S A$frequencimetro_simples$825 Def00C5
+S A$frequencimetro_simples$816 Def00B2
+S A$frequencimetro_simples$780 Def0088
+S A$frequencimetro_simples$771 Def007A
+S A$frequencimetro_simples$762 Def0072
+S A$frequencimetro_simples$708 Def005B
+S A$frequencimetro_simples$681 Def0051
+S A$frequencimetro_simples$672 Def004C
+S C$frequencimetro_simples.c$73$1$54 Def0342
+S C$frequencimetro_simples.c$39$2$51 Def0241
+S A$frequencimetro_simples$943 Def0105
+S A$frequencimetro_simples$916 Def00F8
+S A$frequencimetro_simples$853 Def00D0
+S A$frequencimetro_simples$817 Def00B4
+S A$frequencimetro_simples$808 Def00A8
+S A$frequencimetro_simples$781 Def008A
+S A$frequencimetro_simples$772 Def007C
+S A$frequencimetro_simples$646 Def0037
+S C$frequencimetro_simples.c$58$2$51 Def02AF
+S C$frequencimetro_simples.c$47$3$52 Def024E
+S XG$posicionaCursor$0$0 Def0100
+S A$frequencimetro_simples$971 Def0122
+S A$frequencimetro_simples$962 Def0118
+S A$frequencimetro_simples$953 Def010C
+S A$frequencimetro_simples$944 Def0106
+S A$frequencimetro_simples$926 Def0100
+S A$frequencimetro_simples$917 Def00FA
+S A$frequencimetro_simples$818 Def00B6
+S A$frequencimetro_simples$791 Def0093
+S A$frequencimetro_simples$782 Def008C
+S A$frequencimetro_simples$773 Def007F
+S A$frequencimetro_simples$746 Def006D
+S A$frequencimetro_simples$737 Def0065
+S A$frequencimetro_simples$728 Def005E
+S A$frequencimetro_simples$665 Def0046
+S A$frequencimetro_simples$656 Def003F
+S A$frequencimetro_simples$638 Def0030
+S A$frequencimetro_simples$629 Def002A
+S A$frequencimetro_simples$584 Def0008
+S A$frequencimetro_simples$575 Def0000
+S C$frequencimetro_simples.c$75$1$54 Def0343
+S C$frequencimetro_simples.c$59$2$51 Def02C0
+S C$frequencimetro_simples.c$48$3$52 Def024E
+S C$frequencimetro_simples.c$18$1$48 Def0215
+S G$divideMsg$0$0 Def0054
+S A$frequencimetro_simples$981 Def012C
+S A$frequencimetro_simples$963 Def0119
+S A$frequencimetro_simples$954 Def010F
+S A$frequencimetro_simples$909 Def00EE
+S A$frequencimetro_simples$882 Def00E2
+S A$frequencimetro_simples$846 Def00C8
+S A$frequencimetro_simples$819 Def00B8
+S A$frequencimetro_simples$792 Def0096
+S A$frequencimetro_simples$774 Def0080
+S A$frequencimetro_simples$765 Def0074
+S A$frequencimetro_simples$738 Def0068
+S A$frequencimetro_simples$639 Def0033
+S C$frequencimetro_simples.c$91$1$57 Def03EC
+S C$frequencimetro_simples.c$82$1$57 Def037B
+S C$frequencimetro_simples.c$76$1$54 Def034E
+S C$frequencimetro_simples.c$49$3$52 Def0253
+S C$frequencimetro_simples.c$19$1$48 Def0217
+S _imprimeInst Def00C8
+S A$frequencimetro_simples$964 Def011A
+S A$frequencimetro_simples$955 Def0111
+S A$frequencimetro_simples$883 Def00E5
+S A$frequencimetro_simples$874 Def00D6
+S A$frequencimetro_simples$856 Def00D3
+S A$frequencimetro_simples$793 Def0099
+S A$frequencimetro_simples$676 Def004E
+S C$frequencimetro_simples.c$92$1$57 Def040B
+S C$frequencimetro_simples.c$81$2$58 Def0363
+S A$frequencimetro_simples$974 Def0124
+S A$frequencimetro_simples$965 Def011C
+S A$frequencimetro_simples$956 Def0114
+S A$frequencimetro_simples$947 Def0108
+S A$frequencimetro_simples$875 Def00D9
+S A$frequencimetro_simples$794 Def009B
+S A$frequencimetro_simples$785 Def008F
+S A$frequencimetro_simples$677 Def004F
+S A$frequencimetro_simples$596 Def0010
+S A$frequencimetro_simples$587 Def000B
+S A$frequencimetro_simples$578 Def0002
+S C$frequencimetro_simples.c$80$3$59 Def0353
+S C$frequencimetro_simples.c$69$1$54 Def0334
+S XG$initLCD$0$0 Def00E8
+S A$frequencimetro_simples$966 Def011D
+S A$frequencimetro_simples$939 Def0101
+S A$frequencimetro_simples$849 Def00CB
+S A$frequencimetro_simples$795 Def009D
+S A$frequencimetro_simples$777 Def0082
+S A$frequencimetro_simples$687 Def0053
+S A$frequencimetro_simples$597 Def0013
+S A$frequencimetro_simples$967 Def011F
+S A$frequencimetro_simples$796 Def009F
+S A$frequencimetro_simples$778 Def0084
+S A$frequencimetro_simples$769 Def0076
+S A$frequencimetro_simples$986 Def012E
+S A$frequencimetro_simples$977 Def0126
+S A$frequencimetro_simples$968 Def0120
+S A$frequencimetro_simples$959 Def0116
+S A$frequencimetro_simples$878 Def00DC
+S A$frequencimetro_simples$788 Def0091
+S A$frequencimetro_simples$779 Def0086
+S C$frequencimetro_simples.c$87$1$57 Def03BF
+S C$frequencimetro_simples.c$83$3$59 Def03B1
+S XG$imprimeFrase4bits$0$0 Def01B9
+S XG$atraso$0$0 Def0053
+S _pow Def02E8
+S A$frequencimetro_simples$978 Def0129
+S A$frequencimetro_simples$888 Def00E8
+S A$frequencimetro_simples$879 Def00DF
+S C$frequencimetro_simples.c$84$3$59 Def03B9
+S C$frequencimetro_simples.c$79$1$57 Def0350
+S _imprimeChar4bits Def0101
+S A$frequencimetro_simples$799 Def00A1
+S C$frequencimetro_simples.c$85$3$59 Def03BD
+S G$imprimeFrase$0$0 Def006E
+S G$main$0$0 Def021A
+S C$frequencimetro_simples.c$89$2$58 Def03E8
+S C$atraso.h$10$2$3 Def000B
+S C$atraso.h$31$1$2 Def0039
+S C$atraso.h$11$2$3 Def000E
+S C$atraso.h$20$2$4 Def0022
+S C$atraso.h$12$2$3 Def0010
+S _divideMsg Def0054
+S G$posicionaCursor4bits$0$0 Def01FD
+S XG$imprimeInst$0$0 Def00D5
+S C$atraso.h$21$2$4 Def0025
+S C$atraso.h$13$2$3 Def0010
+S C$atraso.h$43$1$2 Def0053
+S C$atraso.h$22$2$4 Def0027
+S C$atraso.h$14$2$3 Def0015
+S C$atraso.h$17$1$2 Def0019
+S C$atraso.h$15$2$3 Def0017
+S C$atraso.h$40$2$6 Def0051
+A CONST size 4 flags 20 addr 0
+S Ffrequencimetro_simples$_str_0$0$0 Def0000
+A XINIT size 0 flags 20 addr 0
+A CABS size 0 flags 28 addr 0
+T 00 00
+R 00 00 00 02
+T 00 00
+R 00 00 00 03
+T 00 00
+R 00 00 00 04
+T 00 00
+R 00 00 00 05
+T 00 00
+R 00 00 00 05
+T 00 01
+R 00 00 00 05
+T 00 01
+R 00 00 00 05
+T 00 02
+R 00 00 00 05
+T 00 02
+R 00 00 00 05
+T 00 03
+R 00 00 00 05
+T 00 03
+R 00 00 00 05
+T 00 04
+R 00 00 00 05
+T 00 04
+R 00 00 00 05
+T 00 0A
+R 00 00 00 05
+T 00 0A
+R 00 00 00 05
+T 00 0E
+R 00 00 00 05
+T 00 0E
+R 00 00 00 05
+T 00 0F
+R 00 00 00 05
+T 00 0F
+R 00 00 00 05
+T 00 13
+R 00 00 00 05
+T 00 13
+R 00 00 00 05
+T 00 17
+R 00 00 00 05
+T 00 17
+R 00 00 00 05
+T 00 00
+R 00 00 00 06
+T 00 00
+R 00 00 00 06
+T 00 00
+R 00 00 00 0E
+T 00 00 02 00 00 32
+R 00 00 00 0E 02 03 00 F4
+T 00 04
+R 00 00 00 0E
+T 00 0B 32
+R 00 00 00 0E
+T 00 0C
+R 00 00 00 0E
+T 00 13 32
+R 00 00 00 0E
+T 00 14
+R 00 00 00 0E
+T 00 1B 02 02 15
+R 00 00 00 0E 00 03 00 17
+T 00 00 75 00 00 02 00 75 00 00 03 00 75
+R 00 00 00 15 F1 21 03 00 05 F1 21 08 00 05
+T 00 07 00 00 04 30 75 00 00 05 30 75
+R 00 00 00 15 F1 21 02 00 05 F1 21 07 00 05
+T 00 0D 00 00 06 30 75 00 00 07 30 75
+R 00 00 00 15 F1 21 02 00 05 F1 21 07 00 05
+T 00 13 00 00 08 30 75 00 00 09 30
+R 00 00 00 15 F1 21 02 00 05 F1 21 07 00 05
+T 00 00 02 00 1E
+R 00 00 00 16 00 03 00 0E
+T 00 1E
+R 00 00 00 0E
+T 00 1E 02 02 1A
+R 00 00 00 0E 00 03 00 17
+T 00 00
+R 00 00 00 17
+T 00 00 AF 82 BF 01 14 53 89 F0 75 8A 00 75 8C E0
+R 00 00 00 17
+T 00 0E D2 8C
+R 00 00 00 17
+T 00 10
+R 00 00 00 17
+T 00 10 10 8D 02 80 FB
+R 00 00 00 17
+T 00 15
+R 00 00 00 17
+T 00 15 C2 8C 80 3A
+R 00 00 00 17
+T 00 19
+R 00 00 00 17
+T 00 19 BF 0F 1D 53 89 F0 75 8A 00 75 8C E0 D2 8C
+R 00 00 00 17
+T 00 27
+R 00 00 00 17
+T 00 27 EF 60 0B
+R 00 00 00 17
+T 00 2A
+R 00 00 00 17
+T 00 2A 30 8D FD 1F C2 8D 75 8C E0 80 F2
+R 00 00 00 17
+T 00 35
+R 00 00 00 17
+T 00 35 C2 8C 80 1A
+R 00 00 00 17
+T 00 39
+R 00 00 00 17
+T 00 39 BF 64 17 43 89 01 D2 8C
+R 00 00 00 17
+T 00 41
+R 00 00 00 17
+T 00 41 EF 24 9D 50 0B 75 8C 3B
+R 00 00 00 17
+T 00 49
+R 00 00 00 17
+T 00 49 10 8D 02 80 FB
+R 00 00 00 17
+T 00 4E
+R 00 00 00 17
+T 00 4E 1F 80 F0
+R 00 00 00 17
+T 00 51
+R 00 00 00 17
+T 00 51 C2 8C
+R 00 00 00 17
+T 00 53
+R 00 00 00 17
+T 00 53 22
+R 00 00 00 17
+T 00 54
+R 00 00 00 17
+T 00 54 AF 82 74 F0 5F F5 80 8F A0 22
+R 00 00 00 17
+T 00 5E
+R 00 00 00 17
+T 00 5E 12 00 54 D2 80 D2 82 75 82 0F 12 00 00 C2
+R 00 00 00 17 00 03 00 17 00 0D 00 17
+T 00 6C 82 22
+R 00 00 00 17
+T 00 6E
+R 00 00 00 17
+T 00 6E AD 82 AE 83 AF F0 7C 00
+R 00 00 00 17
+T 00 76
+R 00 00 00 17
+T 00 76 8D 82 8E 83 8F F0 12 00 00 FB 60 45 8B 82
+R 00 00 00 17 02 09 00 F7
+T 00 84 C0 07 C0 06 C0 05 C0 04 12 00 54 D2 80 D2
+R 00 00 00 17 00 0B 00 17
+T 00 92 82 75 82 0F 12 00 00 D0 04 D0 05 D0 06 D0
+R 00 00 00 17 00 07 00 17
+T 00 A0 07 C2 82 0D BD 00 01 0E
+R 00 00 00 17
+T 00 A8
+R 00 00 00 17
+T 00 A8 0C BC 0F CA 75 00 00 00 02 75 82 00 C0 07
+R 00 00 00 17 F1 21 07 00 05
+T 00 B4 C0 06 C0 05 C0 04 12 00 E9 D0 04 D0 05 D0
+R 00 00 00 17 00 09 00 17
+T 00 C2 06 D0 07 80 AF
+R 00 00 00 17
+T 00 C7
+R 00 00 00 17
+T 00 C7 22
+R 00 00 00 17
+T 00 C8
+R 00 00 00 17
+T 00 C8 12 00 54 D2 82 75 82 0F 12 00 00 C2 82 22
+R 00 00 00 17 00 03 00 17 00 0B 00 17
+T 00 D6
+R 00 00 00 17
+T 00 D6 75 82 38 12 00 C8 75 82 0F 12 00 C8 75 82
+R 00 00 00 17 00 06 00 17 00 0C 00 17
+T 00 E4 06 12 00 C8 22
+R 00 00 00 17 00 04 00 17
+T 00 E9
+R 00 00 00 17
+T 00 E9 AF 82 74 80 2F FF F5 82 C0 07 12 00 C8 D0
+R 00 00 00 17 00 0D 00 17
+T 00 F7 07 74 C0 2F F5 82 12 00 C8 22
+R 00 00 00 17 00 09 00 17
+T 01 01
+R 00 00 00 17
+T 01 01 AF 82 74 F0 5F F5 80 D2 80 D2 82 75 82 0F
+R 00 00 00 17
+T 01 0F C0 07 12 00 00 D0 07 C2 82 EF C4 54 F0 FF
+R 00 00 00 17 00 05 00 17
+T 01 1D 74 F0 5F F5 80 D2 80 D2 82 75 82 0F 12
+R 00 00 00 17
+T 01 2A 00 00 C2 82 22
+R 00 00 00 17 00 02 00 17
+T 01 2F
+R 00 00 00 17
+T 01 2F AD 82 AE 83 AF F0 7C 00
+R 00 00 00 17
+T 01 37
+R 00 00 00 17
+T 01 37 8D 82 8E 83 8F F0 12 00 00 FB 60 76 74 F0
+R 00 00 00 17 02 09 00 F7
+T 01 45 5B F5 80 D2 80 D2 82 75 82 0F C0 07 C0 06
+R 00 00 00 17
+T 01 53 C0 05 C0 04 12 00 00 D0 04 D0 05 D0 06 D0
+R 00 00 00 17 00 07 00 17
+T 01 61 07 C2 82 8D 82 8E 83 8F F0 12 00 00 FB A3
+R 00 00 00 17 02 0C 00 F7
+T 01 6F AD 82 AE 83 EB C4 54 F0 FB 74 F0 5B F5 80
+R 00 00 00 17
+T 01 7D D2 80 D2 82 75 82 0F C0 07 C0 06 C0 05 C0
+R 00 00 00 17
+T 01 8B 04 12 00 00 D0 04 D0 05 D0 06 D0 07 C2 82
+R 00 00 00 17 00 04 00 17
+T 01 99 0C BC 0F 9A 75 00 00 01 02 75 82 00 C0 07
+R 00 00 00 17 F1 21 07 00 05
+T 01 A5 C0 06 C0 05 C0 04 12 01 FD D0 04 D0 05 D0
+R 00 00 00 17 00 09 00 17
+T 01 B3 06 D0 07 02 01 37
+R 00 00 00 17 00 06 00 17
+T 01 B9
+R 00 00 00 17
+T 01 B9 22
+R 00 00 00 17
+T 01 BA
+R 00 00 00 17
+T 01 BA AF 82 74 F0 5F F5 80 D2 82 75 82 0F C0 07
+R 00 00 00 17
+T 01 C8 12 00 00 D0 07 C2 82 EF C4 54 F0 FF 74 F0
+R 00 00 00 17 00 03 00 17
+T 01 D6 5F F5 80 D2 82 75 82 0F 12 00 00 C2 82 22
+R 00 00 00 17 00 0B 00 17
+T 01 E4
+R 00 00 00 17
+T 01 E4 75 82 28 12 00 C8 75 82 0F 12 01 BA 75 82
+R 00 00 00 17 00 06 00 17 00 0C 00 17
+T 01 F2 06 12 01 BA 75 82 64 12 00 00 22
+R 00 00 00 17 00 04 00 17 00 0A 00 17
+T 01 FD
+R 00 00 00 17
+T 01 FD AF 82 74 80 2F FF F5 82 C0 07 12 01 BA D0
+R 00 00 00 17 00 0D 00 17
+T 02 0B 07 74 C0 2F F5 82 12 01 BA 22
+R 00 00 00 17 00 09 00 17
+T 02 15
+R 00 00 00 17
+T 02 15 05 00 00 03 C2 8F 32
+R 00 00 00 17 F1 21 03 00 05
+T 02 1A
+R 00 00 00 17
+T 02 1A 75 89 51 D2 AF 12 01 E4
+R 00 00 00 17 00 08 00 17
+T 02 22
+R 00 00 00 17
+T 02 22 75 82 01 12 01 BA 7F 00
+R 00 00 00 17 00 06 00 17
+T 02 2A
+R 00 00 00 17
+T 02 2A EF 24 00 00 04 F8 76 30 0F C3 EF 64 80 94
+R 00 00 00 17 F1 01 04 00 05
+T 02 36 86 40 F1 75 00 00 03 00 7E 14 75 8D 00 75
+R 00 00 00 17 F1 21 06 00 05
+T 02 42 8B 00 D2 8E 75 8C 3B D2 8C
+R 00 00 00 17
+T 02 4B
+R 00 00 00 17
+T 02 4B EE 60 08
+R 00 00 00 17
+T 02 4E
+R 00 00 00 17
+T 02 4E 10 8D 02 80 FB
+R 00 00 00 17
+T 02 53
+R 00 00 00 17
+T 02 53 1E 80 F5
+R 00 00 00 17
+T 02 56
+R 00 00 00 17
+T 02 56 C2 8E C2 8C 85 00 00 03 00 00 00 75
+R 00 00 00 17 F1 21 07 00 05 F1 23 0A 00 43
+T 02 5E 00 00 01 00 75 00 00 02 00 75
+R 00 00 00 17 F1 23 02 00 43 F1 23 07 00 43
+T 02 64 00 00 03 00 90 FF FF E4 F5 F0 12 00 00 85
+R 00 00 00 17 F1 23 02 00 43 02 0D 00 FC
+T 02 70 82 00 00 0A 85 83 00 00 0B 85 F0
+R 00 00 00 17 F1 21 03 00 05 F1 21 08 00 05
+T 02 77 00 00 0C F5 00 00 0D AE 8D 7A 00 EE 33 95
+R 00 00 00 17 F1 21 02 00 05 F1 21 06 00 05
+T 02 81 E0 FD FC EA 25 00 00 0A F5 00 00 0A EE 35
+R 00 00 00 17 F1 21 07 00 05 F1 21 0B 00 05
+T 02 8B 00 00 0B F5 00 00 0B ED 35
+R 00 00 00 17 F1 21 02 00 05 F1 21 06 00 05
+T 02 90 00 00 0C F5 00 00 0C EC 35
+R 00 00 00 17 F1 21 02 00 05 F1 21 06 00 05
+T 02 95 00 00 0D F5 00 00 0D AB 8B E4 FE 33 95 E0
+R 00 00 00 17 F1 21 02 00 05 F1 21 06 00 05
+T 02 9F FD FC EB 25 00 00 0A FB EE 35 00 00 0B FE
+R 00 00 00 17 F1 21 06 00 05 F1 21 0C 00 05
+T 02 A9 ED 35 00 00 0C EC 35 00 00 0D 90
+R 00 00 00 17 F1 21 04 00 05 F1 21 09 00 05
+T 02 B0 00 00 75 F0 80 C0 06 C0 03 12 01 2F D0 03
+R 00 00 00 17 00 02 00 18 00 0C 00 17
+T 02 BE D0 06 7D 00 7C 00 8B 82 8E 83 8D F0 EC 12
+R 00 00 00 17
+T 02 CC 03 43 AF 00 00 02
+R 00 00 00 17 00 02 00 17 F1 21 05 00 05
+T 02 D0
+R 00 00 00 17
+T 02 D0 EF 30 E7 03 02 02 22
+R 00 00 00 17 00 07 00 17
+T 02 D7
+R 00 00 00 17
+T 02 D7 EF 24 00 00 04 F9 87 82 C0 07 12 01 01 D0
+R 00 00 00 17 F1 01 04 00 05 00 0D 00 17
+T 02 E3 07 1F 80 E9 22
+R 00 00 00 17
+T 02 E8
+R 00 00 00 17
+T 02 E8 AC 82 AD 83 AE F0 FF 8C 00 00 0F 8D
+R 00 00 00 17 F1 21 0A 00 05
+T 02 F2 00 00 10 8E 00 00 11 8F
+R 00 00 00 17 F1 21 02 00 05 F1 21 06 00 05
+T 02 F6 00 00 12 7B 01
+R 00 00 00 17 F1 21 02 00 05
+T 02 F9
+R 00 00 00 17
+T 02 F9 C3 EB 95 00 00 0E 50 38 8C 00 00 00 8D
+R 00 00 00 17 F1 21 05 00 05 F1 23 0B 00 43
+T 03 02 00 00 01 8E 00 00 02 8F
+R 00 00 00 17 F1 23 02 00 43 F1 23 06 00 43
+T 03 06 00 00 03 85 00 00 0F 82 85
+R 00 00 00 17 F1 23 02 00 43 F1 21 06 00 05
+T 03 0B 00 00 10 83 85 00 00 11 F0 E5
+R 00 00 00 17 F1 21 02 00 05 F1 21 07 00 05
+T 03 11 00 00 12 C0 07 C0 06 C0 05 C0 04 C0 03 12
+R 00 00 00 17 F1 21 02 00 05
+T 03 1D 00 00 85 82 00 00 0F 85 83
+R 00 00 00 17 02 02 00 FC F1 21 06 00 05
+T 03 24 00 00 10 85 F0 00 00 11 F5
+R 00 00 00 17 F1 21 02 00 05 F1 21 07 00 05
+T 03 29 00 00 12 D0 03 D0 04 D0 05 D0 06 D0 07 0B
+R 00 00 00 17 F1 21 02 00 05
+T 03 35 80 C2
+R 00 00 00 17
+T 03 37
+R 00 00 00 17
+T 03 37 85 00 00 0F 82 85 00 00 10 83 85
+R 00 00 00 17 F1 21 03 00 05 F1 21 08 00 05
+T 03 3E 00 00 11 F0 E5 00 00 12 22
+R 00 00 00 17 F1 21 02 00 05 F1 21 07 00 05
+T 03 43
+R 00 00 00 17
+T 03 43 85 82 00 00 13 85 83 00 00 14 85 F0
+R 00 00 00 17 F1 21 04 00 05 F1 21 09 00 05
+T 03 4B 00 00 15 F5 00 00 16 7B 05 75
+R 00 00 00 17 F1 21 02 00 05 F1 21 06 00 05
+T 03 51 00 00 02 00
+R 00 00 00 17 F1 21 02 00 05
+T 03 53
+R 00 00 00 17
+T 03 53 C3 E4 64 80 8B F0 63 F0 80 95 F0 40 03 02
+R 00 00 00 17
+T 03 61 03 EC
+R 00 00 00 17 00 02 00 17
+T 03 63
+R 00 00 00 17
+T 03 63 8B 00 00 0E 90 00 0A E4 F5 F0 C0 03 12
+R 00 00 00 17 F1 21 03 00 05
+T 03 6E 02 E8 85 82 00 00 17 85 83
+R 00 00 00 17 00 02 00 17 F1 21 06 00 05
+T 03 75 00 00 18 85 F0 00 00 19 F5
+R 00 00 00 17 F1 21 02 00 05 F1 21 07 00 05
+T 03 7A 00 00 1A 85 00 00 17
+R 00 00 00 17 F1 21 02 00 05 F1 21 06 00 05
+T 03 7D 00 00 00 85 00 00 18
+R 00 00 00 17 F1 23 02 00 0B F1 21 06 00 05
+T 03 80 00 00 01 85 00 00 19
+R 00 00 00 17 F1 23 02 00 0B F1 21 06 00 05
+T 03 83 00 00 02 85 00 00 1A
+R 00 00 00 17 F1 23 02 00 0B F1 21 06 00 05
+T 03 86 00 00 03 85 00 00 13 82 85
+R 00 00 00 17 F1 23 02 00 0B F1 21 06 00 05
+T 03 8B 00 00 14 83 85 00 00 15 F0 E5
+R 00 00 00 17 F1 21 02 00 05 F1 21 07 00 05
+T 03 91 00 00 16 12 00 00 AA 82 AD 83 AE F0 FF D0
+R 00 00 00 17 F1 21 02 00 05 02 06 00 68
+T 03 9D 03 C3 E4 9A E4 9D E4 9E E4 64 80 8F F0 63
+R 00 00 00 17
+T 03 AB F0 80 95 F0 50 37 EB 24 00 00 04 F9 74 30
+R 00 00 00 17 F1 01 0A 00 05
+T 03 B7 2A F7 E5 00 00 02 70 02 8B 00 00 02
+R 00 00 00 17 F1 21 05 00 05 F1 21 0B 00 05
+T 03 BF
+R 00 00 00 17
+T 03 BF 85 00 00 17 00 00 00 85
+R 00 00 00 17 F1 21 03 00 05 F1 23 06 00 00
+T 03 C3 00 00 18 00 00 01 85
+R 00 00 00 17 F1 21 02 00 05 F1 23 05 00 00
+T 03 C6 00 00 19 00 00 02 85
+R 00 00 00 17 F1 21 02 00 05 F1 23 05 00 00
+T 03 C9 00 00 1A 00 00 03 85
+R 00 00 00 17 F1 21 02 00 05 F1 23 05 00 00
+T 03 CC 00 00 13 82 85 00 00 14 83 85
+R 00 00 00 17 F1 21 02 00 05 F1 21 07 00 05
+T 03 D2 00 00 15 F0 E5 00 00 16 C0 03 12
+R 00 00 00 17 F1 21 02 00 05 F1 21 07 00 05
+T 03 D9 00 00 85 82 00 00 13 85 83
+R 00 00 00 17 02 02 00 56 F1 21 06 00 05
+T 03 E0 00 00 14 85 F0 00 00 15 F5
+R 00 00 00 17 F1 21 02 00 05 F1 21 07 00 05
+T 03 E5 00 00 16 D0 03
+R 00 00 00 17 F1 21 02 00 05
+T 03 E8
+R 00 00 00 17
+T 03 E8 1B 02 03 53
+R 00 00 00 17 00 04 00 17
+T 03 EC
+R 00 00 00 17
+T 03 EC 75 00 00 00 0A E4 F5 00 00 01 F5
+R 00 00 00 17 F1 23 03 00 00 F1 23 09 00 00
+T 03 F3 00 00 02 F5 00 00 03 85
+R 00 00 00 17 F1 23 02 00 00 F1 23 06 00 00
+T 03 F7 00 00 13 82 85 00 00 14 83 85
+R 00 00 00 17 F1 21 02 00 05 F1 21 07 00 05
+T 03 FD 00 00 15 F0 E5 00 00 16 12
+R 00 00 00 17 F1 21 02 00 05 F1 21 07 00 05
+T 04 02 00 00 AC 82 74 30 2C F5 00 00 04 22
+R 00 00 00 17 02 02 00 56 F1 21 0A 00 05
+T 00 00
+R 00 00 00 18
+T 00 00 66 3A 20 00
+R 00 00 00 18
